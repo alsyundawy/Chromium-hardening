@@ -1,6 +1,6 @@
 #### Hardens Chromium and it's settings in the name of security
 
-The goal of this project is to provide information (and an extension maybe?) to setup Chromium for maximum application security (which doesn#t mean you're more secure in terms of that the browser/data aren#t attackable). 
+The goal of this project is to provide information (and an extension maybe?) to setup Chromium for maximum application security (which doesn#t mean you're more secure in terms of that the browser/data aren't attackable). 
 
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40CHEF-KOCH)](https://twitter.com/CKsTechNews)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/CHEF-KOCH)
@@ -118,9 +118,11 @@ The MEI is determined by a ratio of visits to significant media playback events 
 * Tab with video is active.
 * Size of the video (in px) must be greater than 200×140.
 
+
 ## Chrome's Ads blocker
 
 [Google](https://blog.chromium.org/2018/02/how-chromes-ad-filtering-works.html) is evaluating sites based on the [Better Ads standards](https://www.betterads.org/standards) and then rating them as a pass, warning, or failing. Site owners can access these evaluations using an API, and sites can be re-reviewed after bad ads have been addressed.
+
 
 ## Privacy Concerns
 
