@@ -1,6 +1,6 @@
 #### Hardens Chromium and it's settings in the name of security
 
-The goal of this project is to provide information (and an extension maybe?) to setup Chromium for maximum security. 
+The goal of this project is to provide information (and an extension maybe?) to setup Chromium for maximum application security (which doesn#t mean you're more secure in terms of that the browser/data aren#t attackable). 
 
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40CHEF-KOCH)](https://twitter.com/CKsTechNews)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/CHEF-KOCH)
