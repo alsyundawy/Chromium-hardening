@@ -219,3 +219,4 @@ Browser Forks mostly only removing integrated functions which is maybe the best 
 
 ## Papers
 * [Web Developer's Guide to Prerendering in Chrome](https://web.archive.org/web/20120309113126/http://code.google.com/chrome/whitepapers/prerender.html)
+* [Google Chrome Privacy Whitepaper](https://www.google.com/chrome/privacy/whitepaper.html) **updated frequently by me and other people**
