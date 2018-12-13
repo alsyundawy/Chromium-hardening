@@ -7,6 +7,11 @@
 * ~~[WebAPI Manager](https://github.com/snyderp/web-api-manager) or~~ [Trace](https://absolutedouble.co.uk/trace/)
 
 
+CAPTCHA Solver:
+* [Buster](https://chrome.google.com/webstore/detail/buster-captcha-solver-for/mpbjkejclgfgadiemmefgebjfooflfhl)
+* [Cloudhole](https://addons.mozilla.org/en-US/firefox/addon/cloudhole/?src=cb-dl-updated) - only for Firefox (atm)
+* [Privacy Pass](https://privacypass.github.io/faq/)
+
 
 Optional:
 * [Browsec](https://browsec.com/) (Browser VPN/proxy to unblock websites • Alternatives: Betternet, Hideman, Tunnello)
