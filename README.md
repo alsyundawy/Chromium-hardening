@@ -39,6 +39,7 @@ Firefox
 * [Firefox tracks users with Google Analytics in the add-on settings](https://github.com/mozilla/addons-frontend/issues/2785) [2017]
 * Most concerns can be destroyed using about:config.
 * Firefox has forks in order to (by default) opt-out (without any need of altering about:config). E.g. Waterfox.
+* [Mozilla responds to Booking.com Snippet Concerns; “It was not a paid placement or advertisement. We are continually looking for more ways to say thanks for using Firefox."](https://old.reddit.com/r/privacytoolsIO/comments/abfgj5/mozilla_responds_to_bookingcom_snippet_concerns/)
 
 
 Isn't it funny that [Firefox Wikipedia page](https://gist.github.com/solso/423a1104a9e3c1e3b8d7c9ca14e885e5) has not any section related to Mr. Robot and safebrowsing privacy concerns while Chrome has this mentioned?! Remember Firefox (by default) has also in fact more studies and telemetry integrated in his browser! They even call telemetry in the article as [security](https://en.wikipedia.org/wiki/Firefox#Security) feature. Is this objective written - _I very much doubt it._  
