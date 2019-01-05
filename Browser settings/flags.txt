@@ -3,6 +3,7 @@ v68 (no single background connection [no sync build with] chrome://net-internals
 Enabled
 =======
 
+#disallow-doc-written-script-loads
 #enable-webrtc-new-encode-cpu-load-estimator
 #enable-history-entry-requires-user-gesture
 #smooth-scrolling
@@ -45,20 +46,27 @@ Enabled
 #clipboard-content-setting
 #enable-modern-media-controls
 #enable-av1-decoder
-#enable-mark-http-as				(will be removed in v70+) Mark HTTP as actively dangerous.
+#enable-mark-http-as (enabled: non secure warning and passwords ... )
 #unified-consent
 #enable-gpu-appcontainer
 #pdf-isolation
 #ntp-ui-md
 #stop-in-background
 #enable-framebusting-needs-sameorigin-or-usergesture 
+#enable-site-per-process     default
+#extension-content-verification       (enforce strict ...)
+#disable-hyperlink-auditing           (default)
+#reduced-referrer-granularity
+#autoplay-policy                  (user gesture is required ...)
+#enable-tcp-fast-open (enabled)       (chrome only will be removed)
+
 
 
 Disabled
 =======
 
-##account-consistency
-#disable-hyperlink-auditing
+#allow-sxg-certs-without-extension
+#account-consistency
 #show-autofill-type-predictions
 #device-discovery-notifications
 #enable-single-click-autofill
