@@ -27,7 +27,6 @@ Enabled
 #enable-md-extensions
 #enable-brotli
 #automatic-tab-discarding
-#tls13-variant 						Draft 23 (will be draft 24 with v70+)
 #enable-webrtc-h264-with-openh264-ffmpeg
 #important-sites-in-cbd
 #new-audio-rendering-mixing-strategy
@@ -59,7 +58,7 @@ Enabled
 #reduced-referrer-granularity
 #autoplay-policy                  (user gesture is required ...)
 #enable-tcp-fast-open (enabled)       (chrome only will be removed)
-
+#enable-lookalike-URL-navigation-suggestions
 
 
 Disabled
