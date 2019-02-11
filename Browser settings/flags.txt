@@ -64,6 +64,7 @@ Enabled
 Disabled
 =======
 
+#enable-fast-unload
 #allow-sxg-certs-without-extension
 #account-consistency
 #show-autofill-type-predictions
@@ -89,14 +90,4 @@ Disabled
 #new-usb-backend
 #enable-desktop-ios-promotions
 #voice-search-on-local-ntp
-
-
-
-
-
-
-
-
-
-
 
