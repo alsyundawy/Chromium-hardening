@@ -192,6 +192,7 @@ Browser Forks mostly only removing integrated functions which is maybe the best 
 
 
 ## Acknowledgments and References
+* [Official Google Chrome Group Policy Templates](https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip)
 * [Chrome Profiles](https://support.google.com/chrome/answer/2364824)
 * [Chrome removed the enable_webrtc=false flag (which means no more No-WebRTC builds)](https://chromium.googlesource.com/chromium/src/+/d98b020fe1f0cb85de21de5313261a66ad9c9fe4)
 * [Official System Hardening Guide](https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/system-hardening)
