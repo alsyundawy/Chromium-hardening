@@ -3,6 +3,7 @@ v68 (no single background connection [no sync build with] chrome://net-internals
 Enabled
 =======
 
+#enable-origin-trials flag
 #disallow-doc-written-script-loads
 #enable-webrtc-new-encode-cpu-load-estimator
 #enable-history-entry-requires-user-gesture
