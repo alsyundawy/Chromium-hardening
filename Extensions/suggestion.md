@@ -7,6 +7,10 @@
 * ~~[WebAPI Manager](https://github.com/snyderp/web-api-manager) or~~ [Trace](https://absolutedouble.co.uk/trace/)
 
 
+All-in-One solutions:
+* [Browser Plugs Fingerprint Privacy Firewall](https://chrome.google.com/webstore/detail/browser-plugs-fingerprint/gpgbpgdfipppcelfbdlbkhmibofknppj?hl=en) (Basically a all-in-one solution for all of the mentioned extensions [except for ad-blocking]).
+
+
 Fonts:
 * [BP Privacy Block All Font and Glyph Detection](https://chrome.google.com/webstore/detail/bp-privacy-block-all-font/bfoidacjeobbnkpoemlfllfmmnbogcig) (the author offers [AIO solutions for FF/CHrome](https://www.browserplugs.com/))
 
