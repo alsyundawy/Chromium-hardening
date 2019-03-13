@@ -3,6 +3,7 @@ v68 (no single background connection [no sync build with] chrome://net-internals
 Enabled
 =======
 
+#enable-webrtc-hide-local-ips-with-mdns
 #enable-filesystem-in-icognito
 #enable-origin-trials flag
 #disallow-doc-written-script-loads
