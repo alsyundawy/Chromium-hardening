@@ -57,7 +57,6 @@ Enabled
 #enable-framebusting-needs-sameorigin-or-usergesture 
 #enable-site-per-process     default
 #extension-content-verification       (enforce strict ...)
-#disable-hyperlink-auditing           (default)
 #reduced-referrer-granularity
 #autoplay-policy                  (user gesture is required ...)
 #enable-tcp-fast-open (enabled)       (chrome only will be removed)
@@ -67,6 +66,7 @@ Enabled
 Disabled
 =======
 
+#happiness-tracking-surveys-for-desktop
 #network-service
 #enable-fast-unload
 #allow-sxg-certs-without-extension
@@ -94,4 +94,7 @@ Disabled
 #new-usb-backend
 #enable-desktop-ios-promotions
 #voice-search-on-local-ntp
-
+#enable-data-reduction-proxy-with-network-service
+#pdf-form-save
+#enforce-tls13-downgrade
+#disable-hyperlink-auditing
