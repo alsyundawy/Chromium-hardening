@@ -220,6 +220,9 @@ Browser Forks mostly only removing integrated functions which is maybe the best 
 * [The story of why Chrome and Firefox will soon block sites with certain SSL certificates](https://www.templarbit.com/blog/2018/09/07/the-story-of-why-chrome-and-firefox-will-soon-block-sites-with-certain-ssl-certificates/)
 * [Opt-out/opt-in selective on every Google Service](https://takeout.google.com)
 
+## External scripts & tools
+* [PowerShell script to get the latest build of Chromium directly from the Chromium Project](https://github.com/RealDrGordonFreeman/Chromigen)
+
 
 ## Papers
 * [Web Developer's Guide to Prerendering in Chrome](https://web.archive.org/web/20120309113126/http://code.google.com/chrome/whitepapers/prerender.html)
