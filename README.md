@@ -28,11 +28,12 @@ A fork means that Google takes the original source code of Chromium and they add
 | JavaScript performance | //  |  // | Equal? (depending) |
 
 
-## Privacy Scandals
+## Privacy & Security Scandals
 
 Firefox
 ========
 
+* [Firefox browser trusts DarkMatter CA certificate to cause security industry controversy](https://bugzilla.mozilla.org/show_bug.cgi?id=1427262) (see [here](https://www.reuters.com/investigates/special-report/usa-spying-raven/) how it could be abused) _However, this one is questionable and controversial because there is no audit or sign that this was abused_
 * [Firefox Users Cry Foul Over 'Mr. Robot' Ad Installed As Research Program](http://fortune.com/2017/12/17/firefox-mr-robot-looking-glass/) [2017]
 * [Firefox Shield Studies](https://wiki.mozilla.org/Firefox/Shield/Shield_Studies) - these studies are separate from the normal telemetry
 * [Cliqz](https://gist.github.com/solso/423a1104a9e3c1e3b8d7c9ca14e885e5) acquired by Mozilla 
@@ -120,7 +121,7 @@ The MEI is determined by a ratio of visits to significant media playback events 
 * Size of the video (in px) must be greater than 200×140.
 
 
-## Chrome's Ads blocker
+## Chrome's integrated Ads-blocker
 
 [Google](https://blog.chromium.org/2018/02/how-chromes-ad-filtering-works.html) is evaluating sites based on the [Better Ads standards](https://www.betterads.org/standards) and then rating them as a pass, warning, or failing. Site owners can access these evaluations using an API, and sites can be re-reviewed after bad ads have been addressed.
 
