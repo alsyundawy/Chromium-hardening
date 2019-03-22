@@ -1,5 +1,3 @@
-v68 (no single background connection [no sync build with] chrome://net-internals/#dns
-
 Enabled
 =======
 
@@ -100,3 +98,10 @@ Disabled
 * #show-autofill-type-predictions
 * #simplified-fullscreen-ui
 * #voice-search-on-local-ntp
+
+
+Deprecated
+=======
+
+Chrome v68 (only)
+* No single background connection, there are builds compiled with and without a specific flag which toggles `chrome://net-internals/#dns`.
