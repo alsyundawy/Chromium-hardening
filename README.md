@@ -85,11 +85,6 @@ Chrome
 * Both extension/theme/plugin stores getting daily scans to avoid malware
 * WebKit/WebExtension seems the today's default
 
-## Plug-ins
-* Chromium and Firefox are both trying to deprecate the old insecure and buggy NPAPI plugin system. Chromium uses its own PPAPI system for Flash
-* Firefox uses a secure Javascript-based library for reading PDFs
-* ~~Firefox is developing a secure Javascript-based replacement for Flash called Shumway, but it's dropped since Flash is known to be dying~~
-
 ## Data privacy with default settings
 * Firefox uses Yahoo as its default search engine in North America, and other search engines in other regions
 * Chromium uses 'Google' as its default search engine
