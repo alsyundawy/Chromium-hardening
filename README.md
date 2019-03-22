@@ -19,13 +19,21 @@ A fork means that Google takes the original source code of Chromium and they add
 
 
 
-## Performance
+## Performance (Overall)
 
 | Feature        | Chrome           | Firefox Quantum  | Description | 
 | ------------- |:-------------:| :-------------:| -------:|
-| Startup Memory | Chromium consumes a little bit more memory than Firefox, but starts up faster - Chromes kernel requires more resources | Firefox loads less fast and on the initial startup it consumes for a short amount of time lots of RAM |  // |
+| Startup Memory | Chromium consumes overall more memory than Firefox, but starts up faster - Chromes kernel requires more resources | Firefox loads less fast and on the initial startup it consumes for a short amount of time lots of RAM |  // |
 | Multi-core system integration   | Chrome ones is older and more reliable because it's longer tested  |  Firefox isolation feature is (by default) limited | Both perform equal, depending on the used API |
 | JavaScript performance | //  |  // | Equal? (depending) |
+| _Synthetic Octane benchmark_ | 45169 Points | 43246 Points |
+| ARES-6 Browser Benchmark | ~ 21 sec | ~ 50 sec | [Test link](https://browserbench.org/ARES-6/about.html) |
+| WebXPRT Test | ~ 275 | ~ 300 | Several API tests |
+| Basemark | ~ 1420 | ~ 810 Points | Lots of different tests (encryption etc) |
+
+
+### Additional performance tests
+* [A Quick Look At The Firefox 66.0 vs. Chrome 73.0 Performance Benchmarks (phoronix.com)](https://www.phoronix.com/scan.php?page=news_item&px=Firefox-66-Chrome-73-Benchmarks)
 
 
 ## Privacy & Security Scandals
