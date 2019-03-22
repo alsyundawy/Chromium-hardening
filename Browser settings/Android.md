@@ -65,7 +65,6 @@ Chromium 67+
 * #offline-bookmarks
 * #enable-brotli
 * #force-show-update-menu-badge
-* #tls13-variant set to: Enabled (Draft23)
 * #disable-audio-support-for-desktop-share
 * #enable-content-suggestions-new-favicon-server
 * #important-site-in-cbd
