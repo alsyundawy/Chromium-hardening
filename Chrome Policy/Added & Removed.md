@@ -1,3 +1,9 @@
+**Added in 73**
+* tab-hover-cards (Enabled/Disabled/Enabled B/C)
+
+**Added in v68**
+* MetricsReportingEnabled
+
 **Added in v67**
 * webxr-gamepad-support
 * webxr-orientation-sensor-device
@@ -21,3 +27,4 @@
 **Disappears after 64**	
 * AlwaysAuthorizePlugins
 * DisablePluginFinde
+* TLS 1.3 draft 23 option
