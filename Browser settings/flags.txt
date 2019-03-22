@@ -61,6 +61,7 @@ Enabled
 #autoplay-policy                  (user gesture is required ...)
 #enable-tcp-fast-open (enabled)       (chrome only will be removed)
 #enable-lookalike-URL-navigation-suggestions
+#extensions-toolbar-menu
 
 
 Disabled
