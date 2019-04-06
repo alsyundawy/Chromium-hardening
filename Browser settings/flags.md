@@ -97,6 +97,7 @@ Disabled
 * #safe-search-url-reporting
 * #show-autofill-type-predictions
 * #simplified-fullscreen-ui
+* #show-managed-ui
 * #voice-search-on-local-ntp
 
 
