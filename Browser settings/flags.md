@@ -115,5 +115,8 @@ Microsoft Edge (Chromium) [edge://flags]
 Deprecated
 =======
 
+Chrome v74 
+* #disable-hyperlink-auditing
+
 Chrome v68 (only)
 * No single background connection, there are builds compiled with and without a specific flag which toggles `chrome://net-internals/#dns`.
