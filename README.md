@@ -223,6 +223,7 @@ Browser Forks mostly only removing integrated functions which is maybe the best 
 * [Chrome Browser for enterprise](https://enterprise.google.com/chrome/chrome-browser/)
 * [The story of why Chrome and Firefox will soon block sites with certain SSL certificates](https://www.templarbit.com/blog/2018/09/07/the-story-of-why-chrome-and-firefox-will-soon-block-sites-with-certain-ssl-certificates/)
 * [Opt-out/opt-in selective on every Google Service](https://takeout.google.com)
+* [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/en-us/download/)
 
 ## External scripts & tools
 * [PowerShell script to get the latest build of Chromium directly from the Chromium Project](https://github.com/RealDrGordonFreeman/Chromigen)
