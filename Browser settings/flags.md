@@ -112,7 +112,11 @@ Microsoft Edge (Chromium) [edge://flags]
 * #edge-installation-of-extensions-from-microsoft-store //default (enabled)
 * #edge-reading-view //default (enabled)
 * edge-user-agent-spoofing-service (enabled)
-
+* #edge-cookie-import (disabled)
+* #edge-playready-drm-win10 (disabled)
+* #edge-widevine-drm (disabled)
+* #edge-experimental-scrolling (disabled)
+* #edge-sign-in-with-aad (disabled)
 
 Deprecated
 =======
