@@ -111,6 +111,7 @@ Microsoft Edge (Chromium) [edge://flags]
 * #edge-follow-os-theme //default (enabled)
 * #edge-installation-of-extensions-from-microsoft-store //default (enabled)
 * #edge-reading-view //default (enabled)
+* edge-user-agent-spoofing-service (enabled)
 
 
 Deprecated
