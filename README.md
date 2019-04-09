@@ -183,15 +183,14 @@ Our favorite infosec expert (whom we’ve cited before on a few matters) SwiftOn
 In other words it has [no auto-updater mechanism integrated](https://lifehacker.com/ungoogled-chromium-strips-away-the-privacy-invading-fea-1787139870), this is for advance users no problem they can use some tools/scripts or manually download and install it but the normal user will never do this. However, in the meantime some things has changed, it more often gets updates now which is a good sign but this is no guarantee for code quality which applies to every Browser or Fork. The release page by itself mostly only provides the source code until the project manager decide to release a new version which is then always behind other forks because it needs to be reviewed over a long(er) time period.  
 
 
-Using scripts and updater tools can be dangerous when they suddenly starting to download official Google builds, as shown [here](https://github.com/Eloston/ungoogled-chromium/issues/415) which the user is only aware of after everything happened. and Windows Users now need such an updater/downloader in order to get the binaries, read [here](https://github.com/henrypp/chrlauncher/issues/33#issuecomment-279736691) basically this means you must trust someone else because most users will blindly install it and not compile it themselves.I see this critical.
+Using scripts and updater tools can be dangerous when they suddenly starting to download official Google builds, as shown [here](https://github.com/Eloston/ungoogled-chromium/issues/415) which the user is only aware of after everything happened. and Windows Users now need such an updater/downloader in order to get the binaries, read [here](https://github.com/henrypp/chrlauncher/issues/33#issuecomment-279736691) basically this means you must trust someone else because most users will blindly install it and not compile it themselves. I see this as very critical.
 
 
-** Conclusion**
+**Conclusion**
 
 Chrome is not more or less tracking anyone then all other Browsers on the market. Other Browser in fact imitates Google and their features such as [Chromecast](https://en.wikipedia.org/wiki/Chromecast) detection which is often misleading called as _background spying_ because it sends every 2 minutes requests in order to check if the service is available or not among other features such as [Captive portal](https://en.wikipedia.org/wiki/Captive_portal) checks. 
 
 Browser Forks mostly only removing integrated functions which is maybe the best way, preventing or giving people a opt-out for certain integrated features is definitely the better method, you can read about how you do this (with examples) [here](https://github.com/CHEF-KOCH/Chromium-hardening/blob/master/Configure%20Google%20Chrome%20via%20Group%20Policies.md).
-
 
 
 
@@ -223,7 +222,8 @@ Browser Forks mostly only removing integrated functions which is maybe the best 
 * [Chrome Browser for enterprise](https://enterprise.google.com/chrome/chrome-browser/)
 * [The story of why Chrome and Firefox will soon block sites with certain SSL certificates](https://www.templarbit.com/blog/2018/09/07/the-story-of-why-chrome-and-firefox-will-soon-block-sites-with-certain-ssl-certificates/)
 * [Opt-out/opt-in selective on every Google Service](https://takeout.google.com)
-* [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/en-us/download/)
+* [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/en-us/download/) + ([Source Code](https://github.com/MicrosoftEdge/MSEdge))
+
 
 ## External scripts & tools
 * [PowerShell script to get the latest build of Chromium directly from the Chromium Project](https://github.com/RealDrGordonFreeman/Chromigen)
