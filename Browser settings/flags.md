@@ -15,6 +15,7 @@ Enabled
 * #enable-framebusting-needs-sameorigin-or-usergesture 
 * #enable-future-v8-vm-features
 * #enable-gpu-appcontainer
+* #enable-history-manipulation-intervention
 * #enable-history-entry-requires-user-gesture
 * #enable-lookalike-URL-navigation-suggestions
 * #enable-mark-http-as (enabled: non secure warning and passwords ... )
