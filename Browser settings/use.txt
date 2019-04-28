@@ -1,4 +1,4 @@
-Adjust all settings and advanced settings in chrome://settings:
+Adjust all settings and advanced settings in chrome://settings
 =================================================================
 * Do not save passwords in the browser (Prefer a free and open-source password manager like KeePass)
 * Enable incognito (or private) mode (Ctrl+Shift+N shortcut • Use a #flag to start Chromium in this mode)
