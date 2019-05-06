@@ -4,7 +4,7 @@ The following configuration is for Android based Chrome/Chromium based Browsers.
 
 #### Tested with
 
-Chromium 67+
+Chromium 74.x
 
 
 ### Disabled (changed)
@@ -52,6 +52,7 @@ Chromium 67+
 
 ### Enabled (changed)
 
+* #enable-inline-update-flow (disabled)
 * #enable-new-photo-picker (enabled)
 * #enable-fast-unload
 * #enable-history-entry-requires-user-gesture
