@@ -20,8 +20,8 @@ Dev
 
 
 Beta
-x86: `http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/a1cd647c-52dc-4664-9ea3-0b16f1d786ee?P1=1557380238&P2=402&P3=2&P4=PccNDcdXn0X9oFl1ILGz%2fUG1pxh50IsDBQ0FYygem038zuJy6G%2f%2flhvsUMZAxVopZvEkENR4h%2b7rQRctKVOziA%3d%3d`
-x64: `http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/9e853ee9-e687-42ab-a078-d46ec361ec09?P1=1557380238&P2=402&P3=2&P4=pgyX7KcG4akeGWQ0KNmKvkTWHu6cvyuvi4ia1q2qH4mn6noLDOlbdvy2t7bjunLiHbIxIULdZnIwA%2bWnil80vQ%3d%3d`
+* x86: `http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/a1cd647c-52dc-4664-9ea3-0b16f1d786ee?P1=1557380238&P2=402&P3=2&P4=PccNDcdXn0X9oFl1ILGz%2fUG1pxh50IsDBQ0FYygem038zuJy6G%2f%2flhvsUMZAxVopZvEkENR4h%2b7rQRctKVOziA%3d%3d`
+* x64: `http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/9e853ee9-e687-42ab-a078-d46ec361ec09?P1=1557380238&P2=402&P3=2&P4=pgyX7KcG4akeGWQ0KNmKvkTWHu6cvyuvi4ia1q2qH4mn6noLDOlbdvy2t7bjunLiHbIxIULdZnIwA%2bWnil80vQ%3d%3d`
 
 
 ### Information about the URL scheme
@@ -51,7 +51,7 @@ User Agent switcher (still works but might gets removed)
                "applied_policy":"EdgeUA"
 ```
 
-More info about the User-Agent switcher is avbl. [here](https://www.bleepingcomputer.com/news/microsoft/the-new-microsoft-edge-sometimes-impersonates-other-browsers/).
+More info about the User-Agent Switcher is avbl. [here](https://www.bleepingcomputer.com/news/microsoft/the-new-microsoft-edge-sometimes-impersonates-other-browsers/).
 
 
 
