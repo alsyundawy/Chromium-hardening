@@ -20,8 +20,7 @@ Dev
 
 
 Beta
-* x86: `http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/a1cd647c-52dc-4664-9ea3-0b16f1d786ee?P1=1557380238&P2=402&P3=2&P4=PccNDcdXn0X9oFl1ILGz%2fUG1pxh50IsDBQ0FYygem038zuJy6G%2f%2flhvsUMZAxVopZvEkENR4h%2b7rQRctKVOziA%3d%3d`
-* x64: `http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/9e853ee9-e687-42ab-a078-d46ec361ec09?P1=1557380238&P2=402&P3=2&P4=pgyX7KcG4akeGWQ0KNmKvkTWHu6cvyuvi4ia1q2qH4mn6noLDOlbdvy2t7bjunLiHbIxIULdZnIwA%2bWnil80vQ%3d%3d`
+- None (yet)
 
 
 ### Information about the URL scheme
@@ -51,11 +50,28 @@ User Agent switcher (still works but might gets removed)
                "applied_policy":"EdgeUA"
 ```
 
-More info about the User-Agent Switcher is avbl. [here](https://www.bleepingcomputer.com/news/microsoft/the-new-microsoft-edge-sometimes-impersonates-other-browsers/).
+More info about the User-Agent switcher is avbl. [here](https://www.bleepingcomputer.com/news/microsoft/the-new-microsoft-edge-sometimes-impersonates-other-browsers/).
+
+
+Change default display language
+--------------
+Close Microsoft Edge (Chromium) and ensure no background task is running! Download the desired language pack from [here](https://chromium.googlesource.com/chromium/reference_builds/chrome_win/+/f4b7e74a777e85405b284a55ce6e3d798bca7159/locales), it is a `.pak` file.
+
+
+* Canary: `C:\Users\<your-user/pc-name>\AppData\Local\Microsoft\Edge SxS\Application\76.0.152.0\Locales`
+* Dev:    `C:\Program Files (x86)\Microsoft\Edge Dev\Application\75.0.139.4\Locales`
+* Beta:   `C:\Program Files (x86)\Microsoft\Edge Beta\Application\75.0.139.7\Locales`
 
 
 
-All version
+Create a new folder and place every other language into it EXCEPT the one you like to switch to so e.g `\Locales\New Folder\` & `\Locales\ru.pak` is then your folder structure. Restart Edge after you're done.
+
+
+**Warning**
+* After you changed the language you might get DPI problems (e.g. the menu is to wide). That's a _known problem_ and depending which DPI you set for your fonts.
+
+
+Download links
 --------------
 
 * https://32767.ga/edge/
