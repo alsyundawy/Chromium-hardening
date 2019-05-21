@@ -5,9 +5,14 @@ Feature | Comment or setting
 [#automatic-tab-discarding](chrome://flags/#automatic-tab-discarding) | //
 [#autoplay-policy](chrome://flags/#autoplay-policy) | Document user activation is required.
 [#clipboard-content-setting](chrome://flags/#clipboard-content-setting) | //
+[#disable-javascript-harmony-shipping](chrome://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
+[#disallow-doc-written-script-loads](chrome://flags/#disallow-doc-written-script-loads) | //
 [#enable-appcontainer](chrome://flags/#enable-appcontainer) | **Recommend !**
 [#enable-autofill-credit-card-ablation-experiment](chrome://flags/#enable-autofill-credit-card-ablation-experiment) | //
 [#enable-block-tab-unders](chrome://flags/#enable-block-tab-unders) | //
+[#enable-brotli](chrome://flags/#enable-brotli) | //
+[#enable-framebusting-needs-sameorigin-or-usergesture](chrome://flags/#enable-framebusting-needs-sameorigin-or-usergesture) | //
+[#enable-future-v8-vm-features](chrome://flags/#enable-future-v8-vm-features) | //
 [#enable-gpu-appcontainer](chrome://flags/#enable-gpu-appcontainer) | **Recommend !**
 [#enable-history-entry-requires-user-gesture](chrome://flags/#enable-history-entry-requires-user-gesture) | //
 [#enable-history-manipulation-intervention](chrome://flags/#enable-history-manipulation-intervention) | //
@@ -27,10 +32,6 @@ Feature | Comment or setting
 [#pdf-isolation](chrome://flags/#pdf-isolation) | **Recommend !**
 [#smooth-scrolling](chrome://flags/#smooth-scrolling) | //
 [#unified-consent](chrome://flags/#unified-consent) | //
-[disallow-doc-written-script-loads](chrome://flags/#disallow-doc-written-script-loads) | //
-[enable-brotli](chrome://flags/#enable-brotli) | //
-[enable-framebusting-needs-sameorigin-or-usergesture](chrome://flags/#enable-framebusting-needs-sameorigin-or-usergesture) | //
-[enable-future-v8-vm-features](chrome://flags/#enable-future-v8-vm-features) | //
 
 
 
@@ -61,6 +62,7 @@ Feature | Comment or setting
 [#safe-search-url-reporting](chrome://flags/#safe-search-url-reporting) | //
 [#show-autofill-type-predictions](chrome://flags/#show-autofill-type-predictions) | //
 [#show-managed-ui](chrome://flags/#show-managed-ui) | //
+[#enable-javascript-harmony](chrome://flags/#enable-javascript-harmony) | //
 
 
 
@@ -83,12 +85,19 @@ Feature | Comment or setting
 
 
 
-### Problematic do not enable or disable!
+### Problematic do not touch!
 
-* #allow-sxg-certs-without-extension
-* #enable-signed-http-exchange
-* #enforce-tls13-downgrade
-* #focus-mode
+Some flags can cause "critical security holes" in your configuration even if you enable/disable them to prevent exactly this. The flags are been tested against [BrowserAudit](https://browseraudit.com/test), however keep in mind that the test page might not be 100% accurate!
+
+Feature | Reason
+------------ | -------------
+[#allow-sxg-certs-without-extension](chrome://flags/#allow-sxg-certs-without-extension) | Triggers an critical error (DOM)
+[#enable-signed-http-exchange](chrome://flags/#enable-signed-http-exchange) | Triggers an critical error (DOM)
+[#enforce-tls13-downgrade](chrome://flags/#enforce-tls13-downgrade) | Possible attacks
+[#focus-mode](chrome://flags/#focus-mode) | Leakage (?) unconfirmed, triggers warnings
+[#enable-built-in-module-kv-storage](chrome://flags/#enable-built-in-module-kv-storage) | Leakage (?) unconfirmed, triggers warnings
+[#enable-built-in-module-infra](chrome://flags/#enable-built-in-module-infra) | Possible attacks
+
 
 
 

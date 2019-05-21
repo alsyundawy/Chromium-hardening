@@ -9,7 +9,7 @@ The goal of this project is to provide information (and an extension maybe?) to 
 ### Chromium vs. Mozilla Firefox Quantum (**still needs to be updated!**)
 
 
-## Differences between Chrome and Chromium
+## Differences between Chrome & Chromium
 
 Chromium was not made by Google, it's a web browser 'developed' (based on parts of the original source code from Chrome) by volunteers and released under FLOSS. There exist bunch of alternative forks of it with additional features in it.
 
@@ -186,43 +186,145 @@ In other words it has [no auto-updater mechanism integrated](https://lifehacker.
 Using scripts and updater tools can be dangerous when they suddenly starting to download official Google builds, as shown [here](https://github.com/Eloston/ungoogled-chromium/issues/415) which the user is only aware of after everything happened. and Windows Users now need such an updater/downloader in order to get the binaries, read [here](https://github.com/henrypp/chrlauncher/issues/33#issuecomment-279736691) basically this means you must trust someone else because most users will blindly install it and not compile it themselves. I see this as very critical.
 
 
+### Google's "spying code"
+
+The following integrations are "controversial"
+
+* [Anchor ping attribute](https://mytechdecisions.com/compliance/chrome-safari-and-opera-to-force-hyperlink-auditing/) - often called "Hyperlink auditing" or Hyperlink ping
+* Features wich sends data back to google, such as [safe browsing](https://safebrowsing.google.com/) & spell check
+* URL tracker ([chromium_src/chrome/browser/google/chrome_google_url_tracker_client_browsertest.cc](https://chromium.googlesource.com/chromium/src/+/66.0.3359.158/chrome/browser/google/chrome_google_url_tracker_client.h))
+* [Background sync](https://developers.google.com/web/updates/2015/12/background-sync)
+* [Battery API](https://www.chromestatus.com/feature/4537134732017664), [WebUSB API](https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web), [WebBluetooth API](https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web)
+* [Cloud Messaging](https://developers.google.com/cloud-messaging/chrome/client), [Firebase](http://firebase.googleblog.com/2013/03/power-your-chrome-extension-with.html), [Push Client](https://developers.google.com/web/ilt/pwa/introduction-to-push-notifications)
+* [DNS prefetching](https://dev.chromium.org/developers/design-documents/dns-prefetching)
+* [Domain reliability service](https://groups.google.com/a/chromium.org/forum/#!topic/chromium-dev/bIbPyQvXtpo)
+* [Google GAIA Login](https://www.nytimes.com/2010/04/20/technology/20google.html)
+* [Metrics reporting](https://www.stigviewer.com/stig/google_chrome_current_windows/2014-07-08/finding/V-44771)
+* [Network Time Tracker](https://chrome.google.com/webstore/detail/webtime-tracker/ppaojnbmmaigjmlpjaldnkgnklhicppk)
+* [RAPPORT](https://developers.google.com/web/tools/chrome-user-experience-report/)
+* [Remote debugging](https://blog.chromium.org/2011/05/remote-debugging-with-chrome-developer.html)
+* [Report Uploader](https://www.chromium.org/developers/crash-reports)
+* [WebRTC log uploading service](https://webrtc.org/native-code/logging/) - `chrome://webrtc-logs`
+
+
 **Conclusion**
 
-Chrome is not more or less tracking anyone then all other Browsers on the market. Other Browser in fact imitates Google and their features such as [Chromecast](https://en.wikipedia.org/wiki/Chromecast) detection which is often misleading called as _background spying_ because it sends every 2 minutes requests in order to check if the service is available or not among other features such as [Captive portal](https://en.wikipedia.org/wiki/Captive_portal) checks.
+Chrome is not more or less tracking anyone then all other Browsers on the market. Other Browsers in fact trying to imitate Chrome and his features such as [Chromecast](https://en.wikipedia.org/wiki/Chromecast) detection which is often misleading called as _background spying_ because it sends every X minutes requests in order to check if the service is available or not among other features such as [Captive portal](https://en.wikipedia.org/wiki/Captive_portal) checks.
 
-Browser Forks mostly only removing integrated functions which is maybe the best way, preventing or giving people a opt-out for certain integrated features is definitely the better method, you can read about how you do this (with examples) [here](https://github.com/CHEF-KOCH/Chromium-hardening/blob/master/Configure%20Google%20Chrome%20via%20Group%20Policies.md).
+Browser Forks mostly only removing integrated functions which is _maybe the best way_ to prevent from a privacy perspective additional damage. An global opt-out for certain integrated features is definitely the better method, you can read about how you do this (with examples) [here](https://github.com/CHEF-KOCH/Chromium-hardening/blob/master/Configure%20Google%20Chrome%20via%20Group%20Policies.md).
+
+
+
+**Statement 2019**
+
+
+I write this as neutral as possible based on the research I did over the couple years.
+
+Okay now, in 2019 I checked the Wikipedia link again and compared it with the Firefox Wikipedia article. It is (still) beyond me why the Firefox article never got a "criticism" section like almost all other listed browsers on Wikipedia. Mozilla made several serious mistakes (same like Opera, Chrome, etc.) and all of the incidents are nothing but past. They got on both sides fixed - Mozilla responded and Google did the same. In fact Mozilla had more security & privacy incidents over the couple years (see research) which are not even mentioned on Wikipedia (Mr. Robot etc.). In my point of view Wikipedia has the responsible for an "objective" article and apparently there are huge interest to suppress Google (or to push Mozilla) with _facts_ which are years old (and outdated) or even wrong. I already debunked all myths above and now I'm going to mentioned the so called "spying" code, which is in fact documented since day one. Are they controversial? Sure, no doubt about it.
+
+
+Assuming Google abuses these APIs is nothing but wrong since there is zero evidence. The only real evidence you can find is the [location story](https://www.theguardian.com/technology/2018/aug/14/how-to-turn-off-google-location-tracking) which also affected iOS, the problem here is that no one finally could say if it was a bug or on purpose. The [Google Play Services](https://www.apkmirror.com/apk/google-inc/google-play-services/) file is huge, commplex and controls several security and privacy related API's. The service also updates itself in the background and it's difficult to say if the location tracking was maybe only an incident or a result of an outdated APK file, the topic is complex and there are both sides (not only one).
+
+
+The API's are designed ([and documented](https://developer.chrome.com/api_index)) in order to help developers & webmasters to improve/track their extensions/websites, nothing more and nothing less, the rest of the rumours are in 99% without any real evidence.
+
+
+
+__Misunderstanding on purpose?__
+
+
+Some people constantly "WANT Chrome to spy", there are developers which need/want those [mentioned API's](https://developer.chrome.com/apps/api_index) (see __Google's "spying code"__) and on one hand it makes sense to integrate them while other people might arguing that they don't need them or raising _their own_ privacy concerns. Keep in mind that the Browser itself contains not only the "Browser part" it also includes other projects to e.g. render PDF's & more. The question in my opinion isn’t whether someone is collecting data, it’s whether someone is able to, which means if you distrust corp. X you have to automatically distrust corp. Y too.
+
+
+
+
+__Does Chrome spy?__
+
+
+[NO](https://www.google.com/chrome/privacy/), from a developer perspective the Browser does not spy. As said above, the integrated APIs _could be abused_ but other Browser also including them (for example the [Battery API is also included in FF](https://developer.mozilla.org/en-US/docs/Web/API/Battery_Status_API) to name only one example which could be used against you to track you) and you might be able to disable them via settings/options or flags, sadly not all can be disabled or only with "huge" effort. This is more a general question what "the web" should allow and what not. However, there is no evidence of a "keylogger" or other stuff which people usually excusing Google.
+
+
+In the last 6 years whenever I read something in the news about "Chrome spying" I saw zero, right zero (!) evidence for such claims. [I see clickbait articles](https://www.vice.com/en_us/article/wj7x9w/google-chrome-scans-files-on-your-windows-computer-chrome-cleanup-tool) (Chrome has more market shares than Firefox -> higher interests) with strange arguments, like that Chrome would collect all your files, this is incorrect, there was in this case an advance option to enable/disable it. So what, Firefox does the same to improve their products. There are many other examples like this. I think we can agree that every such controversial toggle should be opt-in my default and not opt-out but this is most likely not going to happen.
+
+
+
+**Can security be archived without tracking?**
+
+**I say no**, in fact I log everything whats going on on my PC, Router and my devices otherwise how could I ever know if I'm compromised or not? I guess that's why Google created the [dashboard](https://myaccount.google.com/intro/dashboard?hl=en) to review your options. Apparently, some people never heard of it or never reviewed their options, as a result we get a lot "why google tracked me" topics. It's a feature because your login is used for many websites and Google products. Or how else do you guarantee that no one broke into your account if you can't see when you where logged in the last time with which device?
+
+
+
+__Does Google has an interest in collecting data?__
+
+[YES](https://safety.google/privacy/data/), of course and that's what people complaining about, it's controversial. The real problem here is that people which want opt-in/opt-outs do not get everything what they want and this is maybe the biggest point you can find when it comes to the privacy discussion. This is basically the reason why forks exists, to address exactly this. The question we should ask is if a Browser should be allowed to collect any data (debug, tracking etc.) because we can assume that everything can be abused - this is the real question and not only affects Chrome. Browser development and [bug bounty](https://www.google.com/about/appsecurity/chrome-rewards/) programs are also not really cheap. and most people have no interest to search for holes in your program when there is no reward, because you basically "waste" your lifetime in order to improve the product. Open Source is not really an argument because open source is in general not meant to be a "money making machine", of course there might bbe some whiteheads but that's not the norm. Speaking of how they get money, mostly [ads](https://www.quora.com/How-does-using-a-web-browser-help-the-developers-of-the-browser-financially), [donations](https://www.investopedia.com/articles/investing/041315/how-mozilla-firefox-and-google-chrome-make-money.asp) or [search engine deals](https://www.computerworld.com/article/3240008/mozillas-record-2016-revenue-funded-its-firefox-quantum-browser.html). You see, you can't destroy the web and remove ads or search engines, at some point they all need mooney to survive, this is okay and not really an argumentation point.
+
+
+
+__Real problems__
+
+* Transparency
+* Trust - it is not a renewable resource which affects all, Firefox, Opera, Google & others.
+* [Cookies](https://blog.chromium.org/2019/05/improving-privacy-and-security-on-web.html) and its pervasive advertising network and partnerships
+* Login? No one in the world, not Google or Mozilla forces you to login into the Browser to sync your stuff. You still can backup everything offline in every browser.
+* Private modes are pointless, not Firefox nor Chrome providing a "maximum secure" Browser out of the box because this would destroy the web and break many many websites.
+* Are ads etc bad? What about the people which actually need the clicks/ads to survive? Blogger etc.
+* Google, Firefox made mistakes - _it's simply a learning process_, you never did any mistakes right?! The market is hard and you can't satisfy each an everyone.
+* Every blogger or website can decide to use Google Analytics (Mozilla bzw uses Googletagmanager) or not. No one is forcing you to do that. [Brave uses rewards](https://brave.com/brave-rewards/) which is a cool and "fresh" idea.
+* Misunderstanding from non-technical persons. Just because there is a background connection doesn't automatically mean something is "spying". There are legitimate things like [Chrome Cast support](https://support.google.com/chromecast/chromecast?hl=en) which are implemented in order to make your life easier. The criticism point here can only be that there should be an option to disable it.
+* Ignorance, stupidity & laziness - That's why most of the mentioned stuff exist, people expect to get everything as easy as possible without thinking about the consequences. The browser is much more than a Browser, it's a PDF reader, media player and much more.
+* Control, maybe the biggest point when it comes to Google & privacy. They are in a good position to [dictate the web](https://en.wikipedia.org/wiki/Criticism_of_Google) (_if you check the page Chrome is not mentioned with any word_) and this is dangerous.
+
+
+
+__My personal note__
+
+I think both browsers terrible failed, Firefox and Chrome. Both are trying to gain user trust by implementing more and more "privacy gimmicks" and the changes are slowly going "mainstream". However, I constantly ask myself why we need configuration tweaks, extensions X in order to gain the privacy which all of these Browser promising us. That said here is what ever Browser should integrate, adopt or change (_in my opinion_).
+
+- Listen to your own community, this is maybe the biggest and most important point, the community always knows best because they are the ones which at the end using your product.
+- If you're unsure, don't hesitate and ask. It's no shame to ask your community if you lost your way or if you want input on a good idea.
+- Get rid of idiotic modes like incognito, or private modes. This is a terrible idea, if you promise a secure and private browser then you don't need it and implement it by default for everyone straight from the beginning.
+- Several forks already started to implement ad-blocking, HTTPSE & other "gimmicks". Which are helpful when it comes to giving the user control (privacy) back. The correct way should be to get such developers on board and adopt these into the browser, so that everyone can get the same benefits.
+- Find a balance! Ads are okay unless they are malware or annoying. I think most people would not enable ad-blockers for page x if they know the ads they seeing are not annoying, possible dangerous or can compromise your security somehow. There are pages which placing their ads so that they are not bothering you while you read or click on the website.
+- Think about alternatives and out-of-the-box. Do you really need Google tracking on your website?! How about a donation system or merchandise. No ads, no ad-blocker or script-blocker needed! It's that easy!
+- Be open! Don't integrate telemetry in daily builds! You have a dev/beta/canary/RC version? So why not implement it there?! Most people simply don't want and like telemetry on their daily browsing habits because it makes them feel like they are the product.
+- Provide Installers/Options for "power-users". Every browser installer I've seen so far are stuck in the 90's. There is no setup which gives you the ability to use pre-made configurations/profiles or to remove/install feature X.
+- None of the Browser was able to implement an simple extension to integrate Tor functionality. Maybe a hint...
+- Privacy "blah", just do it! Don't promise. DO IT!
+- Check the priorities and get a identity, don't change like a flag in the wind.
+- Adopting features from other Browser is okay, but don't overdue it not every change Browser X does has to be copied, especially not if it#s bugged (__autoplay__ ... __hm__).
+
 
 
 
 ## Acknowledgments and References
-* [Official Google Chrome Group Policy Templates](https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip)
-* [Chrome Profiles](https://support.google.com/chrome/answer/2364824)
-* [Chrome removed the enable_webrtc=false flag (which means no more No-WebRTC builds)](https://chromium.googlesource.com/chromium/src/+/d98b020fe1f0cb85de21de5313261a66ad9c9fe4)
-* [Official System Hardening Guide](https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/system-hardening)
-* [Official Chromium Security tracker](https://bugs.chromium.org/p/chromium/issues/list?q=Type%3DBug-Security)
-* [Transitioning from SPDY to HTTP/2](https://blog.chromium.org/2016/02/transitioning-from-spdy-to-http2.html)
-* [Chrome Vs. Chromium](http://www.linuxinsider.com/story/79510.html)
-* [The Private Life of Chromium Browsers](https://thesimplecomputer.info/the-private-life-of-chromium-browsers)
-* [How Chromium works](https://medium.com/@aboodman/in-march-2011-i-drafted-an-article-explaining-how-the-team-responsible-for-google-chrome-ships-c479ba623a1b#.is7blrj34)
-* [BetterFirefox](https://github.com/CHEF-KOCH/BetterFirefox)
-* [Chromium WPAD detection](https://sunweavers.net/blog/node/37)
 * [Baselines of Web Browsers](https://thesimplecomputer.info/baselines-web-browsers)
-* [Custom DNS names in Chromium](http://michaelkc.tumblr.com/post/98129633274/working-with-custom-dns-names-in-chromium)
-* [Compile Chrome on Windows](https://github.com/henrypp/chromium)
-* [POTARC](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List)
-* [NoScript whitelist](https://github.com/CHEF-KOCH/NoScript-Whitelist)
-* [Why isn't passive browser fingerprinting (including passive cookies) in Chrome's threat model?](https://dev.chromium.org/Home/chromium-security/security-faq#TOC-Why-isn-t-passive-browser-fingerprinting-including-passive-cookies-in-Chrome-s-threat-model-) *[ref](https://dev.chromium.org/Home/chromium-security/client-identification-mechanisms)
 * [Browser Sec Whitepaper](https://github.com/cure53/browser-sec-whitepaper)
-* [Chromium Updater Script by mkorthof](https://github.com/mkorthof/chrupd)
 * [Cent Browser](https://www.centbrowser.com/)
-* [Privacy disrespected (by default)](https://bugs.chromium.org/p/chromium/issues/detail?id=795526)
-* [https://bugs.chromium.org/p/chromium/issues/detail?id=795526](https://bugs.chromium.org/p/chromium/issues/detail?id=661792)
-* [DNS caches can be used as cross-domain persistent cookies](https://bugs.chromium.org/p/chromium/issues/detail?id=546733)
-* [Chrome Security FAQ](https://chromium.googlesource.com/chromium/src/+/lkcr/docs/security/faq.md)
 * [Chrome Browser for enterprise](https://enterprise.google.com/chrome/chrome-browser/)
-* [The story of why Chrome and Firefox will soon block sites with certain SSL certificates](https://www.templarbit.com/blog/2018/09/07/the-story-of-why-chrome-and-firefox-will-soon-block-sites-with-certain-ssl-certificates/)
-* [Opt-out/opt-in selective on every Google Service](https://takeout.google.com)
+* [Chrome Profiles](https://support.google.com/chrome/answer/2364824)
+* [Chrome Security FAQ](https://chromium.googlesource.com/chromium/src/+/lkcr/docs/security/faq.md)
+* [Chrome Vs. Chromium](http://www.linuxinsider.com/story/79510.html)
+* [Chrome removed the enable_webrtc=false flag (which means no more No-WebRTC builds)](https://chromium.googlesource.com/chromium/src/+/d98b020fe1f0cb85de21de5313261a66ad9c9fe4)
+* [Chromium Updater Script by mkorthof](https://github.com/mkorthof/chrupd)
+* [Chromium WPAD detection](https://sunweavers.net/blog/node/37)
+* [Compile Chrome on Windows](https://github.com/henrypp/chromium)
+* [Custom DNS names in Chromium](http://michaelkc.tumblr.com/post/98129633274/working-with-custom-dns-names-in-chromium)
+* [DNS caches can be used as cross-domain persistent cookies](https://bugs.chromium.org/p/chromium/issues/detail?id=546733)
+* [How Chromium works](https://medium.com/@aboodman/in-march-2011-i-drafted-an-article-explaining-how-the-team-responsible-for-google-chrome-ships-c479ba623a1b#.is7blrj34)
 * [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/en-us/download/) + ([Source Code](https://github.com/MicrosoftEdge/MSEdge))
+* [NoScript whitelist](https://github.com/CHEF-KOCH/NoScript-Whitelist)
+* [Official Chromium Security tracker](https://bugs.chromium.org/p/chromium/issues/list?q=Type%3DBug-Security)
+* [Official Google Chrome Group Policy Templates](https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip)
+* [Official System Hardening Guide](https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/system-hardening)
+* [Opt-out/opt-in selective on every Google Service](https://takeout.google.com)
+* [POTARC](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List)
+* [Privacy disrespected (by default)](https://bugs.chromium.org/p/chromium/issues/detail?id=795526)
+* [The Private Life of Chromium Browsers](https://thesimplecomputer.info/the-private-life-of-chromium-browsers)
+* [The story of why Chrome and Firefox will soon block sites with certain SSL certificates](https://www.templarbit.com/blog/2018/09/07/the-story-of-why-chrome-and-firefox-will-soon-block-sites-with-certain-ssl-certificates/)
+* [Transitioning from SPDY to HTTP/2](https://blog.chromium.org/2016/02/transitioning-from-spdy-to-http2.html)
+* [Why isn't passive browser fingerprinting (including passive cookies) in Chrome's threat model?](https://dev.chromium.org/Home/chromium-security/security-faq#TOC-Why-isn-t-passive-browser-fingerprinting-including-passive-cookies-in-Chrome-s-threat-model-) *[ref](https://dev.chromium.org/Home/chromium-security/client-identification-mechanisms)
+* [https://bugs.chromium.org/p/chromium/issues/detail?id=795526](https://bugs.chromium.org/p/chromium/issues/detail?id=661792)
+* ~~[BetterFirefox](https://github.com/CHEF-KOCH/BetterFirefox)~~
 
 
 ## External scripts & tools
