@@ -49,7 +49,7 @@ Feature | Comment or setting
 [#enable-data-reduction-proxy-with-network-service](chrome://flags/#enable-data-reduction-proxy-with-network-service) | //
 [#enable-generic-sensor-extra-classes](chrome://flags/#enable-generic-sensor-extra-classes) | //
 [#enable-generic-sensor](chrome://flags/#enable-generic-sensor) | //
-[#enable-lookalike-URL-navigation-suggestions](chrome://flags/#enable-lookalike-url-navigation-suggestions)
+[#enable-lookalike-URL-navigation-suggestions](chrome://flags/#enable-lookalike-url-navigation-suggestions) | //
 [#enable-noscript-previews](chrome://flags/#enable-noscript-previews) | //
 [#enable-optimization-hints](chrome://flags/#enable-optimization-hints) | //
 [#fill-on-account-select-http](chrome://flags/#fill-on-account-select-http) | //
@@ -133,8 +133,8 @@ Feature | Deprecated or removed since
 #extensions-toolbar-menu | ?
 #important-sites-in-cbd | ?
 #new-audio-rendering-mixing-strategy | ?
-#ntp-ui-md | ?
-#secondary-ui-md | ?
+#ntp-ui-md | v70
+#secondary-ui-md | v71
 #show-saved-copy | ?
 #simplified-fullscreen-ui | ?
 #simplified-fullscreen-ui | ?
