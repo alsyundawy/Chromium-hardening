@@ -57,6 +57,7 @@ Feature | Comment or setting
 [#happiness-tracking-surveys-for-desktop](chrome://flags/#happiness-tracking-surveys-for-desktop) | //
 [#network-service](chrome://flags/#network-service) | //
 [#new-usb-backend](chrome://flags/#new-usb-backend) | //
+[#omnibox-drive-suggestions](chrome://flags/#omnibox-drive-suggestions) | Workaround for a bug
 [#pdf-form-save](chrome://flags/#pdf-form-save) | //
 [#reduced-referrer-granularity](chrome://flags/#reduced-referrer-granularity) | //
 [#safe-search-url-reporting](chrome://flags/#safe-search-url-reporting) | //
