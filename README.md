@@ -338,6 +338,9 @@ I think both browsers terrible failed, Firefox and Chrome. Both are trying to ga
 
 ## Controversial Topics
 * [Google promises Chrome changes after privacy complaints](https://www.cnet.com/news/google-promises-chrome-changes-after-privacy-complaints/)
+* [Former Mozilla exec: Google has sabotaged Firefox for years](https://www.zdnet.com/article/former-mozilla-exec-google-has-sabotaged-firefox-for-years/)
+* [How DRM has permitted Google to have an "open source" browser that is still under its exclusive control](https://boingboing.net/2019/05/29/hoarding-software-freedom.html)
+* [Chrome to limit full ad blocking extensions to enterprise users](https://9to5google.com/2019/05/29/chrome-ad-blocking-enterprise-manifest-v3/)
 
 
 ## Microsoft Edge (Chromium)
