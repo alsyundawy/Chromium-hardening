@@ -25,14 +25,25 @@ CSS Exfill attack prevention:
 * [CSS Exfil Protection](https://chrome.google.com/webstore/detail/css-exfil-protection/ibeemfhcbbikonfajhamlkdgedmekifo)
 
 
+Sessions Management:
+* [Session Buddy](https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko?hl=de)
+
+
+Temporary Containers:
+* [Lone Tab](https://chrome.google.com/webstore/detail/lone-tab/dlgodcdpmjmeegcakjjldfobmooajhhe)
+* [SessionBox](https://chrome.google.com/webstore/detail/sessionbox-free-multi-log/megbklhjamjbcafknkgmokldgolkdfig)
+* ~~[MultiLogin](https://multilogin.com/)~~ see here why it was taken [offline](https://support.google.com/chrome/forum/AAAAP1KN0B0wmBKHBtX7tQ/?hl=en&gpf=%23!msg%2Fchrome%2FwmBKHBtX7tQ%2FY6JrBw7jPQwJ&msgid=Y6JrBw7jPQwJ)
+
+
 Optional:
 * [Browsec](https://browsec.com/) (Browser VPN/proxy to unblock websites • Alternatives: Betternet, Hideman, Tunnello)
 * [Smart HTTPS](https://chrome.google.com/webstore/detail/smart-https/cmleijjdpceldbelpnpkddofmcmcaknm/related?hl=en) (Force to use secure connection [https://] of websites • Alternatives: [KB SSL Enforcer](https://chrome.google.com/webstore/detail/kb-ssl-enforcer/flcpelgcagfhfoegekianiofphddckof))
-* [WOT (Web of Trust)](https://en.wikipedia.org/wiki/WOT_Services) → [Privacy issues](https://en.wikipedia.org/wiki/WOT_Services#Privacy_issues) (Display sites quality)
 * [NoCoin](https://github.com/keraf/NoCoin)
 * [Tracking Token Stripper](https://chrome.google.com/webstore/detail/tracking-token-stripper/kcpnkledgcbobhkgimpbmejgockkplob/related)
 * [RandomUA](https://leotindall.com/randomua/)
+* [Swap My Cookies](https://chrome.google.com/webstore/detail/swap-my-cookies/dffhipnliikkblkhpjapbecpmoilcama)
 
 
 Not recommend:
 * [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij?hl=en)
+* [WOT (Web of Trust)](https://en.wikipedia.org/wiki/WOT_Services) → [Privacy issues](https://en.wikipedia.org/wiki/WOT_Services#Privacy_issues) (Display sites quality)
