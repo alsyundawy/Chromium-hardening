@@ -83,6 +83,7 @@ Feature | Comment or setting
 [#edge-sign-in-with-aad](edge://flags/#edge-sign-in-with-aad) | Disabled
 [#edge-user-agent-spoofing-service](edge://flags/#edge-user-agent-spoofing-service) | Enabled
 [#edge-widevine-drm](edge://flags/#edge-widevine-drm) | Disabled, will break Netflix!
+[#edge-reading-view-grammar-tools](edge://flags/#edge-reading-view-grammar-tools) | Grammar Tools
 
 
 
