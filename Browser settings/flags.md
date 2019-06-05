@@ -23,6 +23,7 @@ Feature | Comment or setting
 [#enable-parallel-downloading](chrome://flags/#enable-parallel-downloading) | //
 [#enable-picture-in-picture](chrome://flags/#enable-picture-in-picture) | //
 [#enable-quic](chrome://flags/#enable-quic) | Controversial
+[#enable-reader-mode](chrome://flags/#enable-reader-mode) | _optional_
 [#enable-webrtc-h264-with-openh264-ffmpeg](chrome://flags/#enable-webrtc-h264-with-openh264-ffmpeg) | //
 [#enable-webrtc-hide-local-ips-with-mdns](chrome://flags/#enable-webrtc-hide-local-ips-with-mdns) | //
 [#enable-webrtc-new-encode-cpu-load-estimator](chrome://flags/#enable-webrtc-new-encode-cpu-load-estimator) | //
