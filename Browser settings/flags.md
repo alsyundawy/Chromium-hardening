@@ -59,6 +59,7 @@ Feature | Comment or setting
 [#network-service](chrome://flags/#network-service) | //
 [#new-usb-backend](chrome://flags/#new-usb-backend) | //
 [#omnibox-drive-suggestions](chrome://flags/#omnibox-drive-suggestions) | Workaround for a bug
+[#omnibox-rich-entity-suggestion](chrome://flags/#omnibox-rich-entity-suggestion) | Since 74.0.3729.169 enabled
 [#pdf-form-save](chrome://flags/#pdf-form-save) | //
 [#reduced-referrer-granularity](chrome://flags/#reduced-referrer-granularity) | //
 [#safe-search-url-reporting](chrome://flags/#safe-search-url-reporting) | //
