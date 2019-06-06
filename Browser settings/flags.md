@@ -57,6 +57,7 @@ Feature | Comment or setting
 [#enable-optimization-hints](chrome://flags/#enable-optimization-hints) | //
 [#fill-on-account-select-http](chrome://flags/#fill-on-account-select-http) | //
 [#fill-on-account-select](chrome://flags/#fill-on-account-select) | //
+[#hardware-media-key-handling](chrome://flags/#hardware-media-key-handling) | Avoid media stats leakage
 [#happiness-tracking-surveys-for-desktop](chrome://flags/#happiness-tracking-surveys-for-desktop) | //
 [#network-service](chrome://flags/#network-service) | //
 [#new-usb-backend](chrome://flags/#new-usb-backend) | //
