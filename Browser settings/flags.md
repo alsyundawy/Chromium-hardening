@@ -32,6 +32,8 @@ Feature | Comment or setting
 [#gdi-text-printing](chrome://flags/#gdi-text-printing) | //
 [#pdf-isolation](chrome://flags/#pdf-isolation) | **Recommend !**
 [#smooth-scrolling](chrome://flags/#smooth-scrolling) | //
+[#tab-hover-cards](chrome://flags/#tab-hover-cards) | _optional_
+[#tab-hover-card-images](chrome://flags/#tab-hover-card-images) | _optional_
 [#unified-consent](chrome://flags/#unified-consent) | //
 
 
