@@ -7,6 +7,7 @@ Feature | Comment or setting
 [#clipboard-content-setting](chrome://flags/#clipboard-content-setting) | //
 [#disable-javascript-harmony-shipping](chrome://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
 [#disallow-doc-written-script-loads](chrome://flags/#disallow-doc-written-script-loads) | //
+[#drag-to-pin-tabs](chrome://flags/#drag-to-pin-tabs]) | _optional_
 [#enable-appcontainer](chrome://flags/#enable-appcontainer) | **Recommend !**
 [#enable-autofill-credit-card-ablation-experiment](chrome://flags/#enable-autofill-credit-card-ablation-experiment) | //
 [#enable-block-tab-unders](chrome://flags/#enable-block-tab-unders) | //
