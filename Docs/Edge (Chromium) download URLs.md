@@ -20,7 +20,14 @@ Dev
 
 
 Beta
-- None (yet)
+* - None -
+
+
+ARM
+--------------
+
+Canary (needs to be started with `–msedge-sxs`
+* `https://mega.nz/#!M1BDzI5K!n8o0Noy_wi8etauRATKMPKT-qC5Ls_KheMr6c8dYDqQ` Source & Credit: [via Twitter](https://twitter.com/ADeltaXForce/status/1136654348983967744)
 
 
 ### Information about the URL scheme
