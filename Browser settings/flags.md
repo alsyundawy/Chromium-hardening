@@ -6,6 +6,7 @@ Feature | Comment or setting
 [#autoplay-policy](chrome://flags/#autoplay-policy) | Document user activation is required.
 [#clipboard-content-setting](chrome://flags/#clipboard-content-setting) | //
 [#disable-javascript-harmony-shipping](chrome://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
+[#disallow-unsafe-http-downloads](chrome://flags/#disallow-unsafe-http-downloads) | **Recommend !**
 [#disallow-doc-written-script-loads](chrome://flags/#disallow-doc-written-script-loads) | //
 [#drag-to-pin-tabs](chrome://flags/#drag-to-pin-tabs]) | _optional_
 [#enable-appcontainer](chrome://flags/#enable-appcontainer) | **Recommend !**
@@ -28,6 +29,7 @@ Feature | Comment or setting
 [#enable-webrtc-h264-with-openh264-ffmpeg](chrome://flags/#enable-webrtc-h264-with-openh264-ffmpeg) | //
 [#enable-webrtc-hide-local-ips-with-mdns](chrome://flags/#enable-webrtc-hide-local-ips-with-mdns) | //
 [#enable-webrtc-new-encode-cpu-load-estimator](chrome://flags/#enable-webrtc-new-encode-cpu-load-estimator) | //
+[enforce-tls13-downgrade](chrome://flags/#enforce-tls13-downgrade) | Enabled (Known root only)
 [#expensive-background-timer-throttling](chrome://flags/#expensive-background-timer-throttling) | //
 [#extension-content-verification](chrome://flags/#extension-content-verification) | Enforce strict
 [#gdi-text-printing](chrome://flags/#gdi-text-printing) | //
@@ -102,7 +104,6 @@ Feature | Reason
 ------------ | -------------
 [#allow-sxg-certs-without-extension](chrome://flags/#allow-sxg-certs-without-extension) | Triggers an critical error (DOM)
 [#enable-signed-http-exchange](chrome://flags/#enable-signed-http-exchange) | Triggers an critical error (DOM)
-[#enforce-tls13-downgrade](chrome://flags/#enforce-tls13-downgrade) | Possible attacks
 [#focus-mode](chrome://flags/#focus-mode) | Leakage (?) unconfirmed, triggers warnings
 [#enable-built-in-module-kv-storage](chrome://flags/#enable-built-in-module-kv-storage) | Leakage (?) unconfirmed, triggers warnings
 [#enable-built-in-module-infra](chrome://flags/#enable-built-in-module-infra) | Possible attacks
