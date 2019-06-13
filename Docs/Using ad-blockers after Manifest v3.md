@@ -22,3 +22,8 @@ What people need is a Windows version which (officially) deploy some type of [Gr
 * Download the Policy and [preferences templates](https://support.google.com/chrome/a/answer/7650032?hl=en&ref_topic=7649835) (_it's not yet updated)_.
 * [Import the .admx template](https://www.windowstricks.in/2016/06/import-admx-files-windows-10.html). _I assume MacOS/Linux users getting a separate template_ (**speculation**). I will upload them [here](https://github.com/CHEF-KOCH/Chromium-hardening/tree/master/Chrome%20Policy).
 * That's pretty much it.
+
+
+## Resources
+- [Google creates ad blocker Chrome extension for performance testing (9to5google.com)](https://9to5google.com/2019/06/13/google-creates-chrome-ad-blocker-extension/)
+- [Improving Security and Privacy for Extensions Users (security.googleblog.com)](https://security.googleblog.com/2019/06/improving-security-and-privacy-for.html) 
