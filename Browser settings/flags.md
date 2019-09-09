@@ -5,6 +5,7 @@ Feature | Comment or setting
 [#automatic-tab-discarding](chrome://flags/#automatic-tab-discarding) | //
 [#autoplay-policy](chrome://flags/#autoplay-policy) | Document user activation is required.
 [#clipboard-content-setting](chrome://flags/#clipboard-content-setting) | //
+[#cookies-without-same-site-must-be-secure](chrome://flags/#cookies-without-same-site-must-be-secure) | **Recommend !**, see [here](https://scotthelme.co.uk/csrf-is-really-dead/) why
 [#disable-javascript-harmony-shipping](chrome://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
 [#disallow-unsafe-http-downloads](chrome://flags/#disallow-unsafe-http-downloads) | **Recommend !**
 [#disallow-doc-written-script-loads](chrome://flags/#disallow-doc-written-script-loads) | //
