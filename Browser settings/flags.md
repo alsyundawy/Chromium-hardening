@@ -66,6 +66,7 @@ Feature | Comment or setting
 [#happiness-tracking-surveys-for-desktop](chrome://flags/#happiness-tracking-surveys-for-desktop) | //
 [#network-service](chrome://flags/#network-service) | //
 [#new-usb-backend](chrome://flags/#new-usb-backend) | //
+[#omnibox-ui-hide-steady-state-url-scheme-and-subdomains](chrome://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains) | //
 [#omnibox-drive-suggestions](chrome://flags/#omnibox-drive-suggestions) | Workaround for a bug
 [#omnibox-rich-entity-suggestion](chrome://flags/#omnibox-rich-entity-suggestion) | Since 74.0.3729.169 enabled
 [#pdf-form-save](chrome://flags/#pdf-form-save) | //
