@@ -79,6 +79,17 @@ Feature | Comment or setting
 [#enable-javascript-harmony](chrome://flags/#enable-javascript-harmony) | //
 
 
+### Android specific
+
+Feature | Comment or setting
+------------ | -------------
+[#safe-browsing-telemetry-for-apk-downloads](chrome://flags/#safe-browsing-telemetry-for-apk-downloads) | Disabled
+[#enable-android-night-mode](chrome://flags/#enable-android-night-mode) | Enabled (optional)
+[#enable-android-spellchecker](chrome://flags/#enable-android-spellchecker) | Enabled
+
+
+
+
 
 ### Microsoft Edge (Chromium) [edge://flags]
 
@@ -111,6 +122,7 @@ Feature | Reason
 [#focus-mode](chrome://flags/#focus-mode) | Leakage (?) unconfirmed, triggers warnings
 [#enable-built-in-module-kv-storage](chrome://flags/#enable-built-in-module-kv-storage) | Leakage (?) unconfirmed, triggers warnings
 [#enable-built-in-module-infra](chrome://flags/#enable-built-in-module-infra) | Possible attacks
+[#disable-windows10-custom-titlebar](chrome://flags/#disable-windows10-custom-titlebar) | Only if you really need it
 
 
 
