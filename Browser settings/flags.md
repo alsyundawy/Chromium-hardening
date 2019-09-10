@@ -53,6 +53,7 @@ Feature | Comment or setting
 [#data-saver-server-previews](chrome://flags/#data-saver-server-previews) | //
 [#device-discovery-notifications](chrome://flags/#device-discovery-notifications) | //
 [#enable-autofill-credit-card-upload](chrome://flags/#enable-autofill-credit-card-upload) | //
+[#enable-media-session-service](chrome://flags/#enable-media-session-service) | Volume OSD (optional)
 [#enable-client-lo-fi](chrome://flags/#enable-client-lo-fi) | //
 [#enable-data-reduction-proxy-with-network-service](chrome://flags/#enable-data-reduction-proxy-with-network-service) | //
 [#enable-generic-sensor-extra-classes](chrome://flags/#enable-generic-sensor-extra-classes) | //
