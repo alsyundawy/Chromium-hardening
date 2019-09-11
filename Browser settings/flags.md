@@ -5,7 +5,7 @@ Feature | Comment or setting
 [#automatic-tab-discarding](chrome://flags/#automatic-tab-discarding) | //
 [#autoplay-policy](chrome://flags/#autoplay-policy) | Document user activation is required.
 [#clipboard-content-setting](chrome://flags/#clipboard-content-setting) | //
-[#cookies-without-same-site-must-be-secure](chrome://flags/#cookies-without-same-site-must-be-secure) | **Recommend !**, see [here](https://scotthelme.co.uk/csrf-is-really-dead/) why
+[#cookies-without-same-site-must-be-secure](chrome://flags/#cookies-without-same-site-must-be-secure) | **Recommend !** See [here](https://scotthelme.co.uk/csrf-is-really-dead/)
 [#disable-javascript-harmony-shipping](chrome://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
 [#disallow-unsafe-http-downloads](chrome://flags/#disallow-unsafe-http-downloads) | **Recommend !**
 [#disallow-doc-written-script-loads](chrome://flags/#disallow-doc-written-script-loads) | //
@@ -54,6 +54,7 @@ Feature | Comment or setting
 [#device-discovery-notifications](chrome://flags/#device-discovery-notifications) | //
 [#enable-autofill-credit-card-upload](chrome://flags/#enable-autofill-credit-card-upload) | //
 [#enable-media-session-service](chrome://flags/#enable-media-session-service) | Volume OSD (optional)
+[#enable-native-google-assistant](chrome://flags/#enable-native-google-assistant) | [//](https://www.howtogeek.com/429382/how-to-enable-google-assistant-on-your-chromebook/)
 [#enable-client-lo-fi](chrome://flags/#enable-client-lo-fi) | //
 [#enable-data-reduction-proxy-with-network-service](chrome://flags/#enable-data-reduction-proxy-with-network-service) | //
 [#enable-generic-sensor-extra-classes](chrome://flags/#enable-generic-sensor-extra-classes) | //
@@ -67,7 +68,7 @@ Feature | Comment or setting
 [#happiness-tracking-surveys-for-desktop](chrome://flags/#happiness-tracking-surveys-for-desktop) | //
 [#network-service](chrome://flags/#network-service) | //
 [#new-usb-backend](chrome://flags/#new-usb-backend) | //
-[#new-tab-loading-animation](chrome://flags/#new-tab-loading-animation) | ([optional](https://old.reddit.com/r/chrome/comments/ahxx8c/new_tab_loading_animation/) 
+[#new-tab-loading-animation](chrome://flags/#new-tab-loading-animation) | ([optional](https://old.reddit.com/r/chrome/comments/ahxx8c/new_tab_loading_animation/))
 [#omnibox-ui-hide-steady-state-url-trivial-subdomains](chrome://flags/#omnibox-ui-hide-steady-state-url-trivial-subdomains) | hides www only
 [##omnibox-ui-hide-steady-state-url-scheme](chrome://flags/#omnibox-ui-hide-steady-state-url-scheme) | hides https:// only
 [#omnibox-ui-hide-steady-state-url-scheme-and-subdomains](chrome://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains) | //
@@ -90,9 +91,6 @@ Feature | Comment or setting
 [#enable-android-spellchecker](chrome://flags/#enable-android-spellchecker) | Enabled
 
 
-
-
-
 ### Microsoft Edge (Chromium) [edge://flags]
 
 Feature | Comment or setting
@@ -104,7 +102,7 @@ Feature | Comment or setting
 [#edge-experimental-scrolling](edge://flags/#edge-experimental-scrolling) | Disabled
 [#edge-follow-os-theme](edge://flags/#edge-follow-os-theme) | Enabled (Default)
 [#edge-installation-of-extensions-from-microsoft-store](edge://flags/#edge-installation-of-extensions-from-microsoft-store) | Enabled (Default)
-[#edge-playready-drm-win10](edge://flags/#edge-playready-drm-win10)  | Enabled (Default)
+[#edge-playready-drm-win10](edge://flags/#edge-playready-drm-win10) | Enabled (Default)
 [#edge-playready-drm-win10](edge://flags/#edge-playready-drm-win10) | Disabled, will break Netflix!
 [#edge-reading-view](edge://flags/#edge-reading-view) | Enabled (Default)
 [#edge-sign-in-with-aad](edge://flags/#edge-sign-in-with-aad) | Disabled
