@@ -15,9 +15,10 @@ Feature | Comment or setting
 [#cookies-without-same-site-must-be-secure](chrome://flags/#cookies-without-same-site-must-be-secure) | **Recommend !** See [here](https://scotthelme.co.uk/csrf-is-really-dead/)
 [#disable-javascript-harmony-shipping](chrome://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
 [#disallow-unsafe-http-downloads](chrome://flags/#disallow-unsafe-http-downloads) | **Recommend !**
+[#dns-over-https](chrome://flags/#dns-over-https) | **Recommend !**
 [#disallow-doc-written-script-loads](chrome://flags/#disallow-doc-written-script-loads) | //
 [#drag-to-pin-tabs](chrome://flags/#drag-to-pin-tabs]) | _optional_
-[#enable-appcontainer](chrome://flags/#enable-appcontainer) | **Recommend !**
+[#enable-appcontainer](chrome://flags/#enable-appcontainer) | [**Recommend !**](https://blog.chromium.org/2019/09/experimenting-with-same-provider-dns.html)
 [#enable-autofill-credit-card-ablation-experiment](chrome://flags/#enable-autofill-credit-card-ablation-experiment) | //
 [#enable-block-tab-unders](chrome://flags/#enable-block-tab-unders) | //
 [#enable-brotli](chrome://flags/#enable-brotli) | //
@@ -178,3 +179,10 @@ Feature | Deprecated or removed since
 
 ### Chrome v68 (only)
 * No single background connection, there are builds compiled with and without a specific flag which toggles `chrome://net-internals/#dns`.
+
+
+### DNS-over-HTTPS
+ 
+Starting with [Chrome 78](https://blog.chromium.org/2019/09/experimenting-with-same-provider-dns.html) the Browser will get an option to control DoH via `chrome://flags/#dns-over-https` (the flag can only be opt-out'ed [but is listed in my list as enabled [[default]]), however the option is experimental and only avbl. for several users/OS, the iOS and Linux implementation is still unfinished, that been said they won't get this right of the batch. 
+
+Supported are the following providers (for now): Cleanbrowsing, Cloudflare, DNS.SB, Google, OpenDNS & Quad9. If a provider isn't in the integrated list then Chrome will automatically use a fallback and switch back to the "normal" mode.
