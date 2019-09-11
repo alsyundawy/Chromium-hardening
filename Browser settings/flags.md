@@ -67,6 +67,7 @@ Feature | Comment or setting
 [#happiness-tracking-surveys-for-desktop](chrome://flags/#happiness-tracking-surveys-for-desktop) | //
 [#network-service](chrome://flags/#network-service) | //
 [#new-usb-backend](chrome://flags/#new-usb-backend) | //
+[#new-tab-loading-animation](chrome://flags/#new-tab-loading-animation) | ([optional](https://old.reddit.com/r/chrome/comments/ahxx8c/new_tab_loading_animation/) 
 [#omnibox-ui-hide-steady-state-url-trivial-subdomains](chrome://flags/#omnibox-ui-hide-steady-state-url-trivial-subdomains) | hides www only
 [##omnibox-ui-hide-steady-state-url-scheme](chrome://flags/#omnibox-ui-hide-steady-state-url-scheme) | hides https:// only
 [#omnibox-ui-hide-steady-state-url-scheme-and-subdomains](chrome://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains) | //
@@ -96,6 +97,7 @@ Feature | Comment or setting
 
 Feature | Comment or setting
 ------------ | -------------
+[#enable-aura-tooltips-on-windows](edge://flags/#enable-aura-tooltips-on-windows) | [Aura Dark Mode Tooltips](https://mspoweruser.com/microsofts-latest-flag-improves-dark-mode-implementation-on-chromium-based-edge/)
 [#edge-cdm-override-service](edge://flags/#edge-cdm-override-service) | Enabled (Default)
 [#edge-controls](edge://flags/#edge-controls) | Enabled (Default)
 [#edge-cookie-import](edge://flags/#edge-cookie-import) | Disabled
