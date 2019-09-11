@@ -1,3 +1,10 @@
+### Warning
+**You shouldn't use flags to configure Chrome because they're not supported. Instead, configure Chrome for your [enterprise or organization using policies](https://support.google.com/chrome/a/answer/9037717) (chrome://policy).** The original page was [removed](https://www.chromium.org/administrators/policy-list-3/atomic/_groups). 
+
+### Flags (depending which OS/Chrome version)
+* Chrome 76: 307
+* Chrome 77: 302
+
 ### Enabled
 
 Feature | Comment or setting
