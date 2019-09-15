@@ -2,8 +2,8 @@
 **You shouldn't use flags to configure Chrome because they're not supported. Instead, configure Chrome for your [enterprise or organization using policies](https://support.google.com/chrome/a/answer/9037717) (chrome://policy).** The original page was [removed](https://www.chromium.org/administrators/policy-list-3/atomic/_groups). 
 
 ### Flags (depending which OS/Chrome version)
-* Chrome 76: 307
 * Chrome 77: 302
+* Chrome 76: 307
 
 ### Enabled
 
@@ -13,6 +13,8 @@ Feature | Comment or setting
 [#autoplay-policy](chrome://flags/#autoplay-policy) | Document user activation is required.
 [#clipboard-content-setting](chrome://flags/#clipboard-content-setting) | //
 [#cookies-without-same-site-must-be-secure](chrome://flags/#cookies-without-same-site-must-be-secure) | **Recommend !** See [here](https://scotthelme.co.uk/csrf-is-really-dead/)
+[#chrome-colors](chrome://flags/#chrome-colors) | //
+[#chrome-custom-color-picker](chrome://flags/#chrome-colors-custom-color-picker) | //
 [#disable-javascript-harmony-shipping](chrome://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
 [#disallow-unsafe-http-downloads](chrome://flags/#disallow-unsafe-http-downloads) | **Recommend !**
 [#dns-over-https](chrome://flags/#dns-over-https) | **Recommend !**
@@ -42,6 +44,7 @@ Feature | Comment or setting
 [#expensive-background-timer-throttling](chrome://flags/#expensive-background-timer-throttling) | //
 [#extension-content-verification](chrome://flags/#extension-content-verification) | Enforce strict
 [#gdi-text-printing](chrome://flags/#gdi-text-printing) | //
+[#ntp-customization-menu-v2](chrome://flags/#ntp-customization-menu-v2) | //
 [#pdf-isolation](chrome://flags/#pdf-isolation) | **Recommend !**
 [#smooth-scrolling](chrome://flags/#smooth-scrolling) | //
 [#tab-groups](chrome://flags/#tab-groups) | v75+ _optional_
