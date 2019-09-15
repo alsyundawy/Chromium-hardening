@@ -29,3 +29,13 @@ There are additional parameters you can add, for example the website you like to
 
 #### Optional
 * Do not login (GAIA) with a Google account btw who says Mozilla sync is more secure (they use Amazon).
+
+
+### Search Engine & Search Operators
+
+The integrated search engine in Chrome is "diffcult to handle" which means adding a new search provider is _difficult_ to some users. There are also "secret" commands (operators) which you can add to the search URL to "improve" the results you get. Here is an example on how to change/improve your search results and how to deal with operators. This is of course only an example different search providers might have different operators! I used Google here because that's the default search result provider in Chrome. 
+
+* Go into your Chrome settings and open the "search provider section" or simply type in: `Chrome://settings/searchengines` 
+* Add a search engine with a name of your choice. Using a keyword is also possible, you can use whatever you want as keyword. e.g. xy.
+* Add the URL: `https://www.google.net/search?as_q=%s&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=y` (this is only an example)
+* You see that there are a lot parameters added "&as_param=" etc. This can be tweaked, the easiest way is to go to `https://www.google.com/advanced_search` and copy the URL which does what you want. I do not list [all parameters](https://ahrefs.com/blog/google-advanced-search-operators/) here because they are maybe still in [beta](https://searchengineland.com/search-google-by-date-with-new-before-and-after-search-commands-315184). 
