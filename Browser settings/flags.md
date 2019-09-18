@@ -2,12 +2,31 @@
 **You shouldn't use flags to configure Chrome because they're not supported. Instead, configure Chrome for your [enterprise or organization using policies](https://support.google.com/chrome/a/answer/9037717) (chrome://policy).** The original page was [removed](https://www.chromium.org/administrators/policy-list-3/atomic/_groups). 
 
 ### Flags (depending which OS/Chrome version)
+* Chrome 78: //
 * Chrome 77: 302
 * Chrome 76: 307
+* Chrome 75: 311
+
+### Security & privacy (only) enabled flags
+* #enable-webrtc-hide-local-ips-with-mdns
+* #extension-content-verification
+* #reduced-referrer-granuarity
+* #disallow-doc-written-script-loads
+* #enable-appcontainer
+* #enforce-tls13-downgrade
+* #enable-gpu-appcontainer
+* #disallow-unsafe-http-downloads
+* #ignore-gpu-denylist (disabled)
+* #pdf-isolation (will be removed and is only relevant in case you read PDF's via Browser)
+* #edge-strict-origin-isolation (replaces app container lockdown)
+* #block-unsafe-downloads-over-insecure-connections
+* #edge-limit-media-autoplay (will be removed)
+* Microsoft Edge tracking prevention (optional - Edge + Defender only)
+
 
 ### Enabled
 
-Feature | Comment or setting
+Feature | Comment/setting
 ------------ | -------------
 [#automatic-tab-discarding](chrome://flags/#automatic-tab-discarding) | //
 [#autoplay-policy](chrome://flags/#autoplay-policy) | Document user activation is required.
@@ -18,12 +37,13 @@ Feature | Comment or setting
 [#disable-javascript-harmony-shipping](chrome://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
 [#disallow-unsafe-http-downloads](chrome://flags/#disallow-unsafe-http-downloads) | **Recommend !**
 [#dns-over-https](chrome://flags/#dns-over-https) | **Recommend !**
-[#disallow-doc-written-script-loads](chrome://flags/#disallow-doc-written-script-loads) | //
+[#disallow-doc-written-script-loads](chrome://flags/#disallow-doc-written-script-loads) | **Recommend !**
 [#drag-to-pin-tabs](chrome://flags/#drag-to-pin-tabs]) | _optional_
 [#enable-appcontainer](chrome://flags/#enable-appcontainer) | [**Recommend !**](https://blog.chromium.org/2019/09/experimenting-with-same-provider-dns.html)
 [#enable-autofill-credit-card-ablation-experiment](chrome://flags/#enable-autofill-credit-card-ablation-experiment) | //
 [#enable-block-tab-unders](chrome://flags/#enable-block-tab-unders) | //
 [#enable-brotli](chrome://flags/#enable-brotli) | //
+[#reduced-referrer-granuarity](chrome://flags/#reduced-referrer-granuarity) | **Recommend !**
 [#enable-framebusting-needs-sameorigin-or-usergesture](chrome://flags/#enable-framebusting-needs-sameorigin-or-usergesture) | //
 [#enable-future-v8-vm-features](chrome://flags/#enable-future-v8-vm-features) | //
 [#enable-gpu-appcontainer](chrome://flags/#enable-gpu-appcontainer) | **Recommend !**
@@ -38,12 +58,13 @@ Feature | Comment or setting
 [#enable-quic](chrome://flags/#enable-quic) | Controversial
 [#enable-reader-mode](chrome://flags/#enable-reader-mode) | _optional_
 [#enable-webrtc-h264-with-openh264-ffmpeg](chrome://flags/#enable-webrtc-h264-with-openh264-ffmpeg) | //
-[#enable-webrtc-hide-local-ips-with-mdns](chrome://flags/#enable-webrtc-hide-local-ips-with-mdns) | //
+[#enable-webrtc-hide-local-ips-with-mdns](chrome://flags/#enable-webrtc-hide-local-ips-with-mdns) | **Recommend !**
 [#enable-webrtc-new-encode-cpu-load-estimator](chrome://flags/#enable-webrtc-new-encode-cpu-load-estimator) | //
-[enforce-tls13-downgrade](chrome://flags/#enforce-tls13-downgrade) | Enabled (Known root only)
+[enforce-tls13-downgrade](chrome://flags/#enforce-tls13-downgrade) | Enabled (Known root only) **Recommend !**
 [#expensive-background-timer-throttling](chrome://flags/#expensive-background-timer-throttling) | //
-[#extension-content-verification](chrome://flags/#extension-content-verification) | Enforce strict
+[#extension-content-verification](chrome://flags/#extension-content-verification) | Enforce strict (hard fail) - **Recommend !**
 [#gdi-text-printing](chrome://flags/#gdi-text-printing) | //
+[#ignore-gpu-denylist](chrome://flags/#ignore-gpu-denylist) | **Recommend !** (disabled)
 [#ntp-customization-menu-v2](chrome://flags/#ntp-customization-menu-v2) | //
 [#pdf-isolation](chrome://flags/#pdf-isolation) | **Recommend !**
 [#smooth-scrolling](chrome://flags/#smooth-scrolling) | //
@@ -51,6 +72,9 @@ Feature | Comment or setting
 [#tab-hover-cards](chrome://flags/#tab-hover-cards) | _optional_
 [#tab-hover-card-images](chrome://flags/#tab-hover-card-images) | _optional_
 [#unified-consent](chrome://flags/#unified-consent) | //
+[#overlay-scrollbars](chrome://flags/#overlay-scrollbars) | **Recommend !**
+[#overlay-scrollbars-flash-after-scroll-update](chrome://flags/#overlay-scrollbars-flash-after-scroll-update) | **Recommend !**
+[#overlay-scrollbars-flash-when-mouse-enter](chrome://flags/#overlay-scrollbars-flash-when-mouse-enter) | **Recommend !**
 
 
 
@@ -123,7 +147,7 @@ Feature | Comment or setting
 
 
 
-### Problematic do not touch!
+### Some flags are problematic - do not touch! -
 
 Some flags can cause "critical security holes" in your configuration even if you enable/disable them to prevent exactly this. The flags are been tested against [BrowserAudit](https://browseraudit.com/test), however keep in mind that the test page might not be 100% accurate!
 
@@ -143,9 +167,10 @@ Feature | Reason
 
 Feature | Deprecated or removed since
 ------------ | -------------
+#enable-appcontainer | v78
 #PasswordExport | ?
 #PasswordImport | ?
-#disable-hyperlink-auditing | 73
+#disable-hyperlink-auditing | v73
 #enable-autofill-credit-card-last-used-date-display | ?
 #enable-autofill-credit-card-upload-send-detected-values | ?
 #enable-av1-decoder | ?
@@ -172,16 +197,12 @@ Feature | Deprecated or removed since
 #new-audio-rendering-mixing-strategy | ?
 #ntp-ui-md | v70
 #secondary-ui-md | v71
-#show-saved-copy | ?
-#simplified-fullscreen-ui | ?
-#simplified-fullscreen-ui | ?
-#sound-content-setting | ?
-#stop-in-background | ?
-#voice-search-on-local-ntp | ?
-
-
-### Chrome v68 (only)
-* No single background connection, there are builds compiled with and without a specific flag which toggles `chrome://net-internals/#dns`.
+#show-saved-copy | v71
+#simplified-fullscreen-ui | v70
+#simplified-fullscreen-ui | v71
+#sound-content-setting | v70
+#stop-in-background | v70
+#voice-search-on-local-ntp | v70
 
 
 ### DNS-over-HTTPS
