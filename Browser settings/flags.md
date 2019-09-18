@@ -113,7 +113,7 @@ Feature | Comment or setting
 [#edge-experimental-scrolling](edge://flags/#edge-experimental-scrolling) | Disabled
 [#edge-follow-os-theme](edge://flags/#edge-follow-os-theme) | Enabled (Default)
 [#edge-installation-of-extensions-from-microsoft-store](edge://flags/#edge-installation-of-extensions-from-microsoft-store) | Enabled (Default)
-[#edge-playready-drm-win10](edge://flags/#edge-playready-drm-win10) | Enabled (Default)
+[#edge-strict-origin-isolation](edge://edge-strict-origin-isolation) | **Recommend !**
 [#edge-playready-drm-win10](edge://flags/#edge-playready-drm-win10) | Disabled, will break Netflix!
 [#edge-reading-view](edge://flags/#edge-reading-view) | Enabled (Default)
 [#edge-sign-in-with-aad](edge://flags/#edge-sign-in-with-aad) | Disabled
