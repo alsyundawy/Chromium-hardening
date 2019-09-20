@@ -126,7 +126,7 @@ Feature | Comment or setting
 [#enable-android-spellchecker](chrome://flags/#enable-android-spellchecker) | Enabled
 
 
-### Microsoft Edge (Chromium) [edge://flags]
+### Microsoft Edge (Chromium) specific [edge://flags]
 
 Feature | Comment or setting
 ------------ | -------------
@@ -145,9 +145,13 @@ Feature | Comment or setting
 [#edge-widevine-drm](edge://flags/#edge-widevine-drm) | Disabled, will break Netflix!
 [#edge-reading-view-grammar-tools](edge://flags/#edge-reading-view-grammar-tools) | Grammar Tools
 
+#### Other Edge "Tweaks"
+
+* In order to **enable the new Extensions Menu**, create a shortcut or edit the existing shortcut `--enable-features=ExtensionsToolbarMenu` The example should then look like this: `msedge.exe --enable-features=ExtensionsToolbarMenu".
 
 
-### Some flags are problematic - do not touch! -
+
+### Some flags are (in general) problematic - do not touch! -
 
 Some flags can cause "critical security holes" in your configuration even if you enable/disable them to prevent exactly this. The flags are been tested against [BrowserAudit](https://browseraudit.com/test), however keep in mind that the test page might not be 100% accurate!
 
