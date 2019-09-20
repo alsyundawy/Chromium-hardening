@@ -1,5 +1,6 @@
 ### Warning
-**You shouldn't use flags to configure Chrome because they're not supported. Instead, configure Chrome for your [enterprise or organization using policies](https://support.google.com/chrome/a/answer/9037717) (chrome://policy).** The original page was [removed](https://www.chromium.org/administrators/policy-list-3/atomic/_groups). 
+**You shouldn't use flags to configure Chrome because they're not supported. Instead, configure Chrome for your [enterprise or organization using policies](https://support.google.com/chrome/a/answer/9037717) (chrome://policy).** The original page was [removed](https://www.chromium.org/administrators/policy-list-3/atomic/_groups).  - Statement from a Google Marketing Manager (_not my own!_).
+
 
 ### Flags (depending which OS/Chrome version)
 * Chrome 78: //
@@ -7,10 +8,9 @@
 * Chrome 76: 307
 * Chrome 75: 311
 
-### Security & privacy enabled flags
-* #enable-webrtc-hide-local-ips-with-mdns
+
+### Security (only) flags (enabled)
 * #extension-content-verification
-* #reduced-referrer-granuarity
 * #disallow-doc-written-script-loads
 * #enable-appcontainer
 * #enforce-tls13-downgrade
@@ -21,7 +21,37 @@
 * #edge-strict-origin-isolation (replaces app container lockdown)
 * #block-unsafe-downloads-over-insecure-connections
 * #edge-limit-media-autoplay (will be removed)
-* Microsoft Edge tracking prevention (optional - Edge + Defender only)
+* Microsoft Edge tracking prevention (_optional_ - MS Edge + Defender only [via Chrome 75+ with Ent. GPO policy])
+
+
+### Privacy (only) flags (enabled)
+* #enable-webrtc-hide-local-ips-with-mdns
+* #disable-hyperlink-auditing (outdated)
+* Enable search suggestions on the local NTP (disable) (outdated)
+* #reduced-referrer-granuarity
+* Anonymize local IPs exposed by WebRTC (outdated)
+* #search-results-extensions-block-v2 (Opera only)
+* Unified Consent
+* Top Sites from Site Engagement (disable)
+* New history entries require a user gesture
+* History Manipulation Intervention
+* Disable minimum for server-side tile suggestions on NTP (disable)
+
+
+## Performance (only) flags (enabled)
+* GPU rasterization
+* Enable lazy image loading
+* Enable lazy frame loading
+* Parallel downloading
+* Enable doodles on the local NTP (disable)
+* Enable search suggestions on the local NTP (disable)
+
+
+## Advertising (only) flags (enabled)
+* App Banners (disabled)
+* Autoplay policy (document user activation required)
+* Enable promos on the local NTP (disabled)
+* User Activation V2 (disabled)
 
 
 ### Enabled
@@ -125,7 +155,7 @@ Feature | Comment or setting
 [#safe-browsing-telemetry-for-apk-downloads](chrome://flags/#safe-browsing-telemetry-for-apk-downloads) | Disabled
 [#enable-android-night-mode](chrome://flags/#enable-android-night-mode) | Enabled (optional)
 [#enable-android-spellchecker](chrome://flags/#enable-android-spellchecker) | Enabled
-
+[#enable-site-isolation-for-password-sites](chrome://flags/#enable-site-isolation-for-password-sites) | Enabled (v74+)
 
 ### Microsoft Edge (Chromium) specific [edge://flags]
 
@@ -219,5 +249,12 @@ Supported are the following providers (for now): Cleanbrowsing, Cloudflare, DNS.
 Fo [force Chrome to use DoH](https://bugs.chromium.org/p/chromium/issues/detail?id=799753#c8) add the following shortcut path: 
 * `--enable-features="dns-over-https<DoHTrial" --force-fieldtrials="DoHTrial/Group1" --force-fieldtrial-params="DoHTrial.Group1:server/https%3A%2F%2F1.1.1.1%2Fdns-query/method/POST` 
 
-This example will configure Chrome to use Cloudflares DoH server. To test if DoH is working or not, check the [https://1.1.1.1/help](https://1.1.1.1/help) url.  
+This example will configure Chrome to use Cloudflares DoH server. To test if DoH is working or not, check the [https://1.1.1.1/help](https://1.1.1.1/help) url. 
+
+
+### Fooling the NTP to increase the Browser performance and to gain some (questionable) privacy benefit
+
+There is some traffic caused for NTP lookups, this can be disabled with the following trick:
+* Change your default search engine to "Startpage" and remove all other search engines in your lists.
+* Enable or disable the following flags `Enable using the Google local NTP`, `Enable doodles on the local NTP` (disable), `Enable search suggestions on the local NTP` (disable), `Top Sites from Site Engagement` (disable), `Disable minimum for server-side tile suggestions on NTP` (disable) & `Enable promos on the local NTP` (disable).
 
