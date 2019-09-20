@@ -147,7 +147,7 @@ Feature | Comment or setting
 
 #### Other Edge "Tweaks"
 
-* In order to **enable the new Extensions Menu**, create a shortcut or edit the existing shortcut `--enable-features=ExtensionsToolbarMenu` The example should then look like this: `msedge.exe --enable-features=ExtensionsToolbarMenu".
+* In order to **enable the new Extensions Menu**, create a shortcut or edit the existing shortcut `--enable-features=ExtensionsToolbarMenu` The example should then look like this: `msedge.exe --enable-features=ExtensionsToolbarMenu`.
 
 
 
@@ -172,33 +172,33 @@ Feature | Reason
 Feature | Deprecated or removed since
 ------------ | -------------
 #enable-appcontainer | v78
-#PasswordExport | ?
-#PasswordImport | ?
+#PasswordExport | v77
+#PasswordImport | v77
 #disable-hyperlink-auditing | v73
-#enable-autofill-credit-card-last-used-date-display | ?
-#enable-autofill-credit-card-upload-send-detected-values | ?
-#enable-av1-decoder | ?
-#enable-desktop-ios-promotions | ?
-#enable-fast-unload | ?
-#enable-filesystem-in-icognito | ?
-#enable-gamepad-extensions | ?
-#enable-md-bookmarks | ?
-#enable-modern-media-controls | ?
-#enable-new-app-menu-icon | ?
-#enable-new-preconnect | ?
-#enable-new-print-preview | ?
-#enable-nup-printing | ?
-#enable-password-generation | ?
-#enable-policy-tool | ?
-#enable-push-api-background-mode | ?
-#enable-simple-cache-backend | ?
-#enable-single-click-autofill | ?
+#enable-autofill-credit-card-last-used-date-display | v76
+#enable-autofill-credit-card-upload-send-detected-values | v75
+#enable-av1-decoder | v74
+#enable-desktop-ios-promotions | v74
+#enable-fast-unload | v74
+#enable-filesystem-in-icognito | v74
+#enable-gamepad-extensions | v76
+#enable-md-bookmarks | v74
+#enable-modern-media-controls | v77
+#enable-new-app-menu-icon | v74
+#enable-new-preconnect | v75
+#enable-new-print-preview | v76
+#enable-nup-printing | v77
+#enable-password-generation | v75
+#enable-policy-tool | v76
+#enable-push-api-background-mode | v77
+#enable-simple-cache-backend | v69
+#enable-single-click-autofill | v72
 #enable-site-per-process | v70
-#enable-site-settings | ?
-#enable-tcp-fast-open | ?
-#extensions-toolbar-menu | ?
-#important-sites-in-cbd | ?
-#new-audio-rendering-mixing-strategy | ?
+#enable-site-settings | v77
+#enable-tcp-fast-open | v76
+#extensions-toolbar-menu | v76
+#important-sites-in-cbd | v77
+#new-audio-rendering-mixing-strategy | v78
 #ntp-ui-md | v70
 #secondary-ui-md | v71
 #show-saved-copy | v71
