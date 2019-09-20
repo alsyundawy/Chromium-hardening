@@ -7,7 +7,7 @@
 * Chrome 76: 307
 * Chrome 75: 311
 
-### Security & privacy (only) enabled flags
+### Security & privacy enabled flags
 * #enable-webrtc-hide-local-ips-with-mdns
 * #extension-content-verification
 * #reduced-referrer-granuarity
@@ -76,6 +76,7 @@ Feature | Comment/setting
 [#overlay-scrollbars](chrome://flags/#overlay-scrollbars) | **Recommend !**
 [#overlay-scrollbars-flash-after-scroll-update](chrome://flags/#overlay-scrollbars-flash-after-scroll-update) | **Recommend !**
 [#overlay-scrollbars-flash-when-mouse-enter](chrome://flags/#overlay-scrollbars-flash-when-mouse-enter) | **Recommend !**
+[new-tab-button-position](chrome://flags/#new-tab-button-positio) | **Recommend !** (_optional_)
 
 
 ### Disabled
