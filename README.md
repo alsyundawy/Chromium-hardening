@@ -294,6 +294,16 @@ I think both browsers terrible failed, Firefox and Chrome. Both are trying to ga
 - Adopting features from other Browser is okay, but don't overdue it not every change Browser X does has to be copied, especially not if it#s bugged (__autoplay__ ... __hm__).
 
 
+## Chrome Vs. MS Edge (Chromium)
+
+MS did a good job with Edge, however the new Edge (Chromium based) seems even better compared to the original Chrome Browser. It adds a lot of "requested" features into it and some functions are quite unique. Privacy wise it's a step forward compared to Chrome. 
+
+* MS Edge has, overall the better privacy & performance 
+* MS Edge provides built in tracking protection like in Firefox has
+* DRM (4K Netflix) works (compared to Firefox and Chrome) really good
+* The advanced safe download protection (Windows Defender) function is unique compared to other Browsers (Google mentioned such a function will be introduced only for Enterprise users).
+* MS Edge does not "care" about Google's Manifest which means ad-blocking will always be possible
+* The sync between mobile option is not bad, compared to other solution, this one offers ad-blocking support (on Android).
 
 
 ## Acknowledgments and References
