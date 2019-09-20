@@ -64,6 +64,7 @@ Feature | Comment/setting
 [#expensive-background-timer-throttling](chrome://flags/#expensive-background-timer-throttling) | //
 [#extension-content-verification](chrome://flags/#extension-content-verification) | Enforce strict (hard fail) - **Recommend !**
 [#gdi-text-printing](chrome://flags/#gdi-text-printing) | //
+[#isolate-origins](chrome://flags/#isolate-origins) | **Recommend !**, [see here why](https://wicg.github.io/isolation/)
 [#ignore-gpu-denylist](chrome://flags/#ignore-gpu-denylist) | **Recommend !** (disabled)
 [#ntp-customization-menu-v2](chrome://flags/#ntp-customization-menu-v2) | //
 [#pdf-isolation](chrome://flags/#pdf-isolation) | **Recommend !**
@@ -75,7 +76,6 @@ Feature | Comment/setting
 [#overlay-scrollbars](chrome://flags/#overlay-scrollbars) | **Recommend !**
 [#overlay-scrollbars-flash-after-scroll-update](chrome://flags/#overlay-scrollbars-flash-after-scroll-update) | **Recommend !**
 [#overlay-scrollbars-flash-when-mouse-enter](chrome://flags/#overlay-scrollbars-flash-when-mouse-enter) | **Recommend !**
-
 
 
 ### Disabled
