@@ -337,8 +337,9 @@ MS did a good job with Edge, however the new Edge (Chromium based) seems even be
 * ~~[BetterFirefox](https://github.com/CHEF-KOCH/BetterFirefox)~~
 
 
-## External scripts & tools
+## External scripts, extension scanners or tools
 * [PowerShell script to get the latest build of Chromium directly from the Chromium Project](https://github.com/RealDrGordonFreeman/Chromigen)
+* [CRXcavator](https://crxcavator.io/) - Submit a Chrome Extension ID in order to inspect it
 
 
 ## Papers
