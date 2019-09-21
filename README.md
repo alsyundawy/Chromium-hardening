@@ -1,6 +1,6 @@
-#### Hardens Chromium and it's settings in the name of security
+### "Hardens" Chrome & Chromium based Browser and their settings in the name of privacy/security  
 
-The goal of this project is to provide information (and an extension maybe?) to setup Chromium for maximum application security (which doesn#t mean you're more secure in terms of that the browser/data aren't attackable).
+The goal of this project is to provide information (and _maybe_ an extension/policy) to setup Chromium/Chromium to get the best out-of-the-box application security & privacy.
 
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40CHEF-KOCH)](https://twitter.com/CKsTechNews)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/CHEF-KOCH)
@@ -355,3 +355,8 @@ MS did a good job with Edge, however the new Edge (Chromium based) seems even be
 
 ## Microsoft Edge (Chromium)
 * [Edge Privacy Concept](https://blogs.windows.com/msedgedev/2019/05/06/edge-chromium-build-2019-pwa-ie-mode-devtools/#H8GDbV0SOi7Am1AB.97)
+
+
+## How to compile Chromium with Codes
+* [GN build configuration](https://www.chromium.org/developers/gn-build-configuration) 
+* [Chromium build with proprietary codecs by jedi4ever](https://gist.github.com/jedi4ever/d095656ae0f0eca4a83ebb2b331da367) 
