@@ -13,15 +13,18 @@
 * #extension-content-verification
 * #disallow-doc-written-script-loads
 * #enable-appcontainer
-* #enforce-tls13-downgrade
+* #enforce-tls13-downgrade (known root only)
 * #enable-gpu-appcontainer
 * #disallow-unsafe-http-downloads
-* #ignore-gpu-denylist (disabled)
+* #ignore-gpu-denylist (disabled) (outdated)
 * #pdf-isolation (will be removed and is only relevant in case you read PDF's via Browser)
 * #edge-strict-origin-isolation (replaces app container lockdown)
 * #block-unsafe-downloads-over-insecure-connections
-* #edge-limit-media-autoplay (will be removed)
+* #edge-limit-media-autoplay (will be removed, edge onlxy)
 * Microsoft Edge tracking prevention (_optional_ - MS Edge + Defender only [via Chrome 75+ with Ent. GPO policy])
+* #enable-webrtc-srtp-aes-gcm (if WebRTC is supported/enabled)
+* #treat-unsafe-downloads-as-active-content
+* #enable-tls13-early-data (disabled, GET fingerprinting)
 
 
 ### Privacy (only) flags (enabled)
@@ -31,21 +34,36 @@
 * #reduced-referrer-granuarity
 * Anonymize local IPs exposed by WebRTC (outdated)
 * #search-results-extensions-block-v2 (Opera only)
-* Unified Consent
-* Top Sites from Site Engagement (disable)
-* New history entries require a user gesture
-* History Manipulation Intervention
-* Disable minimum for server-side tile suggestions on NTP (disable)
+* #unified-consent
+* Top Sites from Site Engagement (disable) (outdated)
+* New history entries require a user gesture (outdated)
+* #enable-history-manipulation-intervention
+* Disable minimum for server-side tile suggestions on NTP (disable) (outdated)
+* #enable-webrtc-remote-event-log (_optional_) (if WebRTC is allowed/enabled)
+* #pdf-form-save (disabled)
+* #cookies-without-same-site-must-be-secure + #same-site-by-default-cookies (both must be enabled, might break websites!)
+* #enable-data-reduction-proxy-with-network-service (connect to Google - disabled)
+* #happiness-tracking-surveys-for-desktop (disabled)
+* #use-sync-sandbox (connect to Google)
+* #load-media-router-component-extension (WARNING: Don't touch it (breaks the "Cast" feature _optional_ to avoid Google startup connections/loopback)
+* #enable-webvr (prevent possible WebVR API based fingerprinting methods)
+* #enable-generic-sensor (disabled, fingerprinting)
+* #omnibox-experimental-keyword-mode (disable)
+* #omnibox-suggestion-transparency-options
+* #omnibox-drive-suggestions (disable)
+* #enable-speculative-service-worker-start-on-query-input (disabled + performance/fingerprinting reasons)
+* #use-new-accept-language-header (disabled)
 
 
 ## Performance (only) flags (enabled)
 * GPU rasterization
 * Enable lazy image loading
 * Enable lazy frame loading
-* Parallel downloading
+* #enable-parallel-downloading
 * Enable doodles on the local NTP (disable)
 * Enable search suggestions on the local NTP (disable)
-
+* #enable-layout-ng
+* #data-saver-server-previews
 
 ## Advertising (only) flags (enabled)
 * App Banners (disabled)
