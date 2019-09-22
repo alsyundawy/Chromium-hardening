@@ -7,6 +7,7 @@
 * Chrome 77: 302
 * Chrome 76: 307
 * Chrome 75: 311
+* Chrome 74: 316
 
 
 ### Security (only) flags (enabled)
@@ -91,6 +92,7 @@ Feature | Comment/setting
 [#enable-autofill-credit-card-ablation-experiment](chrome://flags/#enable-autofill-credit-card-ablation-experiment) | //
 [#enable-block-tab-unders](chrome://flags/#enable-block-tab-unders) | //
 [#enable-brotli](chrome://flags/#enable-brotli) | //
+[#enable-experimental-fling-animation](chrome://flags/#enable-experimental-fling-animation) | //
 [#reduced-referrer-granuarity](chrome://flags/#reduced-referrer-granuarity) | **Recommend !**
 [#enable-framebusting-needs-sameorigin-or-usergesture](chrome://flags/#enable-framebusting-needs-sameorigin-or-usergesture) | //
 [#enable-future-v8-vm-features](chrome://flags/#enable-future-v8-vm-features) | //
