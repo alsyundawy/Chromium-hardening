@@ -26,6 +26,7 @@
 * #enable-webrtc-srtp-aes-gcm (if WebRTC is supported/enabled)
 * #treat-unsafe-downloads-as-active-content
 * #enable-tls13-early-data (disabled, GET fingerprinting)
+* `--enable-quic` & `--quic-version=h3-23` as command line argument to [enable HTTP/3](https://blog.cloudflare.com/http3-the-past-present-and-future/) See here how to run [Chrome with flags](https://www.chromium.org/developers/how-tos/run-chromium-with-flags).
 
 
 ### Privacy (only) flags (enabled)
@@ -66,6 +67,7 @@
 * #enable-layout-ng
 * #data-saver-server-previews
 
+
 ## Advertising (only) flags (enabled)
 * App Banners (disabled)
 * Autoplay policy (document user activation required)
@@ -105,7 +107,7 @@ Feature | Comment/setting
 [#enable-origin-trials](chrome://flags/#enable-origin-trials) | //
 [#enable-parallel-downloading](chrome://flags/#enable-parallel-downloading) | //
 [#enable-picture-in-picture](chrome://flags/#enable-picture-in-picture) | //
-[#enable-quic](chrome://flags/#enable-quic) | Controversial
+[#enable-quic](chrome://flags/#enable-quic) | Controversial, I **recommend enabling it**
 [#enable-reader-mode](chrome://flags/#enable-reader-mode) | _optional_
 [#enable-webrtc-h264-with-openh264-ffmpeg](chrome://flags/#enable-webrtc-h264-with-openh264-ffmpeg) | //
 [#enable-webrtc-hide-local-ips-with-mdns](chrome://flags/#enable-webrtc-hide-local-ips-with-mdns) | **Recommend !**
