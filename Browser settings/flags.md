@@ -99,6 +99,7 @@ Feature | Comment/setting
 [#enable-framebusting-needs-sameorigin-or-usergesture](chrome://flags/#enable-framebusting-needs-sameorigin-or-usergesture) | //
 [#enable-future-v8-vm-features](chrome://flags/#enable-future-v8-vm-features) | //
 [#enable-gpu-appcontainer](chrome://flags/#enable-gpu-appcontainer) | **Recommend !**
+[#enable-pixel-canvas-recording](chrome://flags/#enable-pixel-canvas-recording) | **Recommend !**
 [#enable-history-entry-requires-user-gesture](chrome://flags/#enable-history-entry-requires-user-gesture) | //
 [#enable-history-manipulation-intervention](chrome://flags/#enable-history-manipulation-intervention) | //
 [#enable-mark-http-as](chrome://flags/#enable-mark-http-as) | Mark as actively dangerous
