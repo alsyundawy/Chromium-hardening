@@ -1,4 +1,4 @@
-### Overview
+# Overview
 
 Chrome (Chromium based Browsers) have a lot of anti-fingerprinting tricks integrated which are not visible via flags. The benefit compared using some extensions is that those flags are more reliable because an extension could fail to load, stopped working etc. and then you're exposed/fingerprintable.
 
@@ -11,6 +11,10 @@ Reducing the network traffic overall helps to keep the fingerprint possabilities
 
 These mentioned flags are not needed in e.g. ungoogled-Chromium, Brave or Chromium!
 
+
+## Always launch Google Chrome in "Guest Browsing Mode"
+
+* Add to Chrome.exe `--guest`. ("right-click" - "properties" - "shortcut" - "target" and then simply add --guest)
 
 ## Search engine
 
