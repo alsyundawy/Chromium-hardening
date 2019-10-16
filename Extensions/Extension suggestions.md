@@ -1,12 +1,28 @@
-### Misc
+### Anti phishing attacks
+* [Donkey Defender](https://chrome.google.com/webstore/detail/donkey-defender/bojniphfjbjdlajlanmaamjhcecdpoan?hl=en)
+
+
+### Web filter 
 * [µBlock Origin](https://github.com/gorhill/uBlock) + [µBO-Extra](https://github.com/gorhill/uBO-Extra) (Block ads, scripts and popups • Alternatives: [ScriptSafe](https://github.com/andryou/scriptsafe), [Adguard](https://adguard.com/en/adguard-adblock-browser-extension/overview.html), [Adblock Plus](https://en.wikipedia.org/wiki/Adblock_Plus), [AdBlock](https://en.wikipedia.org/wiki/AdBlock), NoScript [not for Chrome])
 * [µMatrix](https://github.com/gorhill/uMatrix) (Stop everyone from tracking you • Alternatives: [Privacy Manager](https://chrome.google.com/webstore/detail/privacy-manager/giccehglhacakcfemddmfhdkahamfcmd), [Privacy Badger](https://www.eff.org/privacybadger), [Stealth Mode by Adguard](https://chrome.google.com/webstore/detail/stealth-mode/hfkpddhkjcbfmnclailpehabmekgphfh), ~Blur~, ~RequestPolicy~)
-* [Referer Control](https://chrome.google.com/webstore/detail/referer-control/hnkcfpcejkafcihlgbojoidoihckciin/) (Control the HTTP Referer on a per-site basis • Alternatives: Smart Referer, RefControl, [Web Developer](https://en.wikipedia.org/wiki/Web_Developer_%28software%29))
+
+
+### Canvas protection
 * [CanvasFingerprintBlock](https://chrome.google.com/webstore/detail/canvasfingerprintblock/ipmjngkmngdcdpmgmiebdmfbkcecdndc) (Prevent browser fingerprinting • Alternatives: [Chameleon](https://github.com/ghostwords/chameleon), CanvasBlocker)
+
+
+### CDN emulation
 * [Local CDN](https://github.com/james-fray/local-cdn) (Local emulation of CDN • Alternatives: [Decentraleyes](https://github.com/Synzvato/decentraleyes))
+
+
+### Misc
 * [Chrome extension source viewer](https://chrome.google.com/webstore/detail/chrome-extension-source-v/jifpbeccnghkjeaalbbjmodiffmgedin)
 * ~~[WebAPI Manager](https://github.com/snyderp/web-api-manager)~~ or [Trace](https://absolutedouble.co.uk/trace/)
 * [Force HTTPS](https://chrome.google.com/webstore/detail/force-https-for-all-traff/dpipdndjcofdfhknlfloeokjiooiojoo)
+
+
+### Referer Control
+* [Referer Control](https://chrome.google.com/webstore/detail/referer-control/hnkcfpcejkafcihlgbojoidoihckciin/) (Control the HTTP Referer on a per-site basis • Alternatives: Smart Referer, RefControl, [Web Developer](https://en.wikipedia.org/wiki/Web_Developer_%28software%29))
 
 
 ### All-in-One anti-fingerprinting solutions
