@@ -18,7 +18,6 @@ Most core developers are Google employees, you can easily see this in their bug 
 A fork means that Google takes the original source code of Chromium and they adding some bits of code and tools (like for example Flash Player (now removed), RLZ etc) Google Chrome itself is either open-source nor proprietary, it's freeware under [Google Chrome's Terms of Service](https://www.google.com/intl/en/chrome/browser/privacy/eula_text.html). Googles Privacy policy can be reviewed [here](https://policies.google.com/privacy?hl=en).
 
 
-
 ## Performance (Overall)
 
 | Feature        | Chrome           | Firefox Quantum  | Description |
@@ -324,7 +323,7 @@ MS did a good job with Edge, however the new Edge (Chromium based) seems even be
 * [Microsoft Edge Insider Channels](https://www.microsoftedgeinsider.com/en-us/download/) + ([Source Code](https://github.com/MicrosoftEdge/MSEdge))
 * [NoScript whitelist](https://github.com/CHEF-KOCH/NoScript-Whitelist)
 * [Official Chromium Security tracker](https://bugs.chromium.org/p/chromium/issues/list?q=Type%3DBug-Security)
-* [Official Google Chrome Group Policy Templates](https://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip)
+* [Official Google Chrome Group Policy Templates & Guidance](https://www.chromium.org/administrators/policy-templates)
 * [Official System Hardening Guide](https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/system-hardening)
 * [Opt-out/opt-in selective on every Google Service](https://takeout.google.com)
 * [POTARC](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List)
