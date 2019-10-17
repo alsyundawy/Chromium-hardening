@@ -91,6 +91,7 @@ Feature | Comment/setting
 [#disallow-doc-written-script-loads](chrome://flags/#disallow-doc-written-script-loads) | **Recommend !**
 [#drag-to-pin-tabs](chrome://flags/#drag-to-pin-tabs]) | _optional_
 [#enable-appcontainer](chrome://flags/#enable-appcontainer) | [**Recommend !**](https://blog.chromium.org/2019/09/experimenting-with-same-provider-dns.html)
+[#ForcedColors](chrome://flags/#ForcedColors) | _usability_ (_[optional](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/Accessibility/HighContrast/explainer.md)!_)
 [#enable-autofill-credit-card-ablation-experiment](chrome://flags/#enable-autofill-credit-card-ablation-experiment) | //
 [#enable-block-tab-unders](chrome://flags/#enable-block-tab-unders) | //
 [#enable-brotli](chrome://flags/#enable-brotli) | //
@@ -184,6 +185,7 @@ Feature | Comment or setting
 
 Feature | Comment or setting
 ------------ | -------------
+[#edge-ForcedColors](edge://flags/#ForcedColors) | Enabled (_usability_)
 [#enable-aura-tooltips-on-windows](edge://flags/#enable-aura-tooltips-on-windows) | [Aura Dark Mode Tooltips](https://mspoweruser.com/microsofts-latest-flag-improves-dark-mode-implementation-on-chromium-based-edge/)
 [#edge-cdm-override-service](edge://flags/#edge-cdm-override-service) | Enabled (Default)
 [#edge-controls](edge://flags/#edge-controls) | Enabled (Default)
