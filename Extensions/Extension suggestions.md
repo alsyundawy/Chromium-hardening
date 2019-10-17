@@ -31,9 +31,10 @@
 
 ### Fonts
 * [BP Privacy Block All Font and Glyph Detection](https://chrome.google.com/webstore/detail/bp-privacy-block-all-font/bfoidacjeobbnkpoemlfllfmmnbogcig) (the author offers [AIO solutions for FF/CHrome](https://www.browserplugs.com/))
+* [Font Rendering Enhancer](https://chrome.google.com/webstore/detail/font-rendering-enhancer/hmbmmdjlcdediglgfcdkhinjdelkiock)
 
 
-### CAPTCHA Solver
+### CAPTCHA ~~Solver~~ Helper
 * [Buster](https://chrome.google.com/webstore/detail/buster-captcha-solver-for/mpbjkejclgfgadiemmefgebjfooflfhl)
 * [Cloudhole](https://addons.mozilla.org/en-US/firefox/addon/cloudhole/?src=cb-dl-updated) - only for Firefox (atm)
 * [Privacy Pass](https://privacypass.github.io/faq/)
