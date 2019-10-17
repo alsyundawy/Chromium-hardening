@@ -183,6 +183,8 @@ Feature | Comment or setting
 
 ### Microsoft Edge (Chromium) specific [edge://flags]
 
+Most Chromium based flags for Edge are explained over [here](https://github.com/MicrosoftEdge/MSEdgeExplainers). The project basically explains what each flag does (with Info, Screenshots & more).
+
 Feature | Comment or setting
 ------------ | -------------
 [#edge-ForcedColors](edge://flags/#ForcedColors) | Enabled (_usability_)
