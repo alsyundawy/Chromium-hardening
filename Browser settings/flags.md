@@ -55,6 +55,7 @@
 * #omnibox-drive-suggestions (disable)
 * #enable-speculative-service-worker-start-on-query-input (disabled + performance/fingerprinting reasons)
 * #use-new-accept-language-header (disabled)
+* #data-saver-server-previews (disabled)
 
 
 ## Performance (only) flags (enabled)
@@ -65,7 +66,6 @@
 * Enable doodles on the local NTP (disable)
 * Enable search suggestions on the local NTP (disable)
 * #enable-layout-ng
-* #data-saver-server-previews
 
 
 ## Advertising (only) flags (enabled)
@@ -284,4 +284,3 @@ This example will configure Chrome to use Cloudflares DoH server. To test if DoH
 There is some traffic caused for NTP lookups, this can be disabled with the following trick:
 * Change your default search engine to "Startpage" and remove all other search engines in your lists.
 * Enable or disable the following flags `Enable using the Google local NTP`, `Enable doodles on the local NTP` (disable), `Enable search suggestions on the local NTP` (disable), `Top Sites from Site Engagement` (disable), `Disable minimum for server-side tile suggestions on NTP` (disable) & `Enable promos on the local NTP` (disable).
-
