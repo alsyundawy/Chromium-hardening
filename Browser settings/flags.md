@@ -56,6 +56,7 @@
 * #enable-speculative-service-worker-start-on-query-input (disabled + performance/fingerprinting reasons)
 * #use-new-accept-language-header (disabled)
 * #data-saver-server-previews (disabled)
+* #tab-hover-cards (disabled)
 
 
 ## Performance (only) flags (enabled)
@@ -169,6 +170,7 @@ Feature | Comment or setting
 [#safe-search-url-reporting](chrome://flags/#safe-search-url-reporting) | //
 [#show-autofill-type-predictions](chrome://flags/#show-autofill-type-predictions) | //
 [#show-managed-ui](chrome://flags/#show-managed-ui) | //
+[#tab-hover-cards](chrome://flags/#tab-hover-cards) | //
 [#enable-javascript-harmony](chrome://flags/#enable-javascript-harmony) | //
 
 
