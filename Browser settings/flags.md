@@ -31,8 +31,9 @@
 
 ### Privacy (only) flags (enabled)
 * #enable-webrtc-hide-local-ips-with-mdns
+* #dns-over-https
 * #disable-hyperlink-auditing (outdated)
-* Enable search suggestions on the local NTP (disable) (outdated)
+* ~~Enable search suggestions on the local NTP (disable) (outdated)~~
 * #reduced-referrer-granuarity
 * Anonymize local IPs exposed by WebRTC (outdated)
 * #search-results-extensions-block-v2 (Opera only)
