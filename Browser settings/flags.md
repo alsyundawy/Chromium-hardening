@@ -1,5 +1,5 @@
 ### Warning
-**You shouldn't use flags to configure Chrome because they're not supported. Instead, configure Chrome for your [enterprise or organization using policies](https://support.google.com/chrome/a/answer/9037717) (chrome://policy).** The original page was [removed](https://www.chromium.org/administrators/policy-list-3/atomic/_groups).  - Statement from a Google Marketing Manager (_not my own!_).
+**You shouldn't use flags to configure Chrome because they're not supported. Instead, configure Chrome for your [enterprise or organization using policies](https://support.google.com/chrome/a/answer/9037717) (chrome://policy).** The original page was [removed](https://www.chromium.org/administrators/policy-list-3/atomic/_groups).  - Statement is from a Google Marketing Manager (_not my own!_).
 
 
 ### Flags (depending which OS/Chrome version)
@@ -183,7 +183,7 @@ Feature | Comment or setting
 [#enable-android-spellchecker](chrome://flags/#enable-android-spellchecker) | Enabled
 [#enable-site-isolation-for-password-sites](chrome://flags/#enable-site-isolation-for-password-sites) | Enabled (v74+)
 
-### Microsoft Edge (Chromium) specific [edge://flags]
+### [Microsoft Edge (Chromium)](https://blogs.windows.com/windowsexperience/2019/11/04/introducing-the-new-microsoft-edge-and-bing/) specific [edge://flags]
 
 Most Chromium based flags for Edge are explained over [here](https://github.com/MicrosoftEdge/MSEdgeExplainers). The project basically explains what each flag does (with Info, Screenshots & more).
 
@@ -194,6 +194,7 @@ Feature | Comment or setting
 [#edge-cdm-override-service](edge://flags/#edge-cdm-override-service) | Enabled (Default)
 [#edge-controls](edge://flags/#edge-controls) | Enabled (Default)
 [#edge-cookie-import](edge://flags/#edge-cookie-import) | Disabled
+[#edge-dns-over-https]((edge://dns-over-https) | **Recommend !**, see here [why](https://en.wikipedia.org/wiki/DNS_over_HTTPS)
 [#edge-experimental-scrolling](edge://flags/#edge-experimental-scrolling) | Disabled
 [#edge-follow-os-theme](edge://flags/#edge-follow-os-theme) | Enabled (Default)
 [#edge-installation-of-extensions-from-microsoft-store](edge://flags/#edge-installation-of-extensions-from-microsoft-store) | Enabled (Default)
@@ -205,6 +206,7 @@ Feature | Comment or setting
 [#edge-widevine-drm](edge://flags/#edge-widevine-drm) | Disabled, will break Netflix!
 [#edge-reading-view-grammar-tools](edge://flags/#edge-reading-view-grammar-tools) | Grammar Tools
 [#enable-force-dark](edge://flags/#enable-force-dark) | //
+
 
 #### Other Edge "Tweaks"
 
