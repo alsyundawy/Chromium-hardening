@@ -271,6 +271,7 @@ Feature | Deprecated or removed since
 #sound-content-setting | v70
 #stop-in-background | v70
 #voice-search-on-local-ntp | v70
+#allow-running-insecure-content | [v81](https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html)
 
 
 ### DNS-over-HTTPS
