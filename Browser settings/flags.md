@@ -58,6 +58,7 @@
 * #use-new-accept-language-header (disabled)
 * #data-saver-server-previews (disabled)
 * #tab-hover-cards (disabled)
+* #enable-filesystem-in-incognito
 
 
 ## Performance (only) flags (enabled)
@@ -206,7 +207,8 @@ Feature | Comment or setting
 [#edge-user-agent-spoofing-service](edge://flags/#edge-user-agent-spoofing-service) | Enabled
 [#edge-widevine-drm](edge://flags/#edge-widevine-drm) | Disabled, will break Netflix!
 [#edge-reading-view-grammar-tools](edge://flags/#edge-reading-view-grammar-tools) | Grammar Tools
-[#enable-force-dark](edge://flags/#enable-force-dark) | //
+[#enable-force-dark](edge://flags/#enable-force-dark) | Enforce use of "Dark Mode"
+[#global-media-controls](edge://flags/#global-media-controls) | Enable media control buttons
 
 
 #### Other Edge "Tweaks"
