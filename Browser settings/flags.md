@@ -174,6 +174,10 @@ Feature | Comment or setting
 [#show-managed-ui](chrome://flags/#show-managed-ui) | //
 [#tab-hover-cards](chrome://flags/#tab-hover-cards) | //
 [#enable-javascript-harmony](chrome://flags/#enable-javascript-harmony) | //
+[#web-contents-occlusion](chrome://flags/#web-contents-occlusion) | //
+[#calculate-native-win-occlusion](chrome://flags/#calculate-native-win-occlusion) | //
+
+
 
 
 ### Android specific
