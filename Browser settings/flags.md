@@ -11,6 +11,8 @@
 
 
 ### Security (only) flags (enabled)
+* #enable-sync-uss-nigori (only if your use Browser sync!)
+* (_optional_) #password-leak-detection (or use HaveIBeenPwned website/extension via KeePass, enabling this option will cause more traffic due to password checks (if some are stored in the database)
 * #extension-content-verification
 * #disallow-doc-written-script-loads
 * #enable-appcontainer
@@ -30,6 +32,15 @@
 
 
 ### Privacy (only) flags (enabled)
+* #device-discovery-notifications
+* #prefetch-privacy-changes
+* #enable-sharing-device-registration
+* #sharing-use-device-info
+* #enable-removing-all-third-party-cookies
+* #enterprise-reporting-in-browser (disabled)
+* #autofill-prune-suggestions (if autofill was enabled)
+* #turn-off-streaming-media-caching
+* #improved-cookie-controls
 * #enable-webrtc-hide-local-ips-with-mdns
 * #dns-over-https
 * #disable-hyperlink-auditing (outdated)
@@ -59,23 +70,27 @@
 * #data-saver-server-previews (disabled)
 * #tab-hover-cards (disabled)
 * #enable-filesystem-in-incognito
+* #passwords-account-storage (disabled) (use KeePass instead and disable all "Gaia account features")
 
 
 ## Performance (only) flags (enabled)
-* GPU rasterization
-* Enable lazy image loading
-* Enable lazy frame loading
+* #animated-avatar-button (disabled)
+* #enable-gpu-rasterization
+* #enable-lazy-image-loading
+* #enable-lazy-frame-loading
 * #enable-parallel-downloading
-* Enable doodles on the local NTP (disable)
-* Enable search suggestions on the local NTP (disable)
+* ~~Enable doodles on the local NTP (disable)~~ (outdated)
+* ~~Enable search suggestions on the local NTP (disable)~~ (outdated)
 * #enable-layout-ng
+* #d3d11-video-decoder
 
 
 ## Advertising (only) flags (enabled)
-* App Banners (disabled)
-* Autoplay policy (document user activation required)
-* Enable promos on the local NTP (disabled)
-* User Activation V2 (disabled)
+* ~~App Banners (disabled)~~ (outdated)
+* ~~Autoplay policy (document user activation required)~~ (outdated)
+* ~~Enable promos on the local NTP (disabled)~~ (outdated)
+* ~~User Activation V2 (disabled)~~ (outdated)
+* #happiness-tracking-surveys-for-desktop-demo (disabled)
 
 
 ### Enabled
@@ -176,6 +191,8 @@ Feature | Comment or setting
 [#enable-javascript-harmony](chrome://flags/#enable-javascript-harmony) | //
 [#web-contents-occlusion](chrome://flags/#web-contents-occlusion) | //
 [#calculate-native-win-occlusion](chrome://flags/#calculate-native-win-occlusion) | //
+[#enable-experimental-productivity-features](chrome://flags/#enable-experimental-productivity-features) | //
+[#new-tabstrip-animation](chrome://flags/#new-tabstrip-animation) | //
 
 
 
@@ -278,7 +295,7 @@ Feature | Deprecated or removed since
 #stop-in-background | v70
 #voice-search-on-local-ntp | v70
 #allow-running-insecure-content | [v81](https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html)
-
+##temporary-unexpire-flags-m76 | 80
 
 ### DNS-over-HTTPS
  
