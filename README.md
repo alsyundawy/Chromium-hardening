@@ -33,6 +33,7 @@ A fork means that Google takes the original source code of Chromium and they add
 
 ### Independent performance tests
 * [A Quick Look At The Firefox 66.0 vs. Chrome 73.0 Performance Benchmarks (phoronix.com)](https://www.phoronix.com/scan.php?page=news_item&px=Firefox-66-Chrome-73-Benchmarks)
+* [Firefox vs. Chrome Browser Performance On Intel Ice Lake + Power/Memory Usage Tests (phoronix.com)](https://www.phoronix.com/scan.php?page=article&item=firefox-chrome-icelake&num=7)
 
 
 ## Privacy & Security Scandals
