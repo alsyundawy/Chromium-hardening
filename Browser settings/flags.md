@@ -3,7 +3,7 @@
 
 
 ### Flags (depending which OS/Chrome version)
-* Chrome 78: //
+* Chrome 78: 282
 * Chrome 77: 302
 * Chrome 76: 307
 * Chrome 75: 311
@@ -97,6 +97,7 @@
 
 Feature | Comment/setting
 ------------ | -------------
+[#use-angle](chrome://flags/#use-angle) | D3D11on12 **Recommend !*
 [#automatic-tab-discarding](chrome://flags/#automatic-tab-discarding) | //
 [#autoplay-policy](chrome://flags/#autoplay-policy) | Document user activation is required.
 [#clipboard-content-setting](chrome://flags/#clipboard-content-setting) | //
