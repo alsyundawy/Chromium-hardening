@@ -231,6 +231,7 @@ Feature | Comment or setting
 [#edge-reading-view-grammar-tools](edge://flags/#edge-reading-view-grammar-tools) | Grammar Tools
 [#enable-force-dark](edge://flags/#enable-force-dark) | Enforce use of "Dark Mode"
 [#global-media-controls](edge://flags/#global-media-controls) | Enable media control buttons
+[#edge-enable-shy-ui](edge://flags/#edge-enable-shy-ui) | Fullscreen Dropdown (_matter of taste_)
 
 
 #### Other Edge "Tweaks"
