@@ -1,0 +1,36 @@
+# Chrome (Chromium) 78.0.3904.97
+# All features enabled (sync etc)
+# EXCLUDING sub-spooled domains for e.g. sync or Chromecast.
+#
+0.0.0.0 172.217.130.9 
+0.0.0.0 accounts.google.com
+0.0.0.0 fonts.gstatic.com
+0.0.0.0 fra15s24-in-f238.1e100.net
+0.0.0.0 fra15s46-in-f3.1e100.net
+0.0.0.0 fra16s12-in-f13.1e100.net
+0.0.0.0 fra16s13-in-f227.1e100.net
+0.0.0.0 fra16s20-in-f4.1e100.net
+0.0.0.0 hsdmpfy
+0.0.0.0 huuqjdqtnjj
+0.0.0.0 r4---sn-h0jeened.gvt1.com
+0.0.0.0 redirector.gvt1.com
+0.0.0.0 vypmecteapc
+0.0.0.0 www.google.com
+0.0.0.0 www.gstatic.com
+
+# Brave
+# Excluding or and their own anti-google proxy or ad-blocker connections.
+0.0.0.0 104.28.23.242
+0.0.0.0 151.101.113.7
+0.0.0.0 151.101.114.217
+0.0.0.0 aqkslhfmwv
+0.0.0.0 brave-core-ext.s3.brave.com
+0.0.0.0 componentupdater.brave.com
+0.0.0.0 crlsets.brave.com
+0.0.0.0 go-updater.brave.com
+0.0.0.0 laptop-updates.brave.com
+0.0.0.0 mkidosnkaqqulg
+0.0.0.0 no-thanks.invalid
+0.0.0.0 static.brave.com
+0.0.0.0 static1.brave.com
+0.0.0.0 vgjrddw
