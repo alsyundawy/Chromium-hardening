@@ -11,6 +11,9 @@ Dev
 
 Windows
 --------------
+
+ Starting with 77.0.234.0 how to enable Windows OS Spellchecker `edge://flags/#win-use-native-spellchecker`.
+
 Canary
 * `http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/f4099050-e168-4b0c-9ae3-1ed353ec0486?P1=1555764601&P2=402&P3=2&P4=ZMXei6LNRzOtq0N59ZRnGWSgb1c1vX400i9svGbAQGDbgulUp23%2fGUX7%2bQp3P0IPiRixJQVlq5XGmHG%2bsa1Q9A%3d%3d`
 
@@ -19,8 +22,13 @@ Dev
 * `http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e88bee66-e036-4740-8d67-d9f9042009e8?P1=1557363860&P2=402&P3=2&P4=UYitwtY09unqqGKv0iM%2f66AbYbIJyljmwm3rbQZLo3O1fBM7BBLcWZkwP7a0BmX0nu0vSgIB6j3Zw9%2fSjdOt6g%3d%3d`
 
 
-Beta
-* - None -
+Dev Offline Installer
+* [MicrosoftEdgeDevEnterpriseX64.msi](https://go.microsoft.com/fwlink/?LinkID=2093291)
+* [MicrosoftEdgeDevEnterpriseX86.msi](https://go.microsoft.com/fwlink/?LinkID=2093436)
+
+
+Release Candidate
+* https://www.microsoftedgeinsider.com/en-us/enterprise - The official roadmap can be found over [here](https://blogs.windows.com/msedgedev/2019/07/16/microsoft-edge-enterprise-evaluation-roadmap/#oe2PuqSTS3mYvoGV.97).
 
 
 ARM
@@ -78,9 +86,29 @@ Create a new folder and place every other language into it EXCEPT the one you li
 * After you changed the language you might get DPI problems (e.g. the menu is to wide). That's a _known problem_ and depending which DPI you set for your fonts.
 
 
-Download links
---------------
+### Official Landing page
 
 * https://32767.ga/edge/
+* https://www.microsoftedgeinsider.com/en-us/download
 * https://chromium.googlesource.com/chromium/reference_builds/chrome_win/+/f4b7e74a777e85405b284a55ce6e3d798bca7159/locales (language packs)
+* https://twitter.com/MSEdgeDev
 * https://www.microsoftedgeinsider.com/en-us/download/
+
+
+
+### Policy Templates
+* https://go.microsoft.com/fwlink/?LinkID=2093293 (.cab)
+* ~~https://techcommunity.microsoft.com/gxcuf89792/attachments/gxcuf89792/EdgeInsiderDiscussions/5164/1/Microsoft%20Edge%20(Insider)%20AdministrativeTemplate.zip (.zip)~~ (_removed by MS and replaced with .cab)
+
+
+### Blog
+* https://techcommunity.microsoft.com/t5/Discussions/Early-preview-of-Microsoft-Edge-group-policies/m-p/693929
+* [Blog listing what is new for Canary channel](https://techcommunity.microsoft.com/t5/Discussions/Canary-channel-update-to-80-0-319-0-is-live/m-p/968799)
+* [Blog listing what is new for Dev channel](https://techcommunity.microsoft.com/t5/Discussions/Dev-channel-update-to-80-0-334-2-is-live/m-p/1018372)
+* [New Tab Page Walkthrough](https://techcommunity.microsoft.com/t5/Articles/New-Tab-Page-Walkthrough/m-p/480053#M550)
+
+
+### Change log
+The Edge Insider Team continues to add new info to this page:
+* https://www.microsoftedgeinsider.com/en-us/whats-new
+* https://www.microsoftedgeinsider.com/en-us/welcome/update?channel=stable&version=76.0.182.6
