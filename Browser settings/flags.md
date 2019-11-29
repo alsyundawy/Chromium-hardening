@@ -233,7 +233,7 @@ Feature | Comment or setting
 [#global-media-controls](edge://flags/#global-media-controls) | Enable media control buttons
 [#edge-enable-shy-ui](edge://flags/#edge-enable-shy-ui) | Fullscreen Dropdown (_matter of taste_)
 [#edge-ee-spinner-on-site-card](#edge://flags/#edge-ee-spinner-on-site-card) | **Recommend !**
-
+[#mixed-content-setting](#edge://flags/#mixed-content-setting) | **Recommend !**
 
 #### Other Edge "Tweaks"
 
