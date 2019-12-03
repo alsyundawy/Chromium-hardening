@@ -235,9 +235,10 @@ Feature | Comment or setting
 [#edge-ee-spinner-on-site-card](#edge://flags/#edge-ee-spinner-on-site-card) | **Recommend !**
 [#mixed-content-setting](#edge://flags/#mixed-content-setting) | **Recommend !**
 
-#### Other Edge "Tweaks"
+#### Other MS Edge (Chromium) "Tweaks"
 
 * In order to **enable the new Extensions Menu**, create a shortcut or edit the existing shortcut `--enable-features=ExtensionsToolbarMenu` The example should then look like this: `msedge.exe --enable-features=ExtensionsToolbarMenu`.
+* [Improving Tracking Prevention in Microsoft Edge](https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79/#s7m17j2ibI4KAxAz.97)
 
 
 
