@@ -19,6 +19,8 @@
 * [Chrome extension source viewer](https://chrome.google.com/webstore/detail/chrome-extension-source-v/jifpbeccnghkjeaalbbjmodiffmgedin)
 * ~~[WebAPI Manager](https://github.com/snyderp/web-api-manager)~~ or [Trace](https://absolutedouble.co.uk/trace/)
 * [Force HTTPS](https://chrome.google.com/webstore/detail/force-https-for-all-traff/dpipdndjcofdfhknlfloeokjiooiojoo)
+* [Terms of Service; Didn't Read](https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg)
+* [Opt-out of data collection](https://yourdigitalrights.org/?source=optouteu) [source code website](https://github.com/opt-out-eu/yourdigitalrights.org) + [extension/addon](https://github.com/opt-out-eu/opt-out-web-extensions)
 
 
 ### Referer Control
