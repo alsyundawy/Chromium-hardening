@@ -150,7 +150,8 @@ Feature | Comment/setting
 [#overlay-scrollbars](chrome://flags/#overlay-scrollbars) | **Recommend !**
 [#overlay-scrollbars-flash-after-scroll-update](chrome://flags/#overlay-scrollbars-flash-after-scroll-update) | **Recommend !**
 [#overlay-scrollbars-flash-when-mouse-enter](chrome://flags/#overlay-scrollbars-flash-when-mouse-enter) | **Recommend !**
-[new-tab-button-position](chrome://flags/#new-tab-button-positio) | **Recommend !** (_optional_)
+[#new-tab-button-position](chrome://flags/#new-tab-button-position) | **Recommend !** (_optional_)
+[#proactive-tab-freeze](chrome://flags/#proactive-tab-freeze) | **Recommend !** (_optional_)
 
 
 ### Disabled
