@@ -3,6 +3,7 @@
 
 
 ### Flags (depending which OS/Chrome version)
+* Chrome 80:  
 * Chrome 79: 273
 * Chrome 78: 282
 * Chrome 77: 302
@@ -236,6 +237,7 @@ Feature | Comment or setting
 [#edge-enable-shy-ui](edge://flags/#edge-enable-shy-ui) | Fullscreen Dropdown (_matter of taste_)
 [#edge-ee-spinner-on-site-card](#edge://flags/#edge-ee-spinner-on-site-card) | **Recommend !**
 [#mixed-content-setting](#edge://flags/#mixed-content-setting) | **Recommend !**
+[#edge-collections](#edge://flags/#edge-collections) | (_optional_)
 
 #### Other MS Edge (Chromium) "Tweaks"
 
