@@ -1,3 +1,12 @@
+Blocker Toolkit to disable automatic delivery of Microsoft Edge
+--------------
+
+Microsoft will distribute Microsoft Edge (Chromium-based) through Automatic Updates for Windows 10 RS4 (1803) and newer.
+
+* https://docs.microsoft.com/en-us/deployedge/microsoft-edge-blocker-toolkit
+
+
+
 MacOS
 --------------
 Canary
@@ -7,7 +16,8 @@ Canary
 Dev
 * `https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-76.0.151.0.pkg`
 
-
+Stable:
+* http://go.microsoft.com/fwlink/?LinkID=2093438
 
 Windows
 --------------
@@ -29,6 +39,14 @@ Dev Offline Installer
 
 Release Candidate
 * https://www.microsoftedgeinsider.com/en-us/enterprise - The official roadmap can be found over [here](https://blogs.windows.com/msedgedev/2019/07/16/microsoft-edge-enterprise-evaluation-roadmap/#oe2PuqSTS3mYvoGV.97).
+
+
+Stable (x64.msi)
+* http://go.microsoft.com/fwlink/?LinkID=2093437
+
+Stable (x86.msi)
+* http://go.microsoft.com/fwlink/?LinkID=2093505
+
 
 
 ARM
@@ -97,7 +115,8 @@ Create a new folder and place every other language into it EXCEPT the one you li
 
 
 ### Policy Templates
-* https://go.microsoft.com/fwlink/?LinkID=2093293 (.cab)
+* http://go.microsoft.com/fwlink/?LinkID=2099616 (.cab)
+* http://go.microsoft.com/fwlink/?LinkID=2099617 (_MicrosoftEdgeIntunePolicyTemplate.cab_)
 * ~~https://techcommunity.microsoft.com/gxcuf89792/attachments/gxcuf89792/EdgeInsiderDiscussions/5164/1/Microsoft%20Edge%20(Insider)%20AdministrativeTemplate.zip (.zip)~~ (_removed by MS and replaced with .cab)
 
 
