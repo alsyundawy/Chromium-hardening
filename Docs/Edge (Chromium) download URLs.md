@@ -9,37 +9,38 @@ Microsoft will distribute Microsoft Edge (Chromium-based) through Automatic Upda
 
 MacOS
 --------------
-Canary
-* `https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeCanary-76.0.151.0.pkg`
 
-
-Dev
-* `https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/MicrosoftEdgeDev-76.0.151.0.pkg`
+All builds for MacOS:
+* https://www.microsoftedgeinsider.com/en-us/download/?platform=macos
 
 Stable:
 * http://go.microsoft.com/fwlink/?LinkID=2093438
 
+
 Windows
 --------------
 
- Starting with 77.0.234.0 how to enable Windows OS Spellchecker `edge://flags/#win-use-native-spellchecker`.
-
-Canary
-* `http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/f4099050-e168-4b0c-9ae3-1ed353ec0486?P1=1555764601&P2=402&P3=2&P4=ZMXei6LNRzOtq0N59ZRnGWSgb1c1vX400i9svGbAQGDbgulUp23%2fGUX7%2bQp3P0IPiRixJQVlq5XGmHG%2bsa1Q9A%3d%3d`
+Starting with 77.0.234.0 how to enable Windows OS Spellchecker `edge://flags/#win-use-native-spellchecker`.
 
 
-Dev
-* `http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/e88bee66-e036-4740-8d67-d9f9042009e8?P1=1557363860&P2=402&P3=2&P4=UYitwtY09unqqGKv0iM%2f66AbYbIJyljmwm3rbQZLo3O1fBM7BBLcWZkwP7a0BmX0nu0vSgIB6j3Zw9%2fSjdOt6g%3d%3d`
+ALl download links:
+* microsoftedgeinsider.com/download/win10
+* microsoftedgeinsider.com/download/platform=win8dot1
+* microsoftedgeinsider.com/download/platform=win8
+* microsoftedgeinsider.com/download/platform=win7
 
 
 Dev Offline Installer
+* https://www.microsoftedgeinsider.com/en-us/enterprise
 * [MicrosoftEdgeDevEnterpriseX64.msi](https://go.microsoft.com/fwlink/?LinkID=2093291)
 * [MicrosoftEdgeDevEnterpriseX86.msi](https://go.microsoft.com/fwlink/?LinkID=2093436)
 
 
-Release Candidate
-* https://www.microsoftedgeinsider.com/en-us/enterprise - The official roadmap can be found over [here](https://blogs.windows.com/msedgedev/2019/07/16/microsoft-edge-enterprise-evaluation-roadmap/#oe2PuqSTS3mYvoGV.97).
+Roadmap:
+* The official roadmap can be found over [here](https://blogs.windows.com/msedgedev/2019/07/16/microsoft-edge-enterprise-evaluation-roadmap/#oe2PuqSTS3mYvoGV.97).
 
+Stable:
+* https://go.microsoft.com/fwlink/?linkid=2069324&Channel=Stable (_replace Stable&language=de in the URL with US/GB or to whatever your native language is_)
 
 Stable (x64.msi)
 * http://go.microsoft.com/fwlink/?LinkID=2093437
@@ -104,7 +105,7 @@ Create a new folder and place every other language into it EXCEPT the one you li
 * After you changed the language you might get DPI problems (e.g. the menu is to wide). That's a _known problem_ and depending which DPI you set for your fonts.
 
 
-### Official Landing page
+### Official Landing pages
 
 * https://32767.ga/edge/
 * https://www.microsoftedgeinsider.com/en-us/download
@@ -112,6 +113,9 @@ Create a new folder and place every other language into it EXCEPT the one you li
 * https://twitter.com/MSEdgeDev
 * https://www.microsoftedgeinsider.com/en-us/download/
 
+### Security Baseline (DRAFT) for Edgeium
+* https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-DRAFT-for-Chromium-based-Microsoft-Edge/ba-p/949991 (_Microsoft Edge v78.zip_)
+* https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-DRAFT-for-Chromium-based-Microsoft-Edge/ba-p/1066051 (_Microsoft Edge v79.zip, see [blog post](https://blogs.windows.com/msedgedev/2019/12/18/security-baseline-draft-edge-79/)_)
 
 
 ### Policy Templates
