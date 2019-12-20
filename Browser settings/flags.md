@@ -120,7 +120,7 @@ Feature | Comment/setting
 [#clipboard-content-setting](https://flags/#clipboard-content-setting) | //
 [#cookies-without-same-site-must-be-secure](https://flags/#cookies-without-same-site-must-be-secure) | **Recommend !** See [here](https://scotthelme.co.uk/csrf-is-really-dead/)
 [#cross-origin-embedder-policy](https://flags/#cross-origin-embedder-policy) | **Recommend !**
-[#disable-javascript-harmony-shipping](https://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
+[#disable-javascript-harmony-shipping](https://flags/#disable-javascript-harmony-shipping) | (Enabled [Default])
 [#disallow-doc-written-script-loads](https://flags/#disallow-doc-written-script-loads) | **Recommend !**
 [#disallow-unsafe-http-downloads](https://flags/#disallow-unsafe-http-downloads) | **Recommend !**
 [#dns-over-https](https://flags/#dns-over-https) | **Recommend !**
@@ -180,11 +180,11 @@ Feature | Comment or suggestion
 [#account-consistency](https://flags/#account-consistency) | //
 [#allow-previews](https://flags/#allow-previews) | //
 [#allow-sxg-certs-without-extension](https://flags/#allow-sxg-certs-without-extension) | //
-[#autofill-always-return-cloud-tokenized-card](chrome://flags/#autofill-always-return-cloud-tokenized-card) | //
-[#back-forward-cache](chrome://flags/#back-forward-cache) | // (_possible breakage_)
+[#autofill-always-return-cloud-tokenized-card](https://flags/#autofill-always-return-cloud-tokenized-card) | //
+[#back-forward-cache](https://flags/#back-forward-cache) | // (_possible breakage_)
 [#calculate-native-win-occlusion](https://flags/#calculate-native-win-occlusion) | //
-[#click-to-call-context-menu-selected-text](chrome://flags/#click-to-call-context-menu-selected-text) | //
-[#click-to-call-ui](chrome://flags/#click-to-call-ui) | //
+[#click-to-call-context-menu-selected-text](https://flags/#click-to-call-context-menu-selected-text) | //
+[#click-to-call-ui](https://flags/#click-to-call-ui) | //
 [#data-saver-server-previews](https://flags/#data-saver-server-previews) | //
 [#device-discovery-notifications](https://flags/#device-discovery-notifications) | //
 [#enable-ambient-authentication-in-incognito](https://flags/#enable-ambient-authentication-in-incognito | //
@@ -214,17 +214,17 @@ Feature | Comment or suggestion
 [#new-tab-loading-animation](https://flags/#new-tab-loading-animation) | ([optional](https://old.reddit.com/r/chrome/comments/ahxx8c/new_tab_loading_animation/))
 [#new-tabstrip-animation](https://flags/#new-tabstrip-animation) | //
 [#new-usb-backend](https://flags/#new-usb-backend) | //
-[#ntp-realbox](chrome://flags/#ntp-realbox) | //
-[#omnibox-disable-instant-extended-limit](chrome://flags/#omnibox-disable-instant-extended-limit) | //
+[#ntp-realbox](https://flags/#ntp-realbox) | //
+[#omnibox-disable-instant-extended-limit](https://flags/#omnibox-disable-instant-extended-limit) | //
 [#omnibox-drive-suggestions](https://flags/#omnibox-drive-suggestions) | Workaround for a bug
 [#omnibox-rich-entity-suggestion](https://flags/#omnibox-rich-entity-suggestion) | Since 74.0.3729.169 enabled
 [#omnibox-ui-hide-steady-state-url-scheme-and-subdomains](https://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains) | //
 [#omnibox-ui-hide-steady-state-url-scheme](https://flags/#omnibox-ui-hide-steady-state-url-scheme) | hides https:// only
 [#omnibox-ui-hide-steady-state-url-trivial-subdomains](https://flags/#omnibox-ui-hide-steady-state-url-trivial-subdomains) | hides www only
-[#omnibox-zero-suggestions-on-ntp](chrome://flags/#omnibox-zero-suggestions-on-ntp) | //
-[#omnibox-zero-suggestions-on-serp](chrome://flags/#omnibox-zero-suggestions-on-serp) | //
+[#omnibox-zero-suggestions-on-ntp](https://flags/#omnibox-zero-suggestions-on-ntp) | //
+[#omnibox-zero-suggestions-on-serp](https://flags/#omnibox-zero-suggestions-on-serp) | //
 [#pdf-form-save](https://flags/#pdf-form-save) | //
-[#percent-based-scrolling](chrome://flags/#percent-based-scrolling) | // (_possible breakage_)
+[#percent-based-scrolling](https://flags/#percent-based-scrolling) | // (_possible breakage_)
 [#reduced-referrer-granularity](https://flags/#reduced-referrer-granularity) | //
 [#safe-search-url-reporting](https://flags/#safe-search-url-reporting) | //
 [#safety-tips](https://flags/#safety-tips) | //
@@ -232,9 +232,9 @@ Feature | Comment or suggestion
 [#show-autofill-type-predictions](https://flags/#show-autofill-type-predictions) | //
 [#show-managed-ui](https://flags/#show-managed-ui) | //
 [#tab-hover-cards](https://flags/#tab-hover-cards) | //
-[#use-new-accept-language-header](chrome://flags/#ntp-realbox) | //
-[#username-first-flow](chrome://flags/#username-first-flow) | //
-[#web-bundles](chrome://flags/#web-bundles) | //
+[#use-new-accept-language-header](https://flags/#ntp-realbox) | //
+[#username-first-flow](https://flags/#username-first-flow) | //
+[#web-bundles](https://flags/#web-bundles) | //
 
 
 
@@ -258,7 +258,7 @@ Feature | Comment or setting
 [#edge-cdm-override-service](edge://flags/#edge-cdm-override-service) | Enabled (Default)
 [#edge-controls](edge://flags/#edge-controls) | Enabled (Default)
 [#edge-cookie-import](edge://flags/#edge-cookie-import) | Disabled
-[#edge-dns-over-https]((edge://dns-over-https) | Disabled due to privacy/ad-blocking reasons!
+[#edge-dns-over-https](edge://dns-over-https) | Disabled due to privacy/ad-blocking reasons!
 [#edge-experimental-scrolling](edge://flags/#edge-experimental-scrolling) | Disabled
 [#edge-follow-os-theme](edge://flags/#edge-follow-os-theme) | Enabled (Default)
 [#edge-installation-of-extensions-from-microsoft-store](edge://flags/#edge-installation-of-extensions-from-microsoft-store) | Enabled (Default)
@@ -303,13 +303,13 @@ Feature | Reason
 
 Feature | Deprecated or removed since
 ------------ | -------------
-#enable-appcontainer | v78
-#PasswordExport | v77
-#PasswordImport | v77
+#allow-running-insecure-content | [v81](https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html)
 #disable-hyperlink-auditing | v73
+#enable-appcontainer | v78
 #enable-autofill-credit-card-last-used-date-display | v76
 #enable-autofill-credit-card-upload-send-detected-values | v75
 #enable-av1-decoder | v74
+#enable-block-tab-unders | 78+
 #enable-desktop-ios-promotions | v74
 #enable-fast-unload | v74
 #enable-filesystem-in-icognito | v74
@@ -332,15 +332,16 @@ Feature | Deprecated or removed since
 #important-sites-in-cbd | v77
 #new-audio-rendering-mixing-strategy | v78
 #ntp-ui-md | v70
+#PasswordExport | v77
+#PasswordImport | v77
 #secondary-ui-md | v71
 #show-saved-copy | v71
 #simplified-fullscreen-ui | v70
 #simplified-fullscreen-ui | v71
 #sound-content-setting | v70
 #stop-in-background | v70
+#temporary-unexpire-flags-m76 | 80
 #voice-search-on-local-ntp | v70
-#allow-running-insecure-content | [v81](https://security.googleblog.com/2019/10/no-more-mixed-messages-about-https_3.html)
-##temporary-unexpire-flags-m76 | 80
 
 ### DNS-over-HTTPS
 
