@@ -17,6 +17,7 @@
 * #block-unsafe-downloads-over-insecure-connections
 * #disallow-doc-written-script-loads
 * #disallow-unsafe-http-downloads
+* #disallow-unsafe-http-downloads
 * #edge-limit-media-autoplay (will be removed, edge only)
 * #edge-strict-origin-isolation (replaces app container lockdown)
 * #enable-appcontainer
@@ -32,7 +33,7 @@
 * #treat-unsafe-downloads-as-active-content
 * `--enable-quic` & `--quic-version=h3-23` as command line argument to [enable HTTP/3](https://blog.cloudflare.com/http3-the-past-present-and-future/) See here how to run [Chrome with flags](https://www.chromium.org/developers/how-tos/run-chromium-with-flags).
 * Microsoft Edge tracking prevention (_optional_ - MS Edge + Defender only [via Chrome 75+ with Ent. GPO policy])
-
+* #tls13-hardening-for-local-anchors
 
 
 ### Privacy (only) flags (enabled)
@@ -49,6 +50,7 @@
 * #enable-generic-sensor (disabled, fingerprinting)
 * #enable-history-manipulation-intervention
 * #enable-removing-all-third-party-cookies
+* #enable-safe-browsing-ap-download-verdicts (_disabled_ better use uBlock with a malware filter list_)
 * #enable-sharing-device-registration
 * #enable-speculative-service-worker-start-on-query-input (disabled + performance/fingerprinting reasons)
 * #enable-webrtc-hide-local-ips-with-mdns
@@ -62,6 +64,7 @@
 * #omnibox-drive-suggestions (_disable_)
 * #omnibox-experimental-keyword-mode (_disable_)
 * #omnibox-suggestion-transparency-options
+* #omnibox-zero-suggestions-on-ntp-realbox (_disable_)
 * #passwords-account-storage (disabled) (_use KeePass instead and disable all "Gaia account features"_)
 * #pdf-form-save (disabled)
 * #prefetch-privacy-changes
@@ -78,11 +81,12 @@
 * Disable minimum for server-side tile suggestions on NTP (_disable_) (_outdated_)
 * New history entries require a user gesture (_outdated_)
 * Top Sites from Site Engagement (_disable_) (_outdated_)
-* #enable-safe-browsing-ap-download-verdicts (_disabled_ better use uBlock with a malware filter list_)
+* #webxr-plane-detection (_disable_)
 
 
 ## Performance (only) flags (enabled)
-* #animated-avatar-button (disabled)
+* #animated-avatar-button (_disable_)
+* #cast-media-route-provider (_disable_)
 * #d3d11-video-decoder
 * #enable-gpu-rasterization
 * #enable-layout-ng
@@ -91,6 +95,7 @@
 * #enable-parallel-downloading
 * ~~Enable doodles on the local NTP (_disable_)~~ (_outdated_)
 * ~~Enable search suggestions on the local NTP (_disable_)~~ (_outdated_)
+* #in-product-help-demo-mode-choice (_disable_)
 
 
 ## Advertising (only) flags (enabled)
@@ -114,6 +119,7 @@ Feature | Comment/setting
 [#chrome-custom-color-picker](https://flags/#chrome-colors-custom-color-picker) | //
 [#clipboard-content-setting](https://flags/#clipboard-content-setting) | //
 [#cookies-without-same-site-must-be-secure](https://flags/#cookies-without-same-site-must-be-secure) | **Recommend !** See [here](https://scotthelme.co.uk/csrf-is-really-dead/)
+[#cross-origin-embedder-policy](https://flags/#cross-origin-embedder-policy) | **Recommend !**
 [#disable-javascript-harmony-shipping](https://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
 [#disallow-doc-written-script-loads](https://flags/#disallow-doc-written-script-loads) | **Recommend !**
 [#disallow-unsafe-http-downloads](https://flags/#disallow-unsafe-http-downloads) | **Recommend !**
@@ -177,6 +183,8 @@ Feature | Comment or suggestion
 [#autofill-always-return-cloud-tokenized-card](chrome://flags/#autofill-always-return-cloud-tokenized-card) | //
 [#back-forward-cache](chrome://flags/#back-forward-cache) | // (_possible breakage_)
 [#calculate-native-win-occlusion](https://flags/#calculate-native-win-occlusion) | //
+[#click-to-call-context-menu-selected-text](chrome://flags/#click-to-call-context-menu-selected-text) | //
+[#click-to-call-ui](chrome://flags/#click-to-call-ui) | //
 [#data-saver-server-previews](https://flags/#data-saver-server-previews) | //
 [#device-discovery-notifications](https://flags/#device-discovery-notifications) | //
 [#enable-ambient-authentication-in-incognito](https://flags/#enable-ambient-authentication-in-incognito | //
@@ -206,21 +214,27 @@ Feature | Comment or suggestion
 [#new-tab-loading-animation](https://flags/#new-tab-loading-animation) | ([optional](https://old.reddit.com/r/chrome/comments/ahxx8c/new_tab_loading_animation/))
 [#new-tabstrip-animation](https://flags/#new-tabstrip-animation) | //
 [#new-usb-backend](https://flags/#new-usb-backend) | //
+[#ntp-realbox](chrome://flags/#ntp-realbox) | //
+[#omnibox-disable-instant-extended-limit](chrome://flags/#omnibox-disable-instant-extended-limit) | //
 [#omnibox-drive-suggestions](https://flags/#omnibox-drive-suggestions) | Workaround for a bug
 [#omnibox-rich-entity-suggestion](https://flags/#omnibox-rich-entity-suggestion) | Since 74.0.3729.169 enabled
 [#omnibox-ui-hide-steady-state-url-scheme-and-subdomains](https://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains) | //
 [#omnibox-ui-hide-steady-state-url-scheme](https://flags/#omnibox-ui-hide-steady-state-url-scheme) | hides https:// only
 [#omnibox-ui-hide-steady-state-url-trivial-subdomains](https://flags/#omnibox-ui-hide-steady-state-url-trivial-subdomains) | hides www only
+[#omnibox-zero-suggestions-on-ntp](chrome://flags/#omnibox-zero-suggestions-on-ntp) | //
+[#omnibox-zero-suggestions-on-serp](chrome://flags/#omnibox-zero-suggestions-on-serp) | //
 [#pdf-form-save](https://flags/#pdf-form-save) | //
 [#percent-based-scrolling](chrome://flags/#percent-based-scrolling) | // (_possible breakage_)
 [#reduced-referrer-granularity](https://flags/#reduced-referrer-granularity) | //
 [#safe-search-url-reporting](https://flags/#safe-search-url-reporting) | //
 [#safety-tips](https://flags/#safety-tips) | //
+[#shared-clipboard-receiver](https://flags/#shared-clipboard-receiver) | //
 [#show-autofill-type-predictions](https://flags/#show-autofill-type-predictions) | //
 [#show-managed-ui](https://flags/#show-managed-ui) | //
 [#tab-hover-cards](https://flags/#tab-hover-cards) | //
+[#use-new-accept-language-header](chrome://flags/#ntp-realbox) | //
+[#username-first-flow](chrome://flags/#username-first-flow) | //
 [#web-bundles](chrome://flags/#web-bundles) | //
-[#web-contents-occlusion](https://flags/#web-contents-occlusion) | //
 
 
 
