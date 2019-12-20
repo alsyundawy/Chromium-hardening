@@ -84,7 +84,7 @@
 * ~~Enable doodles on the local NTP (disable)~~ (outdated)
 * ~~Enable search suggestions on the local NTP (disable)~~ (outdated)
 * #enable-layout-ng
-* #d3d11-video-decoder
+* use-angle (set to D3D11on12 or as fallback D3D11 [default])
 
 
 ## Advertising (only) flags (enabled)
