@@ -187,9 +187,8 @@ Feature | Comment or suggestion
 [#click-to-call-ui](https://flags/#click-to-call-ui) | //
 [#data-saver-server-previews](https://flags/#data-saver-server-previews) | //
 [#device-discovery-notifications](https://flags/#device-discovery-notifications) | //
-[#enable-ambient-authentication-in-incognito](https://flags/#enable-ambient-authentication-in-incognito | //
+[#enable-ambient-authentication-in-incognito](https://flags/#enable-ambient-authentication-in-incognito) | //
 [#enable-autofill-credit-card-upload](https://flags/#enable-autofill-credit-card-upload) | //
-[#enable-client-lo-fi](https://flags/#enable-client-lo-fi) | //
 [#enable-data-reduction-proxy-with-network-service](https://flags/#enable-data-reduction-proxy-with-network-service) | //
 [#enable-de-jelly](https://flags/#enable-de-jelly) | //
 [#enable-experimental-productivity-features](https://flags/#enable-experimental-productivity-features) | //
@@ -310,6 +309,7 @@ Feature | Deprecated or removed since
 #enable-autofill-credit-card-upload-send-detected-values | v75
 #enable-av1-decoder | v74
 #enable-block-tab-unders | 78+
+#enable-client-lo-fi | v78+
 #enable-desktop-ios-promotions | v74
 #enable-fast-unload | v74
 #enable-filesystem-in-icognito | v74
