@@ -3,7 +3,7 @@
 
 
 ### Flags (depending which OS/Chrome version)
-* Chrome 80:  
+* Chrome 80:
 * Chrome 79: 273
 * Chrome 78: 282
 * Chrome 77: 302
@@ -13,191 +13,214 @@
 
 
 ### Security (only) flags (enabled)
-* #enable-sync-uss-nigori (only if your use Browser sync!)
 * (_optional_) #password-leak-detection (or use HaveIBeenPwned website/extension via KeePass, enabling this option will cause more traffic due to password checks (if some are stored in the database)
-* #extension-content-verification
-* #disallow-doc-written-script-loads
-* #enable-appcontainer
-* #enforce-tls13-downgrade (known root only)
-* #enable-gpu-appcontainer
-* #disallow-unsafe-http-downloads
-* #ignore-gpu-denylist (disabled) (outdated)
-* #pdf-isolation (will be removed and is only relevant in case you read PDF's via Browser)
-* #edge-strict-origin-isolation (replaces app container lockdown)
 * #block-unsafe-downloads-over-insecure-connections
-* #edge-limit-media-autoplay (will be removed, edge onlxy)
-* Microsoft Edge tracking prevention (_optional_ - MS Edge + Defender only [via Chrome 75+ with Ent. GPO policy])
-* #enable-webrtc-srtp-aes-gcm (if WebRTC is supported/enabled)
-* #treat-unsafe-downloads-as-active-content
+* #disallow-doc-written-script-loads
+* #disallow-unsafe-http-downloads
+* #edge-limit-media-autoplay (will be removed, edge only)
+* #edge-strict-origin-isolation (replaces app container lockdown)
+* #enable-appcontainer
+* #enable-gpu-appcontainer
+* #enable-sync-uss-nigori (only if your use Browser sync!)
 * #enable-tls13-early-data (disabled, GET fingerprinting)
+* #enable-webrtc-srtp-aes-gcm (if WebRTC is supported/enabled)
+* #enforce-tls13-downgrade (known root only)
+* #extension-content-verification
+* #ignore-gpu-denylist (disabled) (_outdated_)
+* #native-file-system-api (_disable_)
+* #pdf-isolation (will be removed and is only relevant in case you read PDFs via Browser)
+* #treat-unsafe-downloads-as-active-content
 * `--enable-quic` & `--quic-version=h3-23` as command line argument to [enable HTTP/3](https://blog.cloudflare.com/http3-the-past-present-and-future/) See here how to run [Chrome with flags](https://www.chromium.org/developers/how-tos/run-chromium-with-flags).
+* Microsoft Edge tracking prevention (_optional_ - MS Edge + Defender only [via Chrome 75+ with Ent. GPO policy])
+
 
 
 ### Privacy (only) flags (enabled)
-* #device-discovery-notifications
-* #prefetch-privacy-changes
-* #enable-sharing-device-registration
-* #sharing-use-device-info
-* #enable-removing-all-third-party-cookies
-* #enterprise-reporting-in-browser (disabled)
+* #allow-popups-during-page-unload (_disable_)
 * #autofill-prune-suggestions (if autofill was enabled)
-* #turn-off-streaming-media-caching
-* #improved-cookie-controls
-* #enable-webrtc-hide-local-ips-with-mdns
-* #dns-over-https
-* #disable-hyperlink-auditing (outdated)
-* ~~Enable search suggestions on the local NTP (disable) (outdated)~~
-* #reduced-referrer-granuarity
-* Anonymize local IPs exposed by WebRTC (outdated)
-* #search-results-extensions-block-v2 (Opera only)
-* #unified-consent
-* Top Sites from Site Engagement (disable) (outdated)
-* New history entries require a user gesture (outdated)
-* #enable-history-manipulation-intervention
-* Disable minimum for server-side tile suggestions on NTP (disable) (outdated)
-* #enable-webrtc-remote-event-log (_optional_) (if WebRTC is allowed/enabled)
-* #pdf-form-save (disabled)
 * #cookies-without-same-site-must-be-secure + #same-site-by-default-cookies (both must be enabled, might break websites!)
-* #enable-data-reduction-proxy-with-network-service (connect to Google - disabled)
-* #happiness-tracking-surveys-for-desktop (disabled)
-* #use-sync-sandbox (connect to Google)
-* #load-media-router-component-extension (WARNING: Don't touch it (breaks the "Cast" feature _optional_ to avoid Google startup connections/loopback)
-* #enable-webvr (prevent possible WebVR API based fingerprinting methods)
-* #enable-generic-sensor (disabled, fingerprinting)
-* #omnibox-experimental-keyword-mode (disable)
-* #omnibox-suggestion-transparency-options
-* #omnibox-drive-suggestions (disable)
-* #enable-speculative-service-worker-start-on-query-input (disabled + performance/fingerprinting reasons)
-* #use-new-accept-language-header (disabled)
 * #data-saver-server-previews (disabled)
-* #tab-hover-cards (disabled)
+* #device-discovery-notifications
+* #disable-hyperlink-auditing (_outdated_)
+* #dns-over-https
+* #enable-autofill-upi-vpa
+* #enable-data-reduction-proxy-with-network-service (connect to Google - disabled)
 * #enable-filesystem-in-incognito
-* #passwords-account-storage (disabled) (use KeePass instead and disable all "Gaia account features")
+* #enable-generic-sensor (disabled, fingerprinting)
+* #enable-history-manipulation-intervention
+* #enable-removing-all-third-party-cookies
+* #enable-sharing-device-registration
+* #enable-speculative-service-worker-start-on-query-input (disabled + performance/fingerprinting reasons)
+* #enable-webrtc-hide-local-ips-with-mdns
+* #enable-webrtc-remote-event-log (_optional_) (if WebRTC is allowed/enabled)
+* #enable-webvr (prevent possible WebVR API based fingerprinting methods)
+* #enterprise-reporting-in-browser (disabled)
+* #happiness-tracking-surveys-for-desktop (_disable_)
+* #improved-cookie-controls
+* #improved-cookie-controls-for-third-party-cookie-blocking
+* #load-media-router-component-extension (WARNING: Don't touch it (breaks the "Cast" feature _optional_ to avoid Google startup connections/loopback)
+* #omnibox-drive-suggestions (_disable_)
+* #omnibox-experimental-keyword-mode (_disable_)
+* #omnibox-suggestion-transparency-options
+* #passwords-account-storage (disabled) (_use KeePass instead and disable all "Gaia account features"_)
+* #pdf-form-save (disabled)
+* #prefetch-privacy-changes
+* #reduced-referrer-granuarity
+* #search-results-extensions-block-v2 (Opera only)
+* #sharing-use-device-info
+* #tab-hover-cards (disabled)
+* #turn-off-streaming-media-caching
+* #unified-consent
+* #use-new-accept-language-header (disabled)
+* #use-sync-sandbox (connect to Google)
+* ~~Enable search suggestions on the local NTP (_disable_) (_outdated_)~~
+* Anonymize local IPs exposed by WebRTC (_outdated_)
+* Disable minimum for server-side tile suggestions on NTP (_disable_) (_outdated_)
+* New history entries require a user gesture (_outdated_)
+* Top Sites from Site Engagement (_disable_) (_outdated_)
+* #enable-safe-browsing-ap-download-verdicts (_disabled_ better use uBlock with a malware filter list_)
 
 
 ## Performance (only) flags (enabled)
 * #animated-avatar-button (disabled)
+* #d3d11-video-decoder
 * #enable-gpu-rasterization
-* #enable-lazy-image-loading
-* #enable-lazy-frame-loading
-* #enable-parallel-downloading
-* ~~Enable doodles on the local NTP (disable)~~ (outdated)
-* ~~Enable search suggestions on the local NTP (disable)~~ (outdated)
 * #enable-layout-ng
-* use-angle (set to D3D11on12 or as fallback D3D11 [default])
+* #enable-lazy-frame-loading
+* #enable-lazy-image-loading
+* #enable-parallel-downloading
+* ~~Enable doodles on the local NTP (_disable_)~~ (_outdated_)
+* ~~Enable search suggestions on the local NTP (_disable_)~~ (_outdated_)
 
 
 ## Advertising (only) flags (enabled)
-* ~~App Banners (disabled)~~ (outdated)
-* ~~Autoplay policy (document user activation required)~~ (outdated)
-* ~~Enable promos on the local NTP (disabled)~~ (outdated)
-* ~~User Activation V2 (disabled)~~ (outdated)
 * #happiness-tracking-surveys-for-desktop-demo (disabled)
+* ~~App Banners (disabled)~~ (_outdated_)
+* ~~Autoplay policy (document user activation required)~~ (_outdated_)
+* ~~Enable promos on the local NTP (disabled)~~ (_outdated_)
+* ~~User Activation V2 (disabled)~~ (_outdated_)
 
 
 ### Enabled
 
+The flags are listed via `https://flags/`.
+
 Feature | Comment/setting
 ------------ | -------------
-[#use-angle](chrome://flags/#use-angle) | D3D11on12 **Recommend !*
-[#automatic-tab-discarding](chrome://flags/#automatic-tab-discarding) | //
-[#autoplay-policy](chrome://flags/#autoplay-policy) | Document user activation is required.
-[#clipboard-content-setting](chrome://flags/#clipboard-content-setting) | //
-[#cookies-without-same-site-must-be-secure](chrome://flags/#cookies-without-same-site-must-be-secure) | **Recommend !** See [here](https://scotthelme.co.uk/csrf-is-really-dead/)
-[#chrome-colors](chrome://flags/#chrome-colors) | //
-[#chrome-custom-color-picker](chrome://flags/#chrome-colors-custom-color-picker) | //
-[#disable-javascript-harmony-shipping](chrome://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
-[#disallow-unsafe-http-downloads](chrome://flags/#disallow-unsafe-http-downloads) | **Recommend !**
-[#dns-over-https](chrome://flags/#dns-over-https) | **Recommend !**
-[#disallow-doc-written-script-loads](chrome://flags/#disallow-doc-written-script-loads) | **Recommend !**
-[#drag-to-pin-tabs](chrome://flags/#drag-to-pin-tabs]) | _optional_
-[#enable-appcontainer](chrome://flags/#enable-appcontainer) | [**Recommend !**](https://blog.chromium.org/2019/09/experimenting-with-same-provider-dns.html)
-[#ForcedColors](chrome://flags/#ForcedColors) | _usability_ (_[optional](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/Accessibility/HighContrast/explainer.md)!_)
-[#enable-autofill-credit-card-ablation-experiment](chrome://flags/#enable-autofill-credit-card-ablation-experiment) | //
-[#enable-block-tab-unders](chrome://flags/#enable-block-tab-unders) | //
-[#enable-brotli](chrome://flags/#enable-brotli) | //
-[#enable-experimental-fling-animation](chrome://flags/#enable-experimental-fling-animation) | //
-[#reduced-referrer-granuarity](chrome://flags/#reduced-referrer-granuarity) | **Recommend !**
-[#enable-framebusting-needs-sameorigin-or-usergesture](chrome://flags/#enable-framebusting-needs-sameorigin-or-usergesture) | //
-[#enable-future-v8-vm-features](chrome://flags/#enable-future-v8-vm-features) | //
-[#enable-gpu-appcontainer](chrome://flags/#enable-gpu-appcontainer) | **Recommend !**
-[#enable-pixel-canvas-recording](chrome://flags/#enable-pixel-canvas-recording) | **Recommend !**
-[#enable-history-entry-requires-user-gesture](chrome://flags/#enable-history-entry-requires-user-gesture) | //
-[#enable-history-manipulation-intervention](chrome://flags/#enable-history-manipulation-intervention) | //
-[#enable-mark-http-as](chrome://flags/#enable-mark-http-as) | Mark as actively dangerous
-[#enable-message-center-new-style-notification](chrome://flags/#enable-message-center-new-style-notification) | //
-[#enable-native-notifications](chrome://flags/#enable-native-notifications) | //
-[#enable-origin-trials](chrome://flags/#enable-origin-trials) | //
-[#enable-parallel-downloading](chrome://flags/#enable-parallel-downloading) | //
-[#enable-picture-in-picture](chrome://flags/#enable-picture-in-picture) | //
-[#enable-quic](chrome://flags/#enable-quic) | Controversial, I **recommend enabling it**
-[#enable-reader-mode](chrome://flags/#enable-reader-mode) | _optional_
-[#enable-webrtc-h264-with-openh264-ffmpeg](chrome://flags/#enable-webrtc-h264-with-openh264-ffmpeg) | //
-[#enable-webrtc-hide-local-ips-with-mdns](chrome://flags/#enable-webrtc-hide-local-ips-with-mdns) | **Recommend !**
-[#enable-webrtc-new-encode-cpu-load-estimator](chrome://flags/#enable-webrtc-new-encode-cpu-load-estimator) | //
-[enforce-tls13-downgrade](chrome://flags/#enforce-tls13-downgrade) | Enabled (Known root only) **Recommend !**
-[#expensive-background-timer-throttling](chrome://flags/#expensive-background-timer-throttling) | //
-[#extension-content-verification](chrome://flags/#extension-content-verification) | Enforce strict (hard fail) - **Recommend !**
-[#gdi-text-printing](chrome://flags/#gdi-text-printing) | //
-[#isolate-origins](chrome://flags/#isolate-origins) | **Recommend !**, [see here why](https://wicg.github.io/isolation/)
-[#ignore-gpu-denylist](chrome://flags/#ignore-gpu-denylist) | **Recommend !** (disabled)
-[#ntp-customization-menu-v2](chrome://flags/#ntp-customization-menu-v2) | //
-[#pdf-isolation](chrome://flags/#pdf-isolation) | **Recommend !**
-[#smooth-scrolling](chrome://flags/#smooth-scrolling) | //
-[#tab-groups](chrome://flags/#tab-groups) | v75+ _optional_
-[#tab-hover-cards](chrome://flags/#tab-hover-cards) | _optional_
-[#tab-hover-card-images](chrome://flags/#tab-hover-card-images) | _optional_
-[#unified-consent](chrome://flags/#unified-consent) | //
-[#overlay-scrollbars](chrome://flags/#overlay-scrollbars) | **Recommend !**
-[#overlay-scrollbars-flash-after-scroll-update](chrome://flags/#overlay-scrollbars-flash-after-scroll-update) | **Recommend !**
-[#overlay-scrollbars-flash-when-mouse-enter](chrome://flags/#overlay-scrollbars-flash-when-mouse-enter) | **Recommend !**
-[#new-tab-button-position](chrome://flags/#new-tab-button-position) | **Recommend !** (_optional_)
-[#proactive-tab-freeze](chrome://flags/#proactive-tab-freeze) | **Recommend !** (_optional_)
+[#audio-worklet-realtime-thread](https://flags/#audio-worklet-realtime-thread) | **Recommend !**
+[#automatic-tab-discarding](https://flags/#automatic-tab-discarding) | //
+[#autoplay-policy](https://flags/#autoplay-policy) | Document user activation is required.
+[#chrome-colors](https://flags/#chrome-colors) | //
+[#chrome-custom-color-picker](https://flags/#chrome-colors-custom-color-picker) | //
+[#clipboard-content-setting](https://flags/#clipboard-content-setting) | //
+[#cookies-without-same-site-must-be-secure](https://flags/#cookies-without-same-site-must-be-secure) | **Recommend !** See [here](https://scotthelme.co.uk/csrf-is-really-dead/)
+[#disable-javascript-harmony-shipping](https://flags/#disable-javascript-harmony-shipping) | (Enabled (Default)
+[#disallow-doc-written-script-loads](https://flags/#disallow-doc-written-script-loads) | **Recommend !**
+[#disallow-unsafe-http-downloads](https://flags/#disallow-unsafe-http-downloads) | **Recommend !**
+[#dns-over-https](https://flags/#dns-over-https) | **Recommend !**
+[#drag-to-pin-tabs](https://flags/#drag-to-pin-tabs]) | _optional_
+[#enable-appcontainer](https://flags/#enable-appcontainer) | [**Recommend !**](https://blog.chromium.org/2019/09/experimenting-with-same-provider-dns.html)
+[#enable-autofill-credit-card-ablation-experiment](https://flags/#enable-autofill-credit-card-ablation-experiment) | //
+[#enable-block-tab-unders](https://flags/#enable-block-tab-unders) | //
+[#enable-brotli](https://flags/#enable-brotli) | //
+[#enable-experimental-fling-animation](https://flags/#enable-experimental-fling-animation) | //
+[#enable-framebusting-needs-sameorigin-or-usergesture](https://flags/#enable-framebusting-needs-sameorigin-or-usergesture) | //
+[#enable-future-v8-vm-features](https://flags/#enable-future-v8-vm-features) | //
+[#enable-gpu-appcontainer](https://flags/#enable-gpu-appcontainer) | **Recommend !**
+[#enable-history-entry-requires-user-gesture](https://flags/#enable-history-entry-requires-user-gesture) | //
+[#enable-history-manipulation-intervention](https://flags/#enable-history-manipulation-intervention) | //
+[#enable-mark-http-as](https://flags/#enable-mark-http-as) | Mark as actively dangerous
+[#enable-message-center-new-style-notification](https://flags/#enable-message-center-new-style-notification) | //
+[#enable-native-notifications](https://flags/#enable-native-notifications) | //
+[#enable-origin-trials](https://flags/#enable-origin-trials) | //
+[#enable-parallel-downloading](https://flags/#enable-parallel-downloading) | //
+[#enable-picture-in-picture](https://flags/#enable-picture-in-picture) | //
+[#enable-pixel-canvas-recording](https://flags/#enable-pixel-canvas-recording) | **Recommend !**
+[#enable-quic](https://flags/#enable-quic) | Controversial, I **recommend enabling it**
+[#enable-reader-mode](https://flags/#enable-reader-mode) | _optional_
+[#enable-webrtc-h264-with-openh264-ffmpeg](https://flags/#enable-webrtc-h264-with-openh264-ffmpeg) | //
+[#enable-webrtc-hide-local-ips-with-mdns](https://flags/#enable-webrtc-hide-local-ips-with-mdns) | **Recommend !**
+[#enable-webrtc-new-encode-cpu-load-estimator](https://flags/#enable-webrtc-new-encode-cpu-load-estimator) | //
+[#enforce-tls13-downgrade](https://flags/#enforce-tls13-downgrade) | Enabled (Known root only) **Recommend !**
+[#expensive-background-timer-throttling](https://flags/#expensive-background-timer-throttling) | //
+[#extension-content-verification](https://flags/#extension-content-verification) | Enforce strict (hard fail) - **Recommend !**
+[#ForcedColors](https://flags/#ForcedColors) | _usability_ (_[optional](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/master/Accessibility/HighContrast/explainer.md)!_)
+[#gdi-text-printing](https://flags/#gdi-text-printing) | //
+[#ignore-gpu-denylist](https://flags/#ignore-gpu-denylist) | **Recommend !** (disabled)
+[#isolate-origins](https://flags/#isolate-origins) | **Recommend !**, [see here why](https://wicg.github.io/isolation/)
+[#new-tab-button-position](https://flags/#new-tab-button-position) | **Recommend !** (_optional_)
+[#ntp-customization-menu-v2](https://flags/#ntp-customization-menu-v2) | //
+[#overlay-scrollbars-flash-after-scroll-update](https://flags/#overlay-scrollbars-flash-after-scroll-update) | **Recommend !**
+[#overlay-scrollbars-flash-when-mouse-enter](https://flags/#overlay-scrollbars-flash-when-mouse-enter) | **Recommend !**
+[#overlay-scrollbars](https://flags/#overlay-scrollbars) | **Recommend !**
+[#pdf-isolation](https://flags/#pdf-isolation) | **Recommend !**
+[#privacy-settings-redesign](https://flags/#privacy-settings-redesign) | **Recommend !**
+[#proactive-tab-freeze](https://flags/#proactive-tab-freeze) | **Recommend !** (_optional_)
+[#reduced-referrer-granuarity](https://flags/#reduced-referrer-granuarity) | **Recommend !**
+[#show-legacy-tls-warnings](https://flags/#show-legacy-tls-warnings) | **Recommend !**
+[#smooth-scrolling](https://flags/#smooth-scrolling) | //
+[#tab-groups](https://flags/#tab-groups) | v75+ _optional_
+[#tab-hover-card-images](https://flags/#tab-hover-card-images) | _optional_
+[#tab-hover-cards](https://flags/#tab-hover-cards) | _optional_
+[#unified-consent](https://flags/#unified-consent) | //
+[#use-angle](https://flags/#use-angle) | D3D11on12 **Recommend !**
+
 
 
 ### Disabled
 
-Feature | Comment or setting
+Feature | Comment or suggestion
 ------------ | -------------
-[#account-consistency](chrome://flags/#account-consistency) | //
-[#allow-previews](chrome://flags/#allow-previews) | //
-[#allow-sxg-certs-without-extension](chrome://flags/#allow-sxg-certs-without-extension) | //
-[#data-saver-server-previews](chrome://flags/#data-saver-server-previews) | //
-[#device-discovery-notifications](chrome://flags/#device-discovery-notifications) | //
-[#enable-autofill-credit-card-upload](chrome://flags/#enable-autofill-credit-card-upload) | //
-[#enable-media-session-service](chrome://flags/#enable-media-session-service) | Volume OSD (optional)
-[#enable-native-google-assistant](chrome://flags/#enable-native-google-assistant) | [//](https://www.howtogeek.com/429382/how-to-enable-google-assistant-on-your-chromebook/)
-[#enable-client-lo-fi](chrome://flags/#enable-client-lo-fi) | //
-[#enable-data-reduction-proxy-with-network-service](chrome://flags/#enable-data-reduction-proxy-with-network-service) | //
-[#enable-generic-sensor-extra-classes](chrome://flags/#enable-generic-sensor-extra-classes) | //
-[#enable-generic-sensor](chrome://flags/#enable-generic-sensor) | //
-[#enable-lookalike-URL-navigation-suggestions](chrome://flags/#enable-lookalike-url-navigation-suggestions) | //
-[#enable-noscript-previews](chrome://flags/#enable-noscript-previews) | //
-[#enable-optimization-hints](chrome://flags/#enable-optimization-hints) | //
-[#fill-on-account-select-http](chrome://flags/#fill-on-account-select-http) | //
-[#fill-on-account-select](chrome://flags/#fill-on-account-select) | //
-[#hardware-media-key-handling](chrome://flags/#hardware-media-key-handling) | Avoid media stats leakage
-[#happiness-tracking-surveys-for-desktop](chrome://flags/#happiness-tracking-surveys-for-desktop) | //
-[#network-service](chrome://flags/#network-service) | //
-[#new-usb-backend](chrome://flags/#new-usb-backend) | //
-[#new-tab-loading-animation](chrome://flags/#new-tab-loading-animation) | ([optional](https://old.reddit.com/r/chrome/comments/ahxx8c/new_tab_loading_animation/))
-[#omnibox-ui-hide-steady-state-url-trivial-subdomains](chrome://flags/#omnibox-ui-hide-steady-state-url-trivial-subdomains) | hides www only
-[##omnibox-ui-hide-steady-state-url-scheme](chrome://flags/#omnibox-ui-hide-steady-state-url-scheme) | hides https:// only
-[#omnibox-ui-hide-steady-state-url-scheme-and-subdomains](chrome://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains) | //
-[#omnibox-drive-suggestions](chrome://flags/#omnibox-drive-suggestions) | Workaround for a bug
-[#omnibox-rich-entity-suggestion](chrome://flags/#omnibox-rich-entity-suggestion) | Since 74.0.3729.169 enabled
-[#pdf-form-save](chrome://flags/#pdf-form-save) | //
-[#reduced-referrer-granularity](chrome://flags/#reduced-referrer-granularity) | //
-[#safe-search-url-reporting](chrome://flags/#safe-search-url-reporting) | //
-[#show-autofill-type-predictions](chrome://flags/#show-autofill-type-predictions) | //
-[#show-managed-ui](chrome://flags/#show-managed-ui) | //
-[#tab-hover-cards](chrome://flags/#tab-hover-cards) | //
-[#enable-javascript-harmony](chrome://flags/#enable-javascript-harmony) | //
-[#web-contents-occlusion](chrome://flags/#web-contents-occlusion) | //
-[#calculate-native-win-occlusion](chrome://flags/#calculate-native-win-occlusion) | //
-[#enable-experimental-productivity-features](chrome://flags/#enable-experimental-productivity-features) | //
-[#new-tabstrip-animation](chrome://flags/#new-tabstrip-animation) | //
-
+[#account-consistency](https://flags/#account-consistency) | //
+[#allow-previews](https://flags/#allow-previews) | //
+[#allow-sxg-certs-without-extension](https://flags/#allow-sxg-certs-without-extension) | //
+[#autofill-always-return-cloud-tokenized-card](chrome://flags/#autofill-always-return-cloud-tokenized-card) | //
+[#back-forward-cache](chrome://flags/#back-forward-cache) | // (_possible breakage_)
+[#calculate-native-win-occlusion](https://flags/#calculate-native-win-occlusion) | //
+[#data-saver-server-previews](https://flags/#data-saver-server-previews) | //
+[#device-discovery-notifications](https://flags/#device-discovery-notifications) | //
+[#enable-ambient-authentication-in-incognito](https://flags/#enable-ambient-authentication-in-incognito | //
+[#enable-autofill-credit-card-upload](https://flags/#enable-autofill-credit-card-upload) | //
+[#enable-client-lo-fi](https://flags/#enable-client-lo-fi) | //
+[#enable-data-reduction-proxy-with-network-service](https://flags/#enable-data-reduction-proxy-with-network-service) | //
+[#enable-de-jelly](https://flags/#enable-de-jelly) | //
+[#enable-experimental-productivity-features](https://flags/#enable-experimental-productivity-features) | //
+[#enable-generic-sensor-extra-classes](https://flags/#enable-generic-sensor-extra-classes) | //
+[#enable-generic-sensor](https://flags/#enable-generic-sensor) | //
+[#enable-javascript-harmony](https://flags/#enable-javascript-harmony) | //
+[#enable-lookalike-URL-navigation-suggestions](https://flags/#enable-lookalike-url-navigation-suggestions) | //
+[#enable-media-session-service](https://flags/#enable-media-session-service) | Volume OSD (optional)
+[#enable-native-google-assistant](https://flags/#enable-native-google-assistant) | [//](https://www.howtogeek.com/429382/how-to-enable-google-assistant-on-your-chromebook/)
+[#enable-noscript-previews](https://flags/#enable-noscript-previews) | //
+[#enable-optimization-hints](https://flags/#enable-optimization-hints) | //
+[#enable-reopen-tab-in-product-help](https://flags/#enable-reopen-tab-in-product-help) | //
+[#enable-send-tab-to-self-broadcast](https://flags/#enable-send-tab-to-self-broadcast) | //
+[#enable-sync-uss-nigori](https://flags/#enable-sync-uss-nigori) | //
+[#enable-winrt-geolocation-implementation](https://flags/#enable-winrt-geolocation-implementation) | //
+[#fill-on-account-select-http](https://flags/#fill-on-account-select-http) | //
+[#fill-on-account-select](https://flags/#fill-on-account-select) | //
+[#global-media-controls](https://flags/#global-media-controls) | //
+[#happiness-tracking-surveys-for-desktop](https://flags/#happiness-tracking-surveys-for-desktop) | //
+[#hardware-media-key-handling](https://flags/#hardware-media-key-handling) | Avoid media stats leakage
+[#network-service](https://flags/#network-service) | //
+[#new-tab-loading-animation](https://flags/#new-tab-loading-animation) | ([optional](https://old.reddit.com/r/chrome/comments/ahxx8c/new_tab_loading_animation/))
+[#new-tabstrip-animation](https://flags/#new-tabstrip-animation) | //
+[#new-usb-backend](https://flags/#new-usb-backend) | //
+[#omnibox-drive-suggestions](https://flags/#omnibox-drive-suggestions) | Workaround for a bug
+[#omnibox-rich-entity-suggestion](https://flags/#omnibox-rich-entity-suggestion) | Since 74.0.3729.169 enabled
+[#omnibox-ui-hide-steady-state-url-scheme-and-subdomains](https://flags/#omnibox-ui-hide-steady-state-url-scheme-and-subdomains) | //
+[#omnibox-ui-hide-steady-state-url-scheme](https://flags/#omnibox-ui-hide-steady-state-url-scheme) | hides https:// only
+[#omnibox-ui-hide-steady-state-url-trivial-subdomains](https://flags/#omnibox-ui-hide-steady-state-url-trivial-subdomains) | hides www only
+[#pdf-form-save](https://flags/#pdf-form-save) | //
+[#percent-based-scrolling](chrome://flags/#percent-based-scrolling) | // (_possible breakage_)
+[#reduced-referrer-granularity](https://flags/#reduced-referrer-granularity) | //
+[#safe-search-url-reporting](https://flags/#safe-search-url-reporting) | //
+[#safety-tips](https://flags/#safety-tips) | //
+[#show-autofill-type-predictions](https://flags/#show-autofill-type-predictions) | //
+[#show-managed-ui](https://flags/#show-managed-ui) | //
+[#tab-hover-cards](https://flags/#tab-hover-cards) | //
+[#web-bundles](chrome://flags/#web-bundles) | //
+[#web-contents-occlusion](https://flags/#web-contents-occlusion) | //
 
 
 
@@ -205,14 +228,14 @@ Feature | Comment or setting
 
 Feature | Comment or setting
 ------------ | -------------
-[#safe-browsing-telemetry-for-apk-downloads](chrome://flags/#safe-browsing-telemetry-for-apk-downloads) | Disabled
-[#enable-android-night-mode](chrome://flags/#enable-android-night-mode) | Enabled (optional)
-[#enable-android-spellchecker](chrome://flags/#enable-android-spellchecker) | Enabled
-[#enable-site-isolation-for-password-sites](chrome://flags/#enable-site-isolation-for-password-sites) | Enabled (v74+)
+[#safe-browsing-telemetry-for-apk-downloads](https://flags/#safe-browsing-telemetry-for-apk-downloads) | Disabled
+[#enable-android-night-mode](https://flags/#enable-android-night-mode) | Enabled (optional)
+[#enable-android-spellchecker](https://flags/#enable-android-spellchecker) | Enabled
+[#enable-site-isolation-for-password-sites](https://flags/#enable-site-isolation-for-password-sites) | Enabled (v74+)
 
 ### [Microsoft Edge (Chromium)](https://blogs.windows.com/windowsexperience/2019/11/04/introducing-the-new-microsoft-edge-and-bing/) specific [edge://flags]
 
-Most Chromium based flags for Edge are explained over [here](https://github.com/MicrosoftEdge/MSEdgeExplainers). The project basically explains what each flag does (with Info, Screenshots & more).
+Most Chromium based flags for Edge are explained over [here](https://github.com/MicrosoftEdge/MSEdgeExplainers). The project basically explains what each flag does (with Info, screenshots & more).
 
 Feature | Comment or setting
 ------------ | -------------
@@ -221,7 +244,7 @@ Feature | Comment or setting
 [#edge-cdm-override-service](edge://flags/#edge-cdm-override-service) | Enabled (Default)
 [#edge-controls](edge://flags/#edge-controls) | Enabled (Default)
 [#edge-cookie-import](edge://flags/#edge-cookie-import) | Disabled
-[#edge-dns-over-https]((edge://dns-over-https) | **Recommend !**, see here [why](https://en.wikipedia.org/wiki/DNS_over_HTTPS)
+[#edge-dns-over-https]((edge://dns-over-https) | Disabled due to privacy/ad-blocking reasons!
 [#edge-experimental-scrolling](edge://flags/#edge-experimental-scrolling) | Disabled
 [#edge-follow-os-theme](edge://flags/#edge-follow-os-theme) | Enabled (Default)
 [#edge-installation-of-extensions-from-microsoft-store](edge://flags/#edge-installation-of-extensions-from-microsoft-store) | Enabled (Default)
@@ -252,12 +275,12 @@ Some flags can cause "critical security holes" in your configuration even if you
 
 Feature | Reason
 ------------ | -------------
-[#allow-sxg-certs-without-extension](chrome://flags/#allow-sxg-certs-without-extension) | Triggers an critical error (DOM)
-[#enable-signed-http-exchange](chrome://flags/#enable-signed-http-exchange) | Triggers an critical error (DOM)
-[#focus-mode](chrome://flags/#focus-mode) | Leakage (?) unconfirmed, triggers warnings
-[#enable-built-in-module-kv-storage](chrome://flags/#enable-built-in-module-kv-storage) | Leakage (?) unconfirmed, triggers warnings
-[#enable-built-in-module-infra](chrome://flags/#enable-built-in-module-infra) | Possible attacks
-[#disable-windows10-custom-titlebar](chrome://flags/#disable-windows10-custom-titlebar) | Only if you really need it
+[#allow-sxg-certs-without-extension](https://flags/#allow-sxg-certs-without-extension) | Triggers an critical error (DOM)
+[#enable-signed-http-exchange](https://flags/#enable-signed-http-exchange) | Triggers an critical error (DOM)
+[#focus-mode](https://flags/#focus-mode) | Leakage (?) unconfirmed, triggers warnings
+[#enable-built-in-module-kv-storage](https://flags/#enable-built-in-module-kv-storage) | Leakage (?) unconfirmed, triggers warnings
+[#enable-built-in-module-infra](https://flags/#enable-built-in-module-infra) | Possible attacks
+[#disable-windows10-custom-titlebar](https://flags/#disable-windows10-custom-titlebar) | Only if you really need it
 
 
 
@@ -306,19 +329,21 @@ Feature | Deprecated or removed since
 ##temporary-unexpire-flags-m76 | 80
 
 ### DNS-over-HTTPS
- 
-Starting with [Chrome 78](https://blog.chromium.org/2019/09/experimenting-with-same-provider-dns.html) the Browser will get an option to control DoH via `chrome://flags/#dns-over-https` (the flag can only be opt-out'ed [but is listed in my list as enabled [[default]]), however the option is experimental and only avbl. for several users/OS, the iOS and Linux implementation is still unfinished, that been said they won't get this right of the batch. 
+
+Starting with [Chrome 78](https://blog.chromium.org/2019/09/experimenting-with-same-provider-dns.html) the Browser will get an option to control DoH via `https://flags/#dns-over-https` (the flag can only be opt-out'ed [but is listed in my list as enabled [[default]]), however the option is experimental and only avbl. for several users/OS, the iOS and Linux implementation is still unfinished, that been said they won't get this right of the batch.
 
 Supported are the following providers (for now): Cleanbrowsing, Cloudflare, DNS.SB, Google, OpenDNS & Quad9. If a provider isn't in the integrated list then Chrome will automatically use a fallback and switch back to the "normal" mode.
 
-Fo [force Chrome to use DoH](https://bugs.chromium.org/p/chromium/issues/detail?id=799753#c8) add the following shortcut path: 
-* `--enable-features="dns-over-https<DoHTrial" --force-fieldtrials="DoHTrial/Group1" --force-fieldtrial-params="DoHTrial.Group1:server/https%3A%2F%2F1.1.1.1%2Fdns-query/method/POST` 
+Fo [force Chrome to use DoH](https://bugs.chromium.org/p/chromium/issues/detail?id=799753#c8) add the following shortcut path:
+* `--enable-features="dns-over-https<DoHTrial" --force-fieldtrials="DoHTrial/Group1" --force-fieldtrial-params="DoHTrial.Group1:server/https%3A%2F%2F1.1.1.1%2Fdns-query/method/POST`
 
-This example will configure Chrome to use Cloudflares DoH server. To test if DoH is working or not, check the [https://1.1.1.1/help](https://1.1.1.1/help) url. 
+This example will configure Chrome to use Cloudflares DoH server. To test if DoH is working or not, check the [https://1.1.1.1/help](https://1.1.1.1/help) url.
 
 
 ### Fooling the NTP to increase the Browser performance and to gain some (questionable) privacy benefit
 
 There is some traffic caused for NTP lookups, this can be disabled with the following trick:
 * Change your default search engine to "Startpage" and remove all other search engines in your lists.
-* Enable or disable the following flags `Enable using the Google local NTP`, `Enable doodles on the local NTP` (disable), `Enable search suggestions on the local NTP` (disable), `Top Sites from Site Engagement` (disable), `Disable minimum for server-side tile suggestions on NTP` (disable) & `Enable promos on the local NTP` (disable).
+* Enable or disable the following flags `Enable using the Google local NTP`, `Enable doodles on the local NTP` (_disable_), `Enable search suggestions on the local NTP` (_disable_), `Top Sites from Site Engagement` (_disable_), `Disable minimum for server-side tile suggestions on NTP` (_disable_) & `Enable promos on the local NTP` (_disable_).
+
+
