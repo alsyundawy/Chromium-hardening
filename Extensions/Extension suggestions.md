@@ -9,6 +9,7 @@
 
 ### Canvas protection
 * [CanvasFingerprintBlock](https://chrome.google.com/webstore/detail/canvasfingerprintblock/ipmjngkmngdcdpmgmiebdmfbkcecdndc) (Prevent browser fingerprinting • Alternatives: [Chameleon](https://github.com/ghostwords/chameleon), CanvasBlocker)
+* [Luminous](https://gbaptista.github.io/luminous/doc/en-US/)
 
 
 ### CDN emulation
