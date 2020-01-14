@@ -307,6 +307,7 @@ MS did a good job with Edge, however the new Edge (Chromium based) seems even be
 
 
 ## Acknowledgments and References
+* [Google Privacy Sandbox project](https://www.chromium.org/Home/chromium-privacy/privacy-sandbox)
 * [Baselines of Web Browsers](https://thesimplecomputer.info/baselines-web-browsers)
 * [Browser Sec Whitepaper](https://github.com/cure53/browser-sec-whitepaper)
 * [Cent Browser](https://www.centbrowser.com/)
