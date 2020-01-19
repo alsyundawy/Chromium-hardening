@@ -22,6 +22,7 @@
 * [Force HTTPS](https://chrome.google.com/webstore/detail/force-https-for-all-traff/dpipdndjcofdfhknlfloeokjiooiojoo)
 * [Terms of Service; Didn't Read](https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg)
 * [Opt-out of data collection](https://yourdigitalrights.org/?source=optouteu) [source code website](https://github.com/opt-out-eu/yourdigitalrights.org) + [extension/addon](https://github.com/opt-out-eu/opt-out-web-extensions)
+* [Unshort.link](https://unshort.link/) - A service + Firefox/Chrome addon/extension to protect against short link service tracking.
 
 
 ### Referer Control
