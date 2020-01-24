@@ -262,7 +262,7 @@ Feature | Comment or setting
 [#edge-follow-os-theme](edge://flags/#edge-follow-os-theme) | Enabled (Default)
 [#edge-installation-of-extensions-from-microsoft-store](edge://flags/#edge-installation-of-extensions-from-microsoft-store) | Enabled (Default)
 [#edge-strict-origin-isolation](edge://edge-strict-origin-isolation) | **Recommend !**
-[#edge-playready-drm-win10](edge://flags/#edge-playready-drm-win10) | Disabled, will break Netflix!
+[#edge-playready-drm-win10](edge://flags/#edge-playready-drm-win10) | Disabling it will break e.g. Netflix!
 [#edge-reading-view](edge://flags/#edge-reading-view) | Enabled (Default)
 [#edge-sign-in-with-aad](edge://flags/#edge-sign-in-with-aad) | Disabled
 [#edge-user-agent-spoofing-service](edge://flags/#edge-user-agent-spoofing-service) | Enabled
@@ -276,6 +276,7 @@ Feature | Comment or setting
 [#edge-collections](#edge://flags/#edge-collections) | (_optional_)
 [#win-use-native-spellchecker](edge://flags/#win-use-native-spellchecker) | **Recommend !**
 [#omnibox-ui-show-suggestion-favicons ](#edge://flags/#omnibox-ui-show-suggestion-favicons ) | (_optional_)
+[#edge-autoplay-user-setting-block-option](edge://flags/#edge-autoplay-user-setting-block-option) | **Recommend !**
 
 
 ### Other MS Edge (Chromium) "Tweaks"
