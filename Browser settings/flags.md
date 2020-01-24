@@ -275,6 +275,7 @@ Feature | Comment or setting
 [#mixed-content-setting](#edge://flags/#mixed-content-setting) | **Recommend !**
 [#edge-collections](#edge://flags/#edge-collections) | (_optional_)
 [#win-use-native-spellchecker](edge://flags/#win-use-native-spellchecker) | **Recommend !**
+[#omnibox-ui-show-suggestion-favicons ](#edge://flags/#omnibox-ui-show-suggestion-favicons ) | (_optional_)
 
 
 ### Other MS Edge (Chromium) "Tweaks"
