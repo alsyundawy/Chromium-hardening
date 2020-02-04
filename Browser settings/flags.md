@@ -3,7 +3,7 @@
 
 
 ### Flags (depending which OS/Chrome version)
-* Chrome 80:
+* Chrome 80: 263
 * Chrome 79: 273
 * Chrome 78: 282
 * Chrome 77: 302
@@ -277,6 +277,7 @@ Feature | Comment or setting
 [#win-use-native-spellchecker](edge://flags/#win-use-native-spellchecker) | **Recommend !**
 [#omnibox-ui-show-suggestion-favicons ](#edge://flags/#omnibox-ui-show-suggestion-favicons ) | (_optional_)
 [#edge-autoplay-user-setting-block-option](edge://flags/#edge-autoplay-user-setting-block-option) | **Recommend !**
+[#edge-smartscreen-pua](edge://flags/#edge-smartscreen-pua) | **Disable Recommend !**
 
 
 ### Other MS Edge (Chromium) "Tweaks"
