@@ -82,6 +82,7 @@
 * New history entries require a user gesture (_outdated_)
 * Top Sites from Site Engagement (_disable_) (_outdated_)
 * #webxr-plane-detection (_disable_)
+* enable-text-fragment-anchor (_disable_)
 
 
 ## Performance (only) flags (enabled)
