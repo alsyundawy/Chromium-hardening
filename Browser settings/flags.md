@@ -18,12 +18,12 @@
 * #disallow-doc-written-script-loads
 * #disallow-unsafe-http-downloads
 * #disallow-unsafe-http-downloads
-* #edge-limit-media-autoplay (will be removed, edge only)
-* #edge-strict-origin-isolation (replaces app container lockdown)
-* #enable-appcontainer
+* ~~#enable-appcontainer~~
 * #enable-gpu-appcontainer
+* strict-origin-isolation
 * #enable-sync-uss-nigori (only if your use Browser sync!)
 * #enable-tls13-early-data (disabled, GET fingerprinting)
+* #reduced-referrer-granularity (only provides domain name as referer)
 * #enable-webrtc-srtp-aes-gcm (if WebRTC is supported/enabled)
 * #enforce-tls13-downgrade (known root only)
 * #extension-content-verification
@@ -34,6 +34,7 @@
 * `--enable-quic` & `--quic-version=h3-23` as command line argument to [enable HTTP/3](https://blog.cloudflare.com/http3-the-past-present-and-future/) See here how to run [Chrome with flags](https://www.chromium.org/developers/how-tos/run-chromium-with-flags).
 * Microsoft Edge tracking prevention (_optional_ - MS Edge + Defender only [via Chrome 75+ with Ent. GPO policy])
 * #tls13-hardening-for-local-anchors
+* cross-origin-isolation
 
 
 ### Privacy (only) flags (enabled)
@@ -60,7 +61,6 @@
 * #happiness-tracking-surveys-for-desktop (_disable_)
 * #improved-cookie-controls
 * #improved-cookie-controls-for-third-party-cookie-blocking
-* #load-media-router-component-extension (WARNING: Don't touch it (breaks the "Cast" feature _optional_ to avoid Google startup connections/loopback)
 * #omnibox-drive-suggestions (_disable_)
 * #omnibox-experimental-keyword-mode (_disable_)
 * #omnibox-suggestion-transparency-options
@@ -83,6 +83,10 @@
 * Top Sites from Site Engagement (_disable_) (_outdated_)
 * #webxr-plane-detection (_disable_)
 * enable-text-fragment-anchor (_disable_)
+* ~~#omnibox-ui-hide-steady-state-url-scheme~~
+* ~~#omnibox-ui-hide-steady-url-trivial-subdomains~~
+* ~~#omnibox-ui-hide-steady-state-url-path-query-and-ref~~
+* ~~#simplify-https-indicator~~
 
 
 ## Performance (only) flags (enabled)
@@ -97,6 +101,7 @@
 * ~~Enable doodles on the local NTP (_disable_)~~ (_outdated_)
 * ~~Enable search suggestions on the local NTP (_disable_)~~ (_outdated_)
 * #in-product-help-demo-mode-choice (_disable_)
+* #load-media-router-component-extension (WARNING: Don't touch it (breaks the "Cast" feature _optional_ to avoid Google startup connections/loopback)
 
 
 ## Advertising (only) flags (enabled)
@@ -287,6 +292,8 @@ Feature | Comment or setting
 * [Improving Tracking Prevention in Microsoft Edge](https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79/#s7m17j2ibI4KAxAz.97)
 * `edge://site-engagement` checks how often you visit your websites (how "popular they are), Chrome uses `chrome://site-engagement, see [here](https://www.chromium.org/developers/design-documents/site-engagement) for more information.
 * Enable `edge://flags/#edge-allow-store-extension-themes` to allow EDgeium to install Themes from Chrome Web Store.
+* #edge-limit-media-autoplay (will be removed, edge only)
+* #edge-strict-origin-isolation (replaces app container lockdown)
 
 
 ### Some flags are (in general) problematic - do not touch! -
