@@ -34,7 +34,8 @@
 * `--enable-quic` & `--quic-version=h3-23` as command line argument to [enable HTTP/3](https://blog.cloudflare.com/http3-the-past-present-and-future/) See here how to run [Chrome with flags](https://www.chromium.org/developers/how-tos/run-chromium-with-flags).
 * Microsoft Edge tracking prevention (_optional_ - MS Edge + Defender only [via Chrome 75+ with Ent. GPO policy])
 * #tls13-hardening-for-local-anchors
-* cross-origin-isolation
+* #cross-origin-isolation
+* #treat-unsafe-downloads-as-active-content
 
 
 ### Privacy (only) flags (enabled)
@@ -201,6 +202,7 @@ Feature | Comment or suggestion
 [#enable-generic-sensor-extra-classes](https://flags/#enable-generic-sensor-extra-classes) | //
 [#enable-generic-sensor](https://flags/#enable-generic-sensor) | //
 [#enable-javascript-harmony](https://flags/#enable-javascript-harmony) | //
+[#enable-ftp](https://flags/##enable-ftp) | //
 [#enable-lookalike-URL-navigation-suggestions](https://flags/#enable-lookalike-url-navigation-suggestions) | //
 [#enable-media-session-service](https://flags/#enable-media-session-service) | Volume OSD (optional)
 [#enable-native-google-assistant](https://flags/#enable-native-google-assistant) | [//](https://www.howtogeek.com/429382/how-to-enable-google-assistant-on-your-chromebook/)
@@ -294,6 +296,10 @@ Feature | Comment or setting
 * Enable `edge://flags/#edge-allow-store-extension-themes` to allow EDgeium to install Themes from Chrome Web Store.
 * #edge-limit-media-autoplay (will be removed, edge only)
 * #edge-strict-origin-isolation (replaces app container lockdown)
+
+
+### Brave
+[#brave-adblock-cosmetic-filtering](chrome://flags/#brave-adblock-cosmetic-filtering) | enabled
 
 
 ### Some flags are (in general) problematic - do not touch! -
