@@ -3,6 +3,7 @@
 
 
 ### Flags (depending which OS/Chrome version)
+* Chrome 81: 257
 * Chrome 80: 263
 * Chrome 79: 273
 * Chrome 78: 282
@@ -286,6 +287,27 @@ Feature | Comment or setting
 [#omnibox-ui-show-suggestion-favicons ](#edge://flags/#omnibox-ui-show-suggestion-favicons ) | (_optional_)
 [#edge-autoplay-user-setting-block-option](edge://flags/#edge-autoplay-user-setting-block-option) | **Recommend !**
 [#edge-smartscreen-pua](edge://flags/#edge-smartscreen-pua) | **Disable Recommend !**
+* Anonymize local IPs exposed by WebRTC | Enabled
+* Extension Content Verification | Enforce Strict
+* Reduce default 'referer' header granularity | Enabled
+* Load Media Router Component Extension | Disabled
+* Connect to Cast devices on all IP addresses | Disabled
+* Block scripts loaded via document.write | Enabled
+* Parallel downloading | Enabled
+* Mark non-secure origins as non-secure | Enabled (mark as active dangerous)
+* Enable GPU AppContainer Lockdown | Enabled
+* Treat risky downloads over insecure connections as active mixed content | Enabled
+* De-elevate browser on launch | Enabled
+* Enable IE Integration | Disabled
+* Strict-Origin-Isolation | Enabled
+* SameSite by default cookie | Enabled
+* Cookies without SameSite must be secure | Enabled
+* Microsoft Edge tracking prevention | Enabled (default)
+* Experimental Tracking Prevention Features | Enabled
+* Potentially unwanted app protection | Enabled (default)
+* [post-quantum-cecpq2](https://techcommunity.microsoft.com/t5/discussions/new-feature-in-microsoft-edge-tls-post-quantum-confidentiality/m-p/1196977#) | Enabled
+* Enable SmartScreen Model Evaluation | Disabled
+* Secure DNS lookups | Disabled (use DNSCrypt/VPN)
 
 
 ### Other MS Edge (Chromium) "Tweaks"
@@ -362,6 +384,7 @@ Feature | Deprecated or removed since
 #stop-in-background | v70
 #temporary-unexpire-flags-m76 | 80
 #voice-search-on-local-ntp | v70
+
 
 ### DNS-over-HTTPS
 
