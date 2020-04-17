@@ -255,7 +255,7 @@ Feature | Comment or setting
 [#enable-android-spellchecker](https://flags/#enable-android-spellchecker) | Enabled
 [#enable-site-isolation-for-password-sites](https://flags/#enable-site-isolation-for-password-sites) | Enabled (v74+)
 
-### [Microsoft Edge (Chromium)](https://blogs.windows.com/windowsexperience/2019/11/04/introducing-the-new-microsoft-edge-and-bing/) specific [edge://flags]
+### [Microsoft Edge (Chromium)](https://blogs.windows.com/windowsexperience/2019/11/04/introducing-the-new-microsoft-edge-and-bing/) specific [edge://flags](https://docs.microsoft.com/en-us/microsoft-edge/privacy-whitepaper)
 
 Most Chromium based flags for Edge are explained over [here](https://github.com/MicrosoftEdge/MSEdgeExplainers). The project basically explains what each flag does (with Info, screenshots & more).
 
