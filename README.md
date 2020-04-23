@@ -361,4 +361,8 @@ MS did a good job with Edge, however the new Edge (Chromium based) seems even be
 
 ## How to compile Chromium with Codes
 * [GN build configuration](https://www.chromium.org/developers/gn-build-configuration) 
-* [Chromium build with proprietary codecs by jedi4ever](https://gist.github.com/jedi4ever/d095656ae0f0eca4a83ebb2b331da367) 
+* [Chromium build with proprietary codecs by jedi4ever](https://gist.github.com/jedi4ever/d095656ae0f0eca4a83ebb2b331da367)
+
+
+## Hardening Tools
+* [ChromeGalvanizer - Generate easy-to-install Chrome policies to harden your browser against extension backdoors and exploits](https://github.com/mandatoryprogrammer/ChromeGalvanizer)
