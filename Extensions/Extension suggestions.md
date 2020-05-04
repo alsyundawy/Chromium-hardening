@@ -1,6 +1,8 @@
-### Anti phishing attacks
+### Anti phishing attacks preventation
 * [Donkey Defender](https://chrome.google.com/webstore/detail/donkey-defender/bojniphfjbjdlajlanmaamjhcecdpoan?hl=en)
 
+### [Anti Behavioral Profiling](https://paul.reviews/behavioral-profiling-the-password-you-cant-change/)
+* [Keyboard Privacy](https://chrome.google.com/webstore/detail/keyboard-privacy/aoeboeflhhnobfjkafamelopfeojdohk)
 
 ### Web filter 
 * [µBlock Origin](https://github.com/gorhill/uBlock) + [µBO-Extra](https://github.com/gorhill/uBO-Extra) (Block ads, scripts and popups • Alternatives: [ScriptSafe](https://github.com/andryou/scriptsafe), [Adguard](https://adguard.com/en/adguard-adblock-browser-extension/overview.html), [Adblock Plus](https://en.wikipedia.org/wiki/Adblock_Plus), [AdBlock](https://en.wikipedia.org/wiki/AdBlock), NoScript [not for Chrome])
