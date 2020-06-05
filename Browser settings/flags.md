@@ -3,6 +3,8 @@
 
 
 ### Flags (depending which OS/Chrome version)
+* Chrome 83: 252
+* Chrome 82: 252
 * Chrome 81: 257
 * Chrome 80: 263
 * Chrome 79: 273
@@ -20,7 +22,6 @@
 * #disallow-unsafe-http-downloads
 * #disallow-unsafe-http-downloads
 * ~~#enable-appcontainer~~
-* #enable-gpu-appcontainer
 * strict-origin-isolation
 * #enable-sync-uss-nigori (only if your use Browser sync!)
 * #enable-tls13-early-data (disabled, GET fingerprinting)
@@ -89,6 +90,7 @@
 * ~~#omnibox-ui-hide-steady-url-trivial-subdomains~~
 * ~~#omnibox-ui-hide-steady-state-url-path-query-and-ref~~
 * ~~#simplify-https-indicator~~
+* ~~#heavy-ad-privacy-mitigation~~
 
 
 ## Performance (only) flags (enabled)
@@ -104,6 +106,7 @@
 * ~~Enable search suggestions on the local NTP (_disable_)~~ (_outdated_)
 * #in-product-help-demo-mode-choice (_disable_)
 * #load-media-router-component-extension (WARNING: Don't touch it (breaks the "Cast" feature _optional_ to avoid Google startup connections/loopback)
+* enable-heavy-ad-intervention
 
 
 ## Advertising (only) flags (enabled)
@@ -295,7 +298,6 @@ Feature | Comment or setting
 * Block scripts loaded via document.write | Enabled
 * Parallel downloading | Enabled
 * Mark non-secure origins as non-secure | Enabled (mark as active dangerous)
-* Enable GPU AppContainer Lockdown | Enabled
 * Treat risky downloads over insecure connections as active mixed content | Enabled
 * De-elevate browser on launch | Enabled
 * Enable IE Integration | Disabled
@@ -384,6 +386,8 @@ Feature | Deprecated or removed since
 #stop-in-background | v70
 #temporary-unexpire-flags-m76 | 80
 #voice-search-on-local-ntp | v70
+#appcontainer | 81
+#gpu-appcontainer | 81
 
 
 ### DNS-over-HTTPS
