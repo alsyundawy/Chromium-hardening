@@ -39,6 +39,7 @@
 * #tls13-hardening-for-local-anchors
 * #cross-origin-isolation
 * #treat-unsafe-downloads-as-active-content
+* #post-quantum-cecpq2
 
 
 ### Privacy (only) flags (enabled)
