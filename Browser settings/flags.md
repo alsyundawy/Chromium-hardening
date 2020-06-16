@@ -3,7 +3,8 @@
 
 
 ### Flags (depending which OS/Chrome version)
-* Chrome 83: 252
+* Chrome 84:
+* Chrome 83: 254
 * Chrome 82: 252
 * Chrome 81: 257
 * Chrome 80: 263
@@ -69,23 +70,26 @@
 * #omnibox-suggestion-transparency-options
 * #omnibox-zero-suggestions-on-ntp-realbox (_disable_)
 * #passwords-account-storage (disabled) (_use KeePass instead and disable all "Gaia account features"_)
-* #pdf-form-save (disabled)
+* ##use-multilogin-endpoint (_disabled_)
+* #pdf-form-save (_disable_)
 * #prefetch-privacy-changes
 * #reduced-referrer-granuarity
-* #search-results-extensions-block-v2 (Opera only)
+* #search-results-extensions-block-v2 (_Opera only_)
 * #sharing-use-device-info
 * #tab-hover-cards (disabled)
 * #turn-off-streaming-media-caching
 * #unified-consent
-* #use-new-accept-language-header (disabled)
-* #use-sync-sandbox (connect to Google)
-* ~~Enable search suggestions on the local NTP (_disable_) (_outdated_)~~
+* #enable-user-data-snapshot (_disable_)
+* #media-history (_disable_)
+* #use-new-accept-language-header (_disable_)
+* #use-sync-sandbox (_connect to Google_)
 * Anonymize local IPs exposed by WebRTC (_outdated_)
 * Disable minimum for server-side tile suggestions on NTP (_disable_) (_outdated_)
 * New history entries require a user gesture (_outdated_)
 * Top Sites from Site Engagement (_disable_) (_outdated_)
 * #webxr-plane-detection (_disable_)
 * enable-text-fragment-anchor (_disable_)
+* ~~Enable search suggestions on the local NTP (_disable_) (_outdated_)~~
 * ~~#omnibox-ui-hide-steady-state-url-scheme~~
 * ~~#omnibox-ui-hide-steady-url-trivial-subdomains~~
 * ~~#omnibox-ui-hide-steady-state-url-path-query-and-ref~~
