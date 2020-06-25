@@ -15,7 +15,7 @@
 
 
 ### CDN emulation
-* ~~[Local CDN](https://github.com/james-fray/local-cdn) (Local emulation of CDN • Alternatives: [Decentraleyes](https://github.com/Synzvato/decentraleyes))~~ Such extensions are **NOT needed** because they are often outdated, the whole point of an CDN is to improve loading speed + it regularily gets update and outdated resources can make you more vulnerable.
+* ~~[Local CDN](https://codeberg.org/nobody/LocalCDN) (Local emulation of CDN • Alternatives: [Decentraleyes](https://git.synz.io/Synzvato/decentraleyes))~~ Such extensions are **NOT needed** because they are often outdated, the whole point of an CDN is to improve loading speed + it regularily gets update and outdated resources can make you more vulnerable.
 
 
 ### Link Phishing protection
