@@ -15,7 +15,11 @@
 
 
 ### CDN emulation
-* [Local CDN](https://github.com/james-fray/local-cdn) (Local emulation of CDN • Alternatives: [Decentraleyes](https://github.com/Synzvato/decentraleyes))
+* ~~[Local CDN](https://github.com/james-fray/local-cdn) (Local emulation of CDN • Alternatives: [Decentraleyes](https://github.com/Synzvato/decentraleyes))~~ Such extensions are **NOT needed** because they are often outdated, the whole point of an CDN is to improve loading speed + it regularily gets update and outdated resources can make you more vulnerable.
+
+
+### Link Phishing protection
+* [No Opener, No Phishers](https://chrome.google.com/webstore/detail/no-opener-no-phishers/hieejlcohhkjbpiihgphcnaaiehphike), see [bug report](https://bugs.chromium.org/p/chromium/issues/detail?id=898942) & [Demo page](https://mathiasbynens.github.io/rel-noopener/)
 
 
 ### Misc
