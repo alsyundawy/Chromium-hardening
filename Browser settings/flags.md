@@ -3,7 +3,8 @@
 
 
 ### Flags (depending which OS/Chrome version)
-* Chrome 84:
+* Chrome 85:
+* Chrome 84: 256
 * Chrome 83: 254
 * Chrome 82: 252
 * Chrome 81: 257
@@ -90,6 +91,8 @@
 * Top Sites from Site Engagement (_disable_) (_outdated_)
 * #webxr-plane-detection (_disable_)
 * enable-text-fragment-anchor (_disable_)
+* [#cors-for-content-scripts](https://www.chromium.org/Home/chromium-security/extension-content-script-fetches)
+* [#freeze-user-agent](https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/-2JIRNMWJ7s/yHe4tQNLCgAJ)
 * ~~Enable search suggestions on the local NTP (_disable_) (_outdated_)~~
 * ~~#omnibox-ui-hide-steady-state-url-scheme~~
 * ~~#omnibox-ui-hide-steady-url-trivial-subdomains~~
