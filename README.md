@@ -2,9 +2,10 @@
 
 The goal of this project is to provide information (and _maybe_ an extension/policy) to setup Chromium/Chromium to get the best out-of-the-box application security & privacy.
 
-[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=Follow%20%40CHEF-KOCH)](https://twitter.com/CKsTechNews)
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/CHEF-KOCH)
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+![Twitter Follow](https://img.shields.io/twitter/follow/CKsTechNews?style=flat)
 [![Discord](https://discordapp.com/api/guilds/418256415874875402/widget.png)](https://discord.me/CHEF-KOCH)
+[![Telegram](https://img.shields.io/badge/Telegram-t.me%2FCKKSK-blue)](https://t.me/CKKSK)]
 
 ### Chromium vs. Mozilla Firefox Quantum (**still needs to be updated!**)
 
@@ -341,6 +342,7 @@ MS did a good job with Edge, however the new Edge (Chromium based) seems even be
 ## External scripts, extension scanners or tools
 * [PowerShell script to get the latest build of Chromium directly from the Chromium Project](https://github.com/RealDrGordonFreeman/Chromigen)
 * [CRXcavator](https://crxcavator.io/) - Submit a Chrome Extension ID in order to inspect it
+* [chrome_flags.js](https://gist.github.com/kkeybbs/d817fad016b401485ab8c4c8fcffe568) - Backup chrome flags to json and restore the backup on another machine.
 
 
 ## Papers
