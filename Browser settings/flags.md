@@ -332,6 +332,12 @@ Feature | Comment or setting
 * Enable `edge://flags/#edge-allow-store-extension-themes` to allow EDgeium to install Themes from Chrome Web Store.
 * #edge-limit-media-autoplay (will be removed, edge only)
 * #edge-strict-origin-isolation (replaces app container lockdown)
+* ~~legacy-tls-enforced~~ outdated, Edge 74+ disables TLS 1.0 & 1.1 by default
+* ~~#edge-de-elevate-on-launch~~ removed
+* ~~#edge-smartscreen-evaluate-model~~ removed 
+* ~~#passive-mixed-content-warning~~ removed
+* ~~#edge-wdag-prelaunch~~ EOL (prelaunch can be controlled via GUI)
+* ~~#edge-mf-clear-playback-Windows 10~~ Causes too many problems
 
 
 ### Brave
