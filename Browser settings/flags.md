@@ -326,6 +326,7 @@ Feature | Comment or setting
 
 ### Other MS Edge (Chromium) "Tweaks"
 
+* Multiple profiles (ssuming you have multiple) can be enabled via `edge://settings/profiles/multiProfileSettings`.
 * In order to **enable the new Extensions Menu**, create a shortcut or edit the existing shortcut `--enable-features=ExtensionsToolbarMenu` The example should then look like this: `msedge.exe --enable-features=ExtensionsToolbarMenu`.
 * [Improving Tracking Prevention in Microsoft Edge](https://blogs.windows.com/msedgedev/2019/12/03/improving-tracking-prevention-microsoft-edge-79/#s7m17j2ibI4KAxAz.97)
 * `edge://site-engagement` checks how often you visit your websites (how "popular they are), Chrome uses `chrome://site-engagement, see [here](https://www.chromium.org/developers/design-documents/site-engagement) for more information.
