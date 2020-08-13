@@ -7,7 +7,8 @@ Use this [script](https://gist.github.com/kkeybbs/d817fad016b401485ab8c4c8fcffe5
 
 
 ### Flags (depending which OS/Chrome version)
-* Chrome 85:
+* Chrome 86: 
+* Chrome 85: 269
 * Chrome 84: 256
 * Chrome 83: 254
 * Chrome 82: 252
@@ -258,7 +259,8 @@ Feature | Comment or suggestion
 [#use-new-accept-language-header](https://flags/#ntp-realbox) | //
 [#username-first-flow](https://flags/#username-first-flow) | //
 [#web-bundles](https://flags/#web-bundles) | //
-
+[#omnibox-ui-reveal-steady-state-url-path-query-and-ref-on-hover](https://flags/#omnibox-ui-reveal-steady-state-url-path-query-and-ref-on-hover) | //
+[#omnibox-ui-sometimes-elide-to-registrable-domain](https://flags/#omnibox-ui-sometimes-elide-to-registrable-domain) | //
 
 
 ### Android specific
