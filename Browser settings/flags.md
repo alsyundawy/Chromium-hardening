@@ -261,6 +261,7 @@ Feature | Comment or suggestion
 [#web-bundles](https://flags/#web-bundles) | //
 [#omnibox-ui-reveal-steady-state-url-path-query-and-ref-on-hover](https://flags/#omnibox-ui-reveal-steady-state-url-path-query-and-ref-on-hover) | //
 [#omnibox-ui-sometimes-elide-to-registrable-domain](https://flags/#omnibox-ui-sometimes-elide-to-registrable-domain) | //
+[#passwords-weakness-check](#passwords-weakness-check) | //
 
 
 ### Android specific
