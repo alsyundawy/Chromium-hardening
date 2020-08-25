@@ -363,6 +363,49 @@ Feature | Reason
 
 
 
+### DNS-over-HTTPS
+
+Starting with [Chrome 78](https://blog.chromium.org/2019/09/experimenting-with-same-provider-dns.html) the Browser will get an option to control DoH via `https://flags/#dns-over-https` (the flag can only be opt-out'ed [but is listed in my list as enabled [[default]]), however the option is experimental and only avbl. for several users/OS, the iOS and Linux implementation is still unfinished, that been said they won't get this right of the batch.
+
+Supported are the following providers (for now): Cleanbrowsing, Cloudflare, DNS.SB, Google, OpenDNS & Quad9. If a provider isn't in the integrated list then Chrome will automatically use a fallback and switch back to the "normal" mode.
+
+Fo [force Chrome to use DoH](https://bugs.chromium.org/p/chromium/issues/detail?id=799753#c8) add the following shortcut path:
+* `--enable-features="dns-over-https<DoHTrial" --force-fieldtrials="DoHTrial/Group1" --force-fieldtrial-params="DoHTrial.Group1:server/https%3A%2F%2F1.1.1.1%2Fdns-query/method/POST`
+
+This example will configure Chrome to use Cloudflares DoH server. To test if DoH is working or not, check the [https://1.1.1.1/help](https://1.1.1.1/help) url.
+
+
+### Fooling the NTP to increase the Browser performance and to gain some (questionable) privacy benefit
+
+There is some traffic caused for NTP lookups, this can be disabled with the following trick:
+* Change your default search engine to "Startpage" and remove all other search engines in your lists.
+* Enable or disable the following flags `Enable using the Google local NTP`, `Enable doodles on the local NTP` (_disable_), `Enable search suggestions on the local NTP` (_disable_), `Top Sites from Site Engagement` (_disable_), `Disable minimum for server-side tile suggestions on NTP` (_disable_) & `Enable promos on the local NTP` (_disable_).
+
+
+### Chrome/Chromium Command Line Switches
+
+If you add a command-line argument that is also used in `/flags`, the flag's state will *not be indicated* in `chrome://flags`. You can find them only manually by checking `chrome://version`.
+
+| In chrome://flags | Command | Comment | 
+| :--:              | :--        |         --: |    
+| :x:           | `--disable-beforeunload`        | Disables JavaScript dialog boxes |    
+| :x:           | `--disable-encryption`        | Windows only  | 
+| :x:           | `--disable-machine-id`        | Windows only  | 
+| :x:           | `--disable-search-engine-collection`        | Disable automatic search engine scraping from webpages.  | 
+| :white_check_mark:           | `--enable-stacked-tab-strip`        | Controls the tab strip behavior.  | 
+| :x:           | `--enable-tab-adjust-layout`        | Needed if `--enable-stacked-tab-strip` was altered. | 
+| :white_check_mark:           | `--disable-features=PostQuantumCECPQ2 www.github.com`        | Example to exclude specific and problematic pages froms the `post-quantum-cecpq2` flag | 
+| :white_check_mark:           | `--extension-mime-request-handling`        | Change how extension MIME types (CRX and user scripts) are handled. | 
+| :x:           | `--fingerprinting-canvas-image-data-noise`        | Bromite only  |
+| :x:           | `--fingerprinting-canvas-measuretext-noise`        | Bromite only  |
+| :x:           | `--fingerprinting-client-rects-noise`        | Bromite only  |
+| :x:           | `--max-connections-per-host`        | Bromite only, added in Chromium. Range between 6 and 15.  |
+| :x:           | `--hide-crashed-bubble`        | Hide `"Restore Pages? Chromium didn't shut down correctly."` |
+| :x:           | `--pdf-plugin-name`        | Allows to set the internal PDF viewer plugin name. |
+| :x:           | `--scroll-tabs`        | Linux only, the flag requires one the values: always, never, incognito-and-guest |
+| :x:           | `--show-avatar-button`        | The flag requires one of the values: always, incognito-and-guest. |
+| :x:           | `--set-ipv6-probe-false`        | Priotize IPv4 addresses over IPv6 addresses by dropping the IPv6 connectivity test. |
+
 
 ### Deprecated
 
@@ -410,48 +453,3 @@ Feature | Deprecated or removed since
 #voice-search-on-local-ntp | v70
 #appcontainer | 81
 #gpu-appcontainer | 81
-
-
-### DNS-over-HTTPS
-
-Starting with [Chrome 78](https://blog.chromium.org/2019/09/experimenting-with-same-provider-dns.html) the Browser will get an option to control DoH via `https://flags/#dns-over-https` (the flag can only be opt-out'ed [but is listed in my list as enabled [[default]]), however the option is experimental and only avbl. for several users/OS, the iOS and Linux implementation is still unfinished, that been said they won't get this right of the batch.
-
-Supported are the following providers (for now): Cleanbrowsing, Cloudflare, DNS.SB, Google, OpenDNS & Quad9. If a provider isn't in the integrated list then Chrome will automatically use a fallback and switch back to the "normal" mode.
-
-Fo [force Chrome to use DoH](https://bugs.chromium.org/p/chromium/issues/detail?id=799753#c8) add the following shortcut path:
-* `--enable-features="dns-over-https<DoHTrial" --force-fieldtrials="DoHTrial/Group1" --force-fieldtrial-params="DoHTrial.Group1:server/https%3A%2F%2F1.1.1.1%2Fdns-query/method/POST`
-
-This example will configure Chrome to use Cloudflares DoH server. To test if DoH is working or not, check the [https://1.1.1.1/help](https://1.1.1.1/help) url.
-
-
-### Fooling the NTP to increase the Browser performance and to gain some (questionable) privacy benefit
-
-There is some traffic caused for NTP lookups, this can be disabled with the following trick:
-* Change your default search engine to "Startpage" and remove all other search engines in your lists.
-* Enable or disable the following flags `Enable using the Google local NTP`, `Enable doodles on the local NTP` (_disable_), `Enable search suggestions on the local NTP` (_disable_), `Top Sites from Site Engagement` (_disable_), `Disable minimum for server-side tile suggestions on NTP` (_disable_) & `Enable promos on the local NTP` (_disable_).
-
-
-### Chrome/Chromium Command Line Switches
-
-If you add a command-line argument that is also used in `/flags`, the flag's state will *not be indicated* in `chrome://flags`. You can find them only manually by checking `chrome://version`.
-
-| In chrome://flags | Command | Comment | 
-| :--              | :--        |         --: |    
-| :x:           | `--disable-beforeunload`        | Disables JavaScript dialog boxes |    
-| :x:           | `--disable-encryption`        | Windows only  | 
-| :x:           | `--disable-machine-id`        | Windows only  | 
-| :x:           | `--disable-search-engine-collection`        | Disable automatic search engine scraping from webpages.  | 
-| :white_check_mark:           | `--enable-stacked-tab-strip`        | Controls the tab strip behavior.  | 
-| :x:           | `--enable-tab-adjust-layout`        | Needed if `--enable-stacked-tab-strip` was altered. | 
-| :white_check_mark:           | `--disable-features=PostQuantumCECPQ2 www.github.com`        | Example to exclude specific and problematic pages froms the `post-quantum-cecpq2` flag | 
-| :white_check_mark:           | `--extension-mime-request-handling`        | Change how extension MIME types (CRX and user scripts) are handled. | 
-| :x:           | `--fingerprinting-canvas-image-data-noise`        | Bromite only  |
-| :x:           | `--fingerprinting-canvas-measuretext-noise`        | Bromite only  |
-| :x:           | `--fingerprinting-client-rects-noise`        | Bromite only  |
-| :x:           | `--max-connections-per-host`        | Bromite only, added in Chromium. Range between 6 and 15.  |
-| :x:           | `--hide-crashed-bubble`        | Hide `"Restore Pages? Chromium didn't shut down correctly."` |
-| :x:           | `--pdf-plugin-name`        | Allows to set the internal PDF viewer plugin name. |
-| :x:           | `--scroll-tabs`        | Linux only, the flag requires one the values: always, never, incognito-and-guest |
-| :x:           | `--show-avatar-button`        | The flag requires one of the values: always, incognito-and-guest. |
-| :x:           | `--set-ipv6-probe-false`        | Priotize IPv4 addresses over IPv6 addresses by dropping the IPv6 connectivity test. |
-
