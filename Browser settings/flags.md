@@ -431,3 +431,27 @@ There is some traffic caused for NTP lookups, this can be disabled with the foll
 * Enable or disable the following flags `Enable using the Google local NTP`, `Enable doodles on the local NTP` (_disable_), `Enable search suggestions on the local NTP` (_disable_), `Top Sites from Site Engagement` (_disable_), `Disable minimum for server-side tile suggestions on NTP` (_disable_) & `Enable promos on the local NTP` (_disable_).
 
 
+### Chrome/Chromium Command Line Switches
+
+If you add a command-line argument that is also used in `/flags`, the flag's state will *not be indicated* in `chrome://flags`. You can find them only manually by checking `chrome://version`.
+
+| In chrome://flags | Command | Comment | 
+| :--              | :--        |         --: |    
+| :x:           | `--disable-beforeunload`        | Disables JavaScript dialog boxes |    
+| :x:           | `--disable-encryption`        | Windows only  | 
+| :x:           | `--disable-machine-id`        | Windows only  | 
+| :x:           | `--disable-search-engine-collection`        | Disable automatic search engine scraping from webpages.  | 
+| :white_check_mark:           | `--enable-stacked-tab-strip`        | Controls the tab strip behavior.  | 
+| :x:           | `--enable-tab-adjust-layout`        | Needed if `--enable-stacked-tab-strip` was altered. | 
+| :white_check_mark:           | `--disable-features=PostQuantumCECPQ2 www.github.com`        | Example to exclude specific and problematic pages froms the `post-quantum-cecpq2` flag | 
+| :white_check_mark:           | `--extension-mime-request-handling`        | Change how extension MIME types (CRX and user scripts) are handled. | 
+| :x:           | `--fingerprinting-canvas-image-data-noise`        | Bromite only  |
+| :x:           | `--fingerprinting-canvas-measuretext-noise`        | Bromite only  |
+| :x:           | `--fingerprinting-client-rects-noise`        | Bromite only  |
+| :x:           | `--max-connections-per-host`        | Bromite only, added in Chromium. Range between 6 and 15.  |
+| :x:           | `--hide-crashed-bubble`        | Hide `"Restore Pages? Chromium didn't shut down correctly."` |
+| :x:           | `--pdf-plugin-name`        | Allows to set the internal PDF viewer plugin name. |
+| :x:           | `--scroll-tabs`        | Linux only, the flag requires one the values: always, never, incognito-and-guest |
+| :x:           | `--show-avatar-button`        | The flag requires one of the values: always, incognito-and-guest. |
+| :x:           | `--set-ipv6-probe-false`        | Priotize IPv4 addresses over IPv6 addresses by dropping the IPv6 connectivity test. |
+
