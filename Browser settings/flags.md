@@ -345,6 +345,8 @@ Feature | Comment or setting
 
 
 ### Brave
+Feature | Reason
+------------ | -------------
 [#brave-adblock-cosmetic-filtering](chrome://flags/#brave-adblock-cosmetic-filtering) | enabled
 
 
@@ -361,6 +363,10 @@ Feature | Reason
 [#enable-built-in-module-infra](https://flags/#enable-built-in-module-infra) | Possible attacks
 [#disable-windows10-custom-titlebar](https://flags/#disable-windows10-custom-titlebar) | Only if you really need it
 
+
+### Brave Command Line Switches
+
+`“C:\Program Files (x86)\BraveSoftware\Brave-Browser\Application\brave.exe” -–ssl-version-min=tls1.2` - This will disable [TLS 1.0/1.1](https://community.brave.com/t/disable-tls-1-0-and-1-1-and-enable-doh-dot/87508).
 
 
 ### DNS-over-HTTPS
