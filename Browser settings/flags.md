@@ -86,6 +86,7 @@ Use this [script](https://gist.github.com/kkeybbs/d817fad016b401485ab8c4c8fcffe5
 * #tab-hover-cards (disabled)
 * #turn-off-streaming-media-caching
 * #unified-consent
+* #cross-origin-opener-policy (_enabled_)
 * #enable-user-data-snapshot (_disable_)
 * #media-history (_disable_)
 * #use-new-accept-language-header (_disable_)
